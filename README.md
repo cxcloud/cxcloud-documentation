@@ -1,20 +1,20 @@
 # Welcome to CXCloud
 
-Welcome to CXCloud. This site will help you through the journey of setting up and operating a CXCloud project. 
+Welcome to CXCloud. This site will help you through the journey of setting up and operating a CXCloud project.
 
-### What is CXCloud?
+## What is CXCloud?
 
 CXCloud is an idea for creating micro-services based architecture on AWS Cloud. This project is created and maintained by Tieto's CEM unit in Finland. We use this idea and architecture for creating high quality online services for our customers.
 
-### Getting Started
+## Getting Started
 
 For getting started, check out the Getting Started guide.
 
-### Source code
+## Source code
 
-CX Cloud components are available at <a href=https://github.com/cxcloud>GitHub</a>.
+CX Cloud components are available at [GitHub](https://github.com/cxcloud).
 
-### License
+## License
 
 CXCloud and it's components are released under the MIT license.
 
