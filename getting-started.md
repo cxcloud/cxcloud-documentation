@@ -39,6 +39,8 @@ $ cxcloud generate microservice
 
 You will be prompted to enter your project information. Follow the terminal guide to create and run the project.
 
+Check the [Micro Services](micro-services.md) page for more information.
+
 ### Generating the Infrastructure
 
 Similarly, run the following command and follow the instructions to create your infrastructure:
