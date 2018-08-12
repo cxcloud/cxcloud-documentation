@@ -5,7 +5,7 @@ A simple helper for using multiple AWS SQS queues at the same time. This tool pr
 ## Installation and Usage
 
 ```bash
-npm install @cxcloud/process-engine-core
+npm install @cxcloud/process-engine
 ```
 
 ```typescript
