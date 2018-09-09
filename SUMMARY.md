@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Welcome to CXCloud](README.md)
+* [Architecture Overview](architecture-overview.md)
 * [Getting Started](getting-started/README.md)
   * [Prepare Your Environment](getting-started/prepare-your-environment.md)
   * [Install CXCloud CLI](getting-started/install-cxcloud-cli.md)
