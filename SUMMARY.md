@@ -8,4 +8,6 @@
   * [Git Repository Conventions](getting-started/create-a-git-repository.md)
 * [NPM Modules](micro-services/README.md)
   * [Process Engine](micro-services/process-engine.md)
+* [Setting up a CXCloud Project](setting-up-a-cxcloud-project/README.md)
+  * [Generating Infrastructure](setting-up-a-cxcloud-project/generating-infrastructure.md)
 
