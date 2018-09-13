@@ -46,6 +46,14 @@ sudo mv kops-linux-amd64 /usr/local/bin/kops
 
 Check [Kops' documentation](https://github.com/kubernetes/kops#installing) for more information.
 
+## Install Helm
+
+[Install the Helm client](https://docs.helm.sh/using_helm/#installing-helm) or your machine. On Mac this can be done using `homebrew`:
+
+```bash
+$ brew install kubernetes-helm
+```
+
 ## Install Node.js and NPM
 
 You need to install Node.js and NPM on your computer. It is recommended to install the latest Node.js LTS version. On macOS you can do this using `homebrew`:
