@@ -1,9 +1,3 @@
----
-description: >-
-  Before you start creating a deploying a CXCloud project, you have to install
-  some dependencies and configure your environment.
----
-
 # Prepare Your Environment
 
 ## Install and Configure the AWS Cli tools

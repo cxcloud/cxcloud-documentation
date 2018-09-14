@@ -1,7 +1,3 @@
----
-description: CXCloud offers a simple command line tool to create and deploy projects.
----
-
 # Install CXCloud CLI
 
 ## Installing CXCloud CLI Tools
