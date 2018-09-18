@@ -1,5 +1,9 @@
 # Generating Infrastructure
 
+{% hint style="info" %}
+Make sure you have setup a domain to be used by this tool before continuing. [Read the docs](configuring-domains.md#configuring-a-domain-for-the-kubernetes-cluster) to find out how.
+{% endhint %}
+
 The first step of setting up a CXCloud project, is generating the infrastructure required for running services.
 
 Make sure you have [installed all the requirements](../getting-started/prepare-your-environment.md) on your computer and have exported the proper AWS profile:
@@ -20,12 +24,16 @@ After answering the questions the tool asks you, it will start bootstrapping you
 
 1. Creates an S3 bucket for storing settings and state
 2. Generates Terraform files for creating container repositories and other required resources
-3. Generates Terraform files for setting up the Kubernetes cluster
-4. Runs and applies the Terraform setup
-5. Waits for the Kubernetes cluster to become available
-6. Configures access controls on the Kubernetes cluster
-7. Installs Tiller, nginx-ingress and cert-manager on the cluster
-8. Setups of staging and production LetsEncrypt issuers 
+3. Generates Kubernetes config files and creates the Kubernetes cluster
+4. Waits for the Kubernetes cluster to become available
+5. Configures access controls on the Kubernetes cluster
+6. Installs Tiller, nginx-ingress and cert-manager on the cluster
+7. Setups of staging and production LetsEncrypt issuers
+8. Displays the load balancer URL
+
+if the setup is successful, the command displays the load balancer URL which you need to use to point your domains to.
+
+[More information on how to point a domain to this load balancer](configuring-domains.md#configuring-a-domain-for-your-service).
 
 ## Demo
 

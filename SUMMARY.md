@@ -8,6 +8,7 @@
 * [Architecture](architecture/README.md)
   * [Overview](architecture/architecture-overview.md)
 * [Setting up a CXCloud Project](setting-up-a-cxcloud-project/README.md)
+  * [Configuring Domains](setting-up-a-cxcloud-project/configuring-domains.md)
   * [Generating Infrastructure](setting-up-a-cxcloud-project/generating-infrastructure.md)
 * [NPM Modules](micro-services/README.md)
   * [Process Engine](micro-services/process-engine.md)
