@@ -24,6 +24,10 @@ $ cd infra
 $ cxcloud generate infra
 ```
 
+{% hint style="info" %}
+If you have enabled Multi-Factor Authentication on your AWS account or you are assuming another role which does, you might be asked to enter your MFA token \(using your Authenticator app\) in this step.
+{% endhint %}
+
 After answering the questions the tool asks you, it will start bootstrapping your environment on AWS. It does the following steps automatically for you:
 
 1. Creates an S3 bucket for storing settings and state
