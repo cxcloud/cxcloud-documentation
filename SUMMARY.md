@@ -11,7 +11,7 @@
   * [Generating a Service](setting-up-a-cxcloud-project/generating-a-service.md)
 * [Architecture](architecture/README.md)
   * [Overview](architecture/architecture-overview.md)
-* [NPM Modules](micro-services/README.md)
-  * [Process Engine](micro-services/process-engine.md)
+* [NPM Modules](npm-modules/README.md)
+  * [Process Engine](npm-modules/process-engine.md)
 * [Best Practices](best-practices.md)
 

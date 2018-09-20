@@ -1,9 +1,3 @@
----
-description: >-
-  CXCloud requires you to configure your domains manually so the command line
-  tool can access it.
----
-
 # Configuring Domains
 
 ## Configuring a domain for the Kubernetes Cluster
