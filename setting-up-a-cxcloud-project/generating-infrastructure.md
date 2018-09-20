@@ -1,5 +1,9 @@
 # Generating Infrastructure
 
+{% hint style="warning" %}
+Windows is not supported. You can only generate the infrastructure using a Unix bases OS. Eg. macOS or Linux.
+{% endhint %}
+
 {% hint style="info" %}
 Make sure you have setup a domain to be used by this tool before continuing. [Read the docs](configuring-domains.md#configuring-a-domain-for-the-kubernetes-cluster) to find out how.
 {% endhint %}
