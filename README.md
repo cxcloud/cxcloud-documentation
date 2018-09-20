@@ -4,11 +4,11 @@ Welcome to CX Cloud. This site will help you through the journey of setting up a
 
 ## What is CX Cloud?
 
-CX Cloud is an idea for creating micro-services based architecture on AWS Cloud. This project is created and maintained by Tieto's CEM unit in Finland. We use this idea, architecture and 3rd party tools (e.g. commercetools, Algolia, Contentful) for creating high quality online services for our customers. For some diagrams, see CX Cloud <a href=https://docs.cxcloud.com/architecture>architecture</a>. More information about the concept can be found from <a href=https://cxcloud.com/>cxcloud.com</a>. 
+CX Cloud is an idea for creating micro-services based architecture on AWS Cloud. This project is created and maintained by Tieto's CEM unit in Finland. We use this idea, architecture and 3rd party tools (e.g. commercetools, Algolia, Contentful) for creating high quality online services for our customers. For some diagrams, see CX Cloud [architecture](https://docs.cxcloud.com/architecture). More information about the concept can be found from [cxcloud.com](https://cxcloud.com). 
 
 ## Getting Started
 
-For getting started, check out the <a href=https://docs.cxcloud.com/getting-started>Getting Started</a> guide. After you set up the basics, you can move forward with <a href=https://docs.cxcloud.com/setting-up-a-cxcloud-project> Setting up your own CX Cloud project</a> and start exploring the possibilties.  
+For getting started, check out the [Getting Started](https://docs.cxcloud.com/getting-started) guide. After you set up the basics, you can move forward with [Setting up your own CX Cloud project](https://docs.cxcloud.com/setting-up-a-cxcloud-project) and start exploring the possibilties.  
 
 ## Online demo
 
