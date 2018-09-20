@@ -1,7 +1,7 @@
 # Generating Infrastructure
 
 {% hint style="warning" %}
-Windows is not supported. You can only generate the infrastructure using a Unix bases OS. Eg. macOS or Linux.
+Windows is not supported. You can only generate the infrastructure using a Unix based OS. Eg. macOS or Linux.
 {% endhint %}
 
 {% hint style="info" %}
