@@ -1,6 +1,6 @@
 # Best practices
 
-* [Multivendor coordination](best-practices/multivendor-coordination.md)
+* [Multivendor coordination](multivendor-coordination.md)
 * When to use API GW
 * Docker vs. Lambda
 * Why/How to use Process engine
