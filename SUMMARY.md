@@ -13,5 +13,6 @@
   * [Overview](architecture/architecture-overview.md)
 * [NPM Modules](npm-modules/README.md)
   * [Process Engine](npm-modules/process-engine.md)
-* [Best Practices](best-practices.md)
+* [Best Practices](best-practices/README.md)
+  * [Multivendor API gateway](best-practices/multivendor-api-gw.md)
 
