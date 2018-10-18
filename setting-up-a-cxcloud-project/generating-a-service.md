@@ -4,7 +4,7 @@
 Make sure you have generated infrastructure and exported your AWS profile before continuing. [Read the docs](generating-infrastructure.md) to find out how.
 {% endhint %}
 
-CXCloud provides support for selected services, which can be generated and added to the project using CXCloud CLI. You start by creating a new folder and running the following command:
+CXCloud provides support for selected services, which can be generated and added to the project using CXCloud CLI. You start by creating a new folder and running the following command inside of that folder:
 
 ```bash
 $ cxcloud generate service
@@ -90,7 +90,7 @@ $ npm run build
 $ npm run start
 ```
 
-It will build your Swagger documentation and start the local server for you to be able to test your configurations. 
+It will build your Swagger documentation and start the local server for you to be able to test your configurations. Swagger provides an interface for testing right in the browser.
 
 After you have tested the API, if you chose `deploy to cluster` option, you can deploy your services using the following command:
 
