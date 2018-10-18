@@ -9,6 +9,7 @@
   * [Configuring Domains](setting-up-a-cxcloud-project/configuring-domains.md)
   * [Generating Infrastructure](setting-up-a-cxcloud-project/generating-infrastructure.md)
   * [Generating a Service](setting-up-a-cxcloud-project/generating-a-service.md)
+  * [Generating a Frontend](setting-up-a-cxcloud-project/generating-a-frontend.md)
 * [Architecture](architecture/README.md)
   * [Overview](architecture/architecture-overview.md)
 * [NPM Modules](npm-modules/README.md)
