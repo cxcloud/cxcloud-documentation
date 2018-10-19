@@ -21,7 +21,7 @@ Currently CLI supports next services:
 - Auth (AWS Cognito)
 - Search (Algolia)
 
-After you have generated the services, it's time to provide them with configurations. Edit file `\config\default.json` and add necessary information there. Each service should have own object with configurations. Make sure to check the application port there as well.
+After you have generated the services, it's time to provide them with configurations. Edit file `\config\default.json` and add necessary information there. Each service should have its own object with configurations. Make sure to check the application port there as well.
 
 {% hint style="info" %}
 CXCloud does not provide any testable configurations. You must purchase licenses for selected services and set them up yourself.
@@ -74,7 +74,7 @@ Example configurations for Auth:
 }
 ```
 
-Example configurations for Searcch:
+Example configurations for Search:
 
 ```json
 "algolia": {
