@@ -4,7 +4,9 @@
 Make sure you have generated infrastructure and exported your AWS profile before continuing. [Read the docs](generating-infrastructure.md) to find out how.
 {% endhint %}
 
-CXCloud provides support for selected services, which can be generated and added to the project using CXCloud CLI. You start by creating a new repository for the service in Github, named for example `service-commerce`. Then clone it to your project folder and start service generation by running the following commands:
+CXCloud provides support for selected services, which can be generated and added to the project using CXCloud CLI. 
+
+You start by creating a new repository for the service in Github, named for example `service-commerce`. Then clone it to your project folder and start service generation by running the following commands:
 
 ```bash
 $ git clone git@github.com:myorganization/service-commerce.git
