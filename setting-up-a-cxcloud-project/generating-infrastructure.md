@@ -16,7 +16,7 @@ Make sure you have [installed all the requirements](../getting-started/prepare-y
 $ export AWS_PROFILE=my-cxcloud-dev
 ```
 
-Then create a Github repository named `infra` in your organization, clone it, and run the following command:
+Create a Github repository named `infra` in your organization. Then clone it to your project folder and start infra generation by running the following commands:
 
 ```bash
 $ git clone git@github.com:myorganization/infra.git
