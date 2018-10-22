@@ -1,14 +1,9 @@
 # Setting up a CXCloud Project
 
-Before setting up a CXCloud project make sure you:
-
-1. [Prepare your environment](../getting-started/prepare-your-environment.md)
-2. [Install the CXCloud CLI](../getting-started/install-cxcloud-cli.md)
-3. [Read about Git repository conventions](../getting-started/create-a-git-repository.md)
-
-When you're ready, start by:
+Great, you have now [prepared your environment and configured the tools needed](../getting-started). So the next phase is to set up your own CX Cloud project following these steps: 
 
 1. [Configuring domains](configuring-domains.md)
 2. [Generating your infrastructure](generating-infrastructure.md)
 3. [Generating a service](generating-a-service.md)
+4. [Generating a frontend](generating-a-frontend.md)
 
