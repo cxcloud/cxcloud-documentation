@@ -2,7 +2,7 @@
 
 ## Install and Configure the AWS Cli tools
 
-[Install the AWS Cli tools using this guide ](https://docs.aws.amazon.com/cli/latest/userguide/installing.html)and configure a profile:
+You naturally need an AWS account. For quick testing, You can create your own [AWS Free Tier account](https://aws.amazon.com/free/). Then install the AWS Cli tools using [this guide](https://docs.aws.amazon.com/cli/latest/userguide/installing.html) and configure a profile:
 
 ```bash
 $ aws configure --profile myproject
