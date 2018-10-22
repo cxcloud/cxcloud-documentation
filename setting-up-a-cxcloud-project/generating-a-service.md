@@ -4,7 +4,7 @@
 Make sure you have generated infrastructure and exported your AWS profile before continuing. [Read the docs](generating-infrastructure.md) to find out how.
 {% endhint %}
 
-CXCloud provides support for selected services, which can be generated and added to the project using CXCloud CLI. 
+CX Cloud provides support for selected services (e.g. commerce, content, search) which can be generated and added to the project using CLI. CX Cloud also provides service templates to facilitate the creation of full custom microservices. To create multiple services, just run CX Cloud CLI multiple times. 
 
 You start by creating a new repository for the service in Github, named for example `service-commerce`. Then clone it to your project folder and start service generation by running the following commands:
 
@@ -104,4 +104,11 @@ After you have tested the API, if you chose `deploy to cluster` option, you can 
 
 ```bash
 $ cxcloud deploy
+```
+
+As a final step, commit changes to your Github repository by running the following commands:
+
+```bash
+$ git add .
+$ git commit -m "initial "
 ```
