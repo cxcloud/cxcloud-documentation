@@ -50,7 +50,7 @@ $ brew install kubernetes-helm
 
 ## Install Terraform
 
-[Install Terraform ](https://www.terraform.io/intro/getting-started/install.html) or your machine. On Mac this can be done using `homebrew`:
+[Install Terraform ](https://www.terraform.io/intro/getting-started/install.html) on your machine. On Mac this can be done using `homebrew`:
 
 ```bash
 $ brew install terraform
