@@ -42,7 +42,7 @@ Check [Kops' documentation](https://github.com/kubernetes/kops#installing) for m
 
 ## Install Helm
 
-[Install the Helm client](https://docs.helm.sh/using_helm/#installing-helm) or your machine. On Mac this can be done using `homebrew`:
+[Install the Helm client](https://docs.helm.sh/using_helm/#installing-helm) on your machine. On Mac this can be done using `homebrew`:
 
 ```bash
 $ brew install kubernetes-helm
@@ -50,9 +50,7 @@ $ brew install kubernetes-helm
 
 ## Install Terraform
 
-You need to install Terraform on your computer. Visit the downloads page and pick the package for your system here:
-
-https://www.terraform.io/downloads.html
+[Install Terraform ](https://www.terraform.io/intro/getting-started/install.html) or your machine. On Mac this can be done using `homebrew`:
 
 ```bash
 $ brew install terraform
