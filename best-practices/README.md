@@ -1,6 +1,7 @@
 # Best practices
 
 * [Multivendor coordination](multivendor-coordination.md)
+* How to participate in developing CX Cloud? 
 * When to use API GW
 * Docker vs. Lambda
 * Why/How to use Process engine
