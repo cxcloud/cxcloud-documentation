@@ -25,14 +25,18 @@ Currently CLI supports next services:
 - Auth (AWS Cognito)
 - Search (Algolia)
 
-After you have generated the services, it's time to provide them with configurations. Edit file `\config\default.json` and add necessary information there. Each service should have its own object with configurations. Make sure to check the application port there as well.
+After you have generated the services, it's time to provide them with configurations. We are using Node-config for providing different configurations based on environment. Documentation for Node-config can be foud [here](https://www.npmjs.com/package/config).
+
+Create file `\config\development.json` and add necessary configurations there. Each service should have its own object with configurations. Make sure to check the application port there as well. For production, you should create `\config\production.json` respectively. These files will override configurations from the `\config\default.json`, but keep the non-sensitive configurations there (like `defaultCurrency`) and add the environment-related keys to `development.json` or `production.json` files. 
+
+`development.json` file will be automatically loaded when you are testing at your local environment while `production.json` will be used if you deploy the services.
 
 {% hint style="info" %}
 CXCloud does not provide any testable configurations. You must purchase licenses for selected services and set them up yourself.
 {% endhint %}
 
 {% hint style="warning" %}
-If you use public repository for versioning, make sure to encrypt the `default.json` file (for instance, with git-crypt).
+If you use public repository for versioning, make sure to encrypt the `development.json` and `production.json` files (for instance, with git-crypt).
 {% endhint %}
 
 Example configurations for Commerce:
