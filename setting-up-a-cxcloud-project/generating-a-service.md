@@ -4,7 +4,7 @@
 Make sure you have generated infrastructure and exported your AWS profile before continuing. [Read the docs](generating-infrastructure.md) to find out how.
 {% endhint %}
 
-CX Cloud provides support for selected services (e.g. commerce, content, search) which can be generated and added to the project using CLI. CX Cloud also provides service templates to facilitate the creation of full custom microservices. To create multiple services, just run CX Cloud CLI multiple times. 
+CX Cloud provides support for selected ready-made services (e.g. commerce, content, search) which can be generated and added to the project using CLI. These can of course be customized later on. CX Cloud also provides simple service templates to facilitate the creation of full custom microservices with various technologies (e.g. Java, Node.js, Scala, Groovy). To create multiple services to your project, just run CLI multiple times. 
 
 You start by creating a new repository for the service in Github, named for example `service-commerce`. Then clone it to your project folder and start service generation by running the following commands:
 
@@ -14,25 +14,25 @@ $ cd service-commerce
 $ cxcloud generate service
 ```
 
-You will go through a number of questions and get to choose which services to create. At this point, CXCloud CLI won't deploy anything yet, though it might ask to perform some authentefication steps for AWS.
+You will go through a number of questions and get to choose which service to create. At this point, CX Cloud CLI won't deploy anything yet, though it might ask to perform some authentefication steps for AWS.
 
-Some services might conflict with each other, in this case you will get a warning. Example of such conflict is Commerce and Auth services. Commerce includes own authentication service, making Auth in this case redundant.
+To enable ready-made functionality for services, CX Cloud provides a set of core modules that can be used when generating services. To enable desired level of granularity, one can use multiple core modules for one service or create multiple services based on same core module. It should be noted that if generating a service with multiple core modules, some services might conflict with each other. In this case you will get a warning. Example of such conflict is Commerce and Auth services. Commerce includes own authentication service, making Auth in this case redundant.
 
-Currently CLI supports next services:
+Currently CLI supports the following core modules:
 
 - Commerce (Commercetools)
 - Content (Contentful)
 - Auth (AWS Cognito)
 - Search (Algolia)
 
-After you have generated the services, it's time to provide them with configurations. We are using Node-config for providing different configurations based on environment. Documentation for Node-config can be foud [here](https://www.npmjs.com/package/config).
+After you have generated the service, it's time to provide it with configurations. We are using Node-config for providing different configurations based on environment. Documentation for Node-config can be foud [here](https://www.npmjs.com/package/config).
 
 Create file `\config\development.json` and add necessary configurations there. Each service should have its own object with configurations. Make sure to check the application port there as well. For production, you should create `\config\production.json` respectively. These files will override configurations from the `\config\default.json`, but keep the non-sensitive configurations there (like `defaultCurrency`) and add the environment-related keys to `development.json` or `production.json` files. 
 
-`development.json` file will be automatically loaded when you are testing at your local environment while `production.json` will be used if you deploy the services.
+`development.json` file will be automatically loaded when you are testing at your local environment while `production.json` will be used if you deploy the services to AWS.
 
 {% hint style="info" %}
-CXCloud does not provide any testable configurations. You must purchase licenses for selected services and set them up yourself.
+CXCloud does not provide any testable configurations for 3rd party solutions. You must get test account or purchase licenses for selected services and set them up yourself.
 {% endhint %}
 
 {% hint style="warning" %}
@@ -91,7 +91,7 @@ Example configurations for Search:
 }
 ```
 
-After generation is finished and configurations are set, all of selected services will be working as a single API. You should be able to see Swagger API documentation at `http://localhost:4003/api/v1/api-docs`. To do that, run the following set of commands at the root of your repository with services:
+After generation is finished and configurations are set, the generated service will be working as a single API. You should be able to see Swagger API documentation at `http://localhost:4003/api/v1/api-docs` (Please note the application port for your service). To do that, run the following set of commands at the root of your repository with service:
 
 ```bash
 $ npm run build
@@ -110,5 +110,5 @@ As a final step, commit changes to your Github repository by running the followi
 
 ```bash
 $ git add .
-$ git commit -m "initial "
+$ git commit -m "initial commit"
 ```
