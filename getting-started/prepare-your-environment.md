@@ -48,6 +48,12 @@ Check [Kops' documentation](https://github.com/kubernetes/kops#installing) for m
 $ brew install kubernetes-helm
 ```
 
+## Install Terraform
+
+You need to install Terraform on your computer. Visit the downloads page and pick the package for your system here:
+
+https://www.terraform.io/downloads.html
+
 ## Install Node.js and NPM
 
 You need to install Node.js and NPM on your computer. It is recommended to install the latest Node.js LTS version. On macOS you can do this using `homebrew`:
