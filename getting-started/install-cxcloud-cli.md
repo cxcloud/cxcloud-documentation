@@ -12,6 +12,12 @@ Once you have installed Node.js and you confirm that NPM is working using `npm -
 $ npm install -g cxcloud
 ```
 
+If you need to update CX Cloud CLI, run this command`:
+
+```text
+$ npm i -g cxcloud@latest
+```
+
 After installation is complete, you can call cxcloud directly from command line:
 
 ```bash
@@ -24,9 +30,4 @@ Or if you don't want to install cxcloud globally, you can call it directly using
 $ npx cxcloud --version
 ```
 
-If you need to update CX Cloud CLI, run this command`:
-
-```text
-npm i -g cxcloud@latest
-```
 
