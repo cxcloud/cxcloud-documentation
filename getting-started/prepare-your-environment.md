@@ -1,5 +1,18 @@
 # Prepare Your Environment
 
+## Install Git client
+
+Currently, our Cli only supports GitHub as a versioning system. Make sure you have a profile there which has at least one public commit made - this is required by Cli to be able to find your profile.
+
+Once you have installed Git client of your preference, make sure to configure global `username` and `email` properties with values from your GitHub account like this:
+
+```bash
+git config --global user.username "username"
+git config --global user.email "example@email.com"
+```
+
+You can use [this link](https://github.com/search?q=author-email%3Aexample%40email.com&type=Commits) for debugging purposes - replace the email in the top left corner to your GitHub email and you should be able to find at least one commit made by you.
+
 ## Install and Configure the AWS Cli tools
 
 You naturally need an AWS account. For quick testing, You can create your own [AWS Free Tier account](https://aws.amazon.com/free/). Then install the AWS Cli tools using [this guide](https://docs.aws.amazon.com/cli/latest/userguide/installing.html) and configure a profile:
