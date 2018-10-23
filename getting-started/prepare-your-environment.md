@@ -79,3 +79,7 @@ $ brew install node
 
 For other systems, you can check [Node.js official documentation](https://nodejs.org/en/download/package-manager/).
 
+## Install Docker
+
+To be able to compose a deployable image you have to install Docker. Head over to [this page](https://docs.docker.com/install/#supported-platforms) and get the Docker for your system. You'll need to create a Docker account as well.
+
