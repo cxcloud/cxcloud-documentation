@@ -24,5 +24,9 @@ Or if you don't want to install cxcloud globally, you can call it directly using
 $ npx cxcloud --version
 ```
 
+If you need to update CX Cloud CLI, run this command`:
 
+```text
+npm i -g cxcloud@latest
+```
 
