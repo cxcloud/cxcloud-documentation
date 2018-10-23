@@ -49,6 +49,7 @@ As a final step, commit changes to your Github repository by running the followi
 ```bash
 $ git add .
 $ git commit -m "initial "
+$ git push
 ```
 
 ## Demo
