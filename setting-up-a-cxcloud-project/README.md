@@ -6,4 +6,4 @@ Great, you have now [prepared your environment and configured the tools needed](
 2. [Generating your infrastructure](generating-infrastructure.md)
 3. [Generating a service](generating-a-service.md)
 4. [Generating a frontend](generating-a-frontend.md)
-
+5. [Configuring CI/CD pipeline](configuring-cicd.md)
