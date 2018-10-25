@@ -7,10 +7,10 @@ When configuring domains, the assumed starting state is that there is already a 
  - newsite.example.com (customer front-end)
  - admin.newsite.example.com ("admin panel")
  - developer.newsite.examle.com (developer portal)
- - newsite.example.com/api/commerce/ (commerce service API)
- - newsite.example.com/api/content/ (content service API)
- - newsite.example.com/api/search/ (search service API)
- - newsite.example.com/api/auth/ (auth service API)
+ - newsite.example.com/api/commerce/v1/ (commerce service API)
+ - newsite.example.com/api/content/v1/ (content service API)
+ - newsite.example.com/api/search/v1/ (search service API)
+ - newsite.example.com/api/auth/v1/ (auth service API)
 
 We have used this assumption in our documentation and configuration examples. Below you see the different scenarios to manage domains. 
 
