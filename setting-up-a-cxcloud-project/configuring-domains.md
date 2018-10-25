@@ -1,5 +1,20 @@
 # Configuring Domains
 
+## Target state
+
+When configuring domains, the assumed starting state is that there is already a site working in "example.com" and you have access to manage DNS. CX Cloud is then installed to utilize this same domain to explore its possibilities. So the target state with CX Cloud would look like this: 
+
+ - newsite.example.com (customer front-end)
+ - admin.newsite.example.com ("admin panel")
+ - developer.newsite.examle.com (developer portal)
+ - newsite.example.com/api/commerce/ (commerce service API)
+ - newsite.example.com/api/content/ (content service API)
+ - newsite.example.com/api/search/ (search service API)
+ - newsite.example.com/api/auth/ (auth service API)
+
+We have used this assumption in our documentation and configuration examples. Below you see the different scenarios to manage domains. 
+
+
 ## Configuring a domain for the Kubernetes Cluster
 
 In order to build a Kubernetes cluster with `cxcloud`, we need to prepare somewhere to build the required DNS records. There are three scenarios below and you should choose the one that most closely matches your AWS situation:
