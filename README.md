@@ -20,7 +20,7 @@ CX API: [https://demo.cxcloud.com/api/v1/api-docs/](https://demo.cxcloud.com/api
 
 ## Source code and change log 
 
-CX Cloud components are available at [GitHub](https://github.com/cxcloud). The online demo is created by running the CX Cloud CLI with default settings. The CLI generated source code for the demo is also available at [GitHub](https://github.com/cxcloud-demos). Check our [Change log](https://docs.cxcloud.com/architecture/changelog.md) for quaterly summaries of the most important changes and improvements. 
+CX Cloud components are available at [GitHub](https://github.com/cxcloud). The online demo is created by running the CX Cloud CLI with default settings. The CLI generated source code for the demo is also available at [GitHub](https://github.com/cxcloud-demos). Check our [Change log](https://docs.cxcloud.com/architecture/changelog) for quaterly summaries of the most important changes and improvements. 
 
 ## License
 
