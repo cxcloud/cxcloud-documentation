@@ -13,6 +13,7 @@
   * [Configuring CI/CD pipeline](setting-up-a-cxcloud-project/configuring-CICD.md)  
 * [Architecture](architecture/README.md)
   * [Overview](architecture/architecture-overview.md)
+  * [Change log](architecture/changelog.md)
 * [NPM Modules](npm-modules/README.md)
   * [Process Engine](npm-modules/process-engine.md)
 * [Best Practices](best-practices/README.md)
