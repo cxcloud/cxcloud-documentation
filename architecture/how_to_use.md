@@ -1,22 +1,27 @@
-# How to use CX Cloud in your project
+# Different scenarios for CX Cloud
+CX Cloud is a solution accelerator to create online solutions with microservices & API-first architecture. Example solutions include web shops, customer self-service solutions, content rich web sites and API-layer for mobile apps and other clients. Solution implementation can also be part of "decomposing the monolith" program where your customer targets to create new online solutions with modern omni-channel architecture while at the same time reducing the scope of legacy platforms.
 
-## When to use CX Cloud
-CX Cloud is a solution accelerator to create online solutions with microservices & API-first architecture. 
-Example solutions include web shops, content rich web sites and API-layer for mobile app. 
-Typically solution implementation can also be part of "decomposing the monolith" program where our customer targets creating new solutions with modern omni-channel architecture while at the same time reducing the scope of legacy platforms.
+There are three main scenarios for usage. 
+* A green field project to create a new solution or replace existing solution  
+* Use CX Cloud for a "decomposing the monolith" program
+* Add CX Cloud capablities to an existing microservices stack
 
-## How to use CX Cloud
-There are two main scenarios for usage. One is to start a green field project and the other is to add CX Cloud capablities to an existing project. 
-Below you can see these scenarios from Github perspective. 
-
+![](../.gitbook/assets/cxcloud_github.png)
 
 
+## 1. Green field 
+In this scenario, the solution scope has little dependencies to existing IT stack. You have quite big freedom in technology choises regarding both services, front-ends, infrastrcuture and CI/CD configurations. As target is quite "stand-alone" solution stack, no separate API Gateway is necessarily needed as CX Cloud runs Kubernetes with internal ingress loadbalancer. 
+
+In this case, you can have a clean start for your project using CX Cloud CLI and generating the infra, services and front-ends needed. 
 
 
-### Green field 
-In this scenario, the solution scope has little dependencies to existing IT stack. You have quite big freedom in technology choises regarding both services, fron-ends, infrastrcuture and CI/CD configurations. 
-In this case, you can have a clean start and start your project with CX Cloud CLI.
+## 2. "Decomposing the monolith" 
+Quite similar to green field. But there is a need for separate API Gateway to enable multi-vendor approach (different vendors can expose API's via one gatweay). This gateway can also be utilized to expose API's of current legacy platforms for new client/front-end solutions. CX Cloud enables generating and running AWS API Gatweay outside Kubernetes cluster but you can also configure the tool of choice (e.g. WSO2, Azure API Management) separately. 
+
+In this case, you can have a clean start for your project using CX Cloud CLI and generating the infra, services and front-ends needed. 
 
 
-### Add capabilities for your existing microservice stack
+## 3. Add capabilities for your existing microservice stack
+In this scenario, there is already a microcervices architcture in place, including centralized API Gateway, version control and DevOps pipeline. Your task might be for example to add additional capabilities (e.g. commerce, content, search) to the existing stack. And in this area CX Cloud services might come handy. 
 
+In this case, you can copy needed services from https://github.com/cxcloud-demos to your own version control and configure DevOps pipeline manually. The repos in our "CX Cloud Demos" GitHub account are created automatically every night by running CX Cloud CLI with default settings. 
