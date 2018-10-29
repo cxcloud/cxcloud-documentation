@@ -1,5 +1,5 @@
 # Architecture
 
-* [Architecture overview](architecture-overview)
-* [How to use CX Cloud](architecture/how-to-use.md)
-* [Change log](architecture/changelog.md)
+* [Architecture overview](architecture-overview.md)
+* [How to use CX Cloud](how-to-use.md)
+* [Change log](changelog.md)
