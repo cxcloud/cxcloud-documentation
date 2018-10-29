@@ -2,9 +2,7 @@
 
 ## Install Git client
 
-Currently, our Cli only supports GitHub as a versioning system. Make sure you have a profile there which has at least one public commit made - this is required by Cli to be able to find your profile.
-
-Once you have installed Git client of your preference, make sure to configure global `username` and `email` properties with values from your GitHub account like this:
+Currently, our Cli only supports GitHub as a versioning system. Once you have installed Git client of your preference, make sure to configure global `username` and `email` properties with values from your GitHub account like this:
 
 ```bash
 git config --global user.username "username"
