@@ -5,7 +5,7 @@ We constantly devlop Tieto CX Cloud based on customer projects, internal ideas a
 
 # Planned for Q4/2018
 
-Add GraphQL to basic set-up. Create more templates to enable microservices generation with various technologies (e.g. Groovy, Java) using CX Cloud CLI. Create default CI/CD pipeline. Azure support for CLI infra generation. 
+Add GraphQL to basic set-up. Create more templates to enable custom microservices generation with various technologies (e.g. Node, Java, Groovy) using CX Cloud CLI. Create default CI/CD pipeline between Github and AWS. Add Azure support for CLI infra generation. 
 
 
 # Changes in 2018
@@ -17,7 +17,7 @@ Created CX Cloud CLI to enable more easy project set-up with infra, service and 
 
 ## Q2/2018
 
-We split core module to more granular modules (e.g. commerce, content, search). Also enabled generation of services and service specific API's with selected level of granularity based on core modules.  
+We split core module to more granular modules (e.g. commerce, content, search). Also enabled generation of services and service specific API's with selected level of granularity based on available core modules.  
 
 
 ## Q1/2018
