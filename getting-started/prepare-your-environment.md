@@ -9,8 +9,6 @@ git config --global user.username "username"
 git config --global user.email "example@email.com"
 ```
 
-You can use [this link](https://github.com/search?q=author-email%3Aexample%40email.com&type=Commits) for debugging purposes - replace the email in the top left corner to your GitHub email and you should be able to find at least one commit made by you.
-
 ## Install and Configure the AWS Cli tools
 
 You naturally need an AWS account. For quick testing, You can create your own [AWS Free Tier account](https://aws.amazon.com/free/). Then install the AWS Cli tools using [this guide](https://docs.aws.amazon.com/cli/latest/userguide/installing.html) and configure a profile:
