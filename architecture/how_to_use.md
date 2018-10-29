@@ -18,12 +18,12 @@ For a green field project, you can take a clean start for your project using CX 
 
 
 ## 2. "Decomposing the monolith" 
-Quite similar to green field. But there is a need for separate API Gateway to enable multi-vendor approach (different vendors can expose API's via one gatweay). This gateway can also be utilized to expose API's of current legacy platforms for new client/front-end solutions. CX Cloud enables generating and running AWS API Gatweay outside Kubernetes cluster but you can also configure the tool of choice (e.g. WSO2, Azure API Management) separately. 
+Quite similar to green field. But there is a need for separate API Gateway to enable multi-vendor approach (different vendors can expose API's via one gateway). This gateway can also be utilized to expose API's of current legacy platforms for new client/front-end solutions. CX Cloud enables generating and running AWS API Gatweay outside Kubernetes cluster but you can also configure the tool of choice (e.g. WSO2, Azure API Management) separately. 
 
 In this case, you can have a clean start for your project using CX Cloud CLI and generating the infra, services and front-ends needed. 
 
 
 ## 3. Add capabilities for your existing microservice stack
-In this scenario, there is already a microcervices architcture in place, including centralized API Gateway, version control and DevOps pipeline. Your task might be for example to add additional capabilities (e.g. commerce, content, search) to the existing stack. And in this area CX Cloud services might come handy. 
+In this scenario, there is already a microservices architecture in place, including centralized API Gateway, version control and DevOps pipeline. Your task might be for example to add additional capabilities (e.g. commerce, content, search) to the existing stack. And in this area CX Cloud services might come handy. 
 
 In this case, you can copy needed services from https://github.com/cxcloud-demos to your own version control and configure DevOps pipeline manually. The repos in our "CX Cloud Demos" GitHub account are created automatically every night by running CX Cloud CLI with default settings. 
