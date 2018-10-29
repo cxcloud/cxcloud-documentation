@@ -14,7 +14,7 @@
 * [Architecture](architecture/README.md)
   * [Overview](architecture/architecture-overview.md)
   * [How to use CX Cloud](architecture/how_to_use.md)
-  * [Change log](architecture/)
+  * [Change log](architecture/changelog.md)
 * [NPM Modules](npm-modules/README.md)
   * [Process Engine](npm-modules/process-engine.md)
 * [Best Practices](best-practices/README.md)
