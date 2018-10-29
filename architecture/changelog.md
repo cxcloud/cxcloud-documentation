@@ -1,6 +1,6 @@
 # Change log
 
-We constantly devlop Tieto CX Cloud based on customer projects, internal ideas and partner contributions. Naturally you can follow progress via Github but here are quarterly summaries of the most important changes and improvements. 
+We constantly develop Tieto CX Cloud based on customer projects, internal ideas and partner contributions. Naturally you can follow progress via Github but here are quarterly summaries of the most important changes and improvements. 
 
 
 # Planned for Q4/2018
