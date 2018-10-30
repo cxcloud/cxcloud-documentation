@@ -4,7 +4,7 @@ CX Cloud CLI allows you to test the concept with end-to-end functionality by gen
 
 Generated demo will be using our test API end point with pre-filled sets of data for Commerce and Content modules. You can use these projects as a reference for your own development.
 
-As you should have CX Cloud CLI installed by now, use the following command to start:
+Create a new folder for your demo project and go inside of that folder. As you should have CX Cloud CLI installed by now, use the following command to start generating:
 
 ```bash
 $ cxcloud generate demo
