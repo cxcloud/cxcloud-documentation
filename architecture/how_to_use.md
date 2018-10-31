@@ -18,7 +18,7 @@ For a green field project, you can take a clean start for your project using CX 
 
 
 ## 2. "Decomposing the monolith" 
-Quite similar to green field. But there is a need for separate API Gateway to enable multi-vendor approach (different vendors can expose API's via one gateway). This gateway can also be utilized to expose API's of current legacy platforms for new client/front-end solutions. CX Cloud enables generating and running AWS API Gatweay outside Kubernetes cluster but you can also configure the tool of choice (e.g. WSO2, Azure API Management) separately. 
+Quite similar to green field. But there is a need for separate API Gateway to enable multi-vendor approach (different vendors can expose API's via one gateway). This gateway can also be utilized to expose API's of current legacy platforms for new client/front-end solutions. CX Cloud enables generating and running AWS API Gateway outside Kubernetes cluster but you can also configure the tool of choice (e.g. WSO2, Azure API Management) separately. 
 
 In this case, you can have a clean start for your project using CX Cloud CLI and generating the infra, services and front-ends needed. 
 
