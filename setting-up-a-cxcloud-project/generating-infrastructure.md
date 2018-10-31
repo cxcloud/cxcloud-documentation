@@ -8,15 +8,14 @@ Windows is not supported. You can only generate the infrastructure using a Unix 
 Make sure you have setup a domain to be used by this tool before continuing. [Read the docs](configuring-domains.md#configuring-a-domain-for-the-kubernetes-cluster) to find out how.
 {% endhint %}
 
-The first step of setting up a CXCloud project, is generating the infrastructure required for running services.
-
 Make sure you have [installed all the requirements](../getting-started/prepare-your-environment.md) on your computer and have exported the proper AWS profile:
 
 ```bash
 $ export AWS_PROFILE=my-cxcloud-dev
 ```
 
-Create a Github repository named `infra` in your organization. Then clone it to your project folder and start infra generation by running the following commands:
+## Infra generation
+The first step of setting up a CXCloud project, is generating the infrastructure required for running services. Create a Github repository named `infra` in your organization. Then clone it to your project folder and start infra generation by running the following commands:
 
 ```bash
 $ git clone git@github.com:myorganization/infra.git
@@ -44,6 +43,7 @@ if the setup is successful, the command displays the load balancer URL which you
 [More information on how to point a domain to this load balancer](configuring-domains.md#configuring-a-domain-for-your-service).
 
 
+## Commit
 As a final step, commit changes to your Github repository by running the following commands:
 
 ```bash
