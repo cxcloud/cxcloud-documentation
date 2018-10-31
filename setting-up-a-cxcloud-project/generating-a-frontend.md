@@ -17,7 +17,7 @@ It should be noted that our Angular demo is using one API/service, with the Comm
 
 
 ## Configuration
-Generated demo will be using our test API including end points with pre-filled sets of data for Commerce, Content and Search modules. Later we will provide a guide to configure your front-end to connect to your own services, with set level of granularity, running in your AWS.
+Generated demo will be using our live test API including end points with pre-filled sets of data for Commerce, Content and Search services. Later we will provide a guide to configure your front-end to connect to your own services, with set level of granularity, running in your AWS.
 
 
 ## Local test
