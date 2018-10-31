@@ -6,6 +6,8 @@ Make sure you have generated infrastructure and exported your AWS profile before
 
 CX Cloud provides support for selected ready-made services (e.g. commerce, content, search, authentication) which can be generated and added to the project using CLI. These can of course be customized later on. CX Cloud also provides simple service templates to facilitate the creation of full custom microservices with various technologies (e.g. Java, Node.js, Scala, Groovy). To create multiple services to your project, just run CLI multiple times. 
 
+
+## Generation
 You start by creating a new repository for the service in Github, named for example `service-commerce`. Then clone it to your project folder and start service generation by running the following commands:
 
 ```bash
@@ -25,6 +27,8 @@ Currently CLI supports the following core modules:
 - Auth (AWS Cognito)
 - Search (Algolia)
 
+
+## Configuration
 After you have generated the service, it's time to provide it with configurations. We are using Node-config for providing different configurations based on environment. Documentation for Node-config can be foud [here](https://www.npmjs.com/package/config).
 
 Create file `\config\development.json` and add necessary configurations there. Each service should have its own object with configurations. Make sure to check the application port there as well. For production, you should create `\config\production.json` respectively. These files will override configurations from the `\config\default.json`, but keep the non-sensitive configurations there (like `defaultCurrency`) and add the environment-related keys to `development.json` or `production.json` files. 
@@ -91,6 +95,7 @@ Example configurations for Search:
 }
 ```
 
+## Local test
 After generation is finished and configurations are set, the generated service will be working as a single API. You should be able to see Swagger API documentation at `http://localhost:4003/api/v1/api-docs` (Please note the application port for your service). To do that, run the following set of commands at the root of your repository with service:
 
 ```bash
@@ -100,12 +105,14 @@ $ npm run start
 
 It will build your Swagger documentation and start the local server for you to be able to test your configurations. Swagger provides an interface for testing right in the browser.
 
+## Deployment
 After you have tested the API, if you chose `deploy to cluster` option, you can deploy your services using the following command:
 
 ```bash
 $ cxcloud deploy
 ```
 
+## Commit
 As a final step, commit changes to your Github repository by running the following commands:
 
 ```bash
