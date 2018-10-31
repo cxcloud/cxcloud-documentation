@@ -7,7 +7,7 @@ Make sure you have generated infrastructure and exported your AWS profile before
 CX Cloud provides support for selected ready-made services (e.g. commerce, content, search, authentication) which can be generated and added to the project using CLI. These can of course be customized later on. CX Cloud also provides simple service templates to facilitate the creation of full custom microservices with various technologies (e.g. Java, Node.js, Scala, Groovy). To create multiple services to your project, just run CLI multiple times. 
 
 
-## Generation
+## Service generation
 You start by creating a new repository for the service in Github, named for example `service-commerce`. Then clone it to your project folder and start service generation by running the following commands:
 
 ```bash
