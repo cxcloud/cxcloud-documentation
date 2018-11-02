@@ -4,3 +4,10 @@ CXCloud projects are essentially services and functions that are deployed to a K
 
 ![](../.gitbook/assets/architecture-v2.png)
 
+## Demo architecture
+
+When you create your CX Cloud project with CLI and default configurations (infra, services (Commerce, Content and Search) and React front-end) the outcome will look like this:
+
+{% hint style="info" %}
+TBA
+{% endhint %}
