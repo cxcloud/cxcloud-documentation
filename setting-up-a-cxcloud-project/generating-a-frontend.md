@@ -32,7 +32,13 @@ By default, your demo will be available at `http://localhost:4200/` but check th
 
 ## Deployment
 
-TBA \(Only local testing available at the moment\)
+Run the following command to deploy your frontend demo:
+
+```bash
+$ cxcloud deploy
+```
+
+Check [Deploying Service](deploying-services.md) and [Routing Manifest](routing-manifest.md) sections for more information on deployment and routing.
 
 ## Commit
 
