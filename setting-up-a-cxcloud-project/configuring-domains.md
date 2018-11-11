@@ -2,18 +2,17 @@
 
 ## Target state
 
-When configuring domains, the assumed starting state is that there is already a site working in "example.com" and you have access to manage DNS. CX Cloud is then installed to utilize this same domain to explore its possibilities. So the target state with CX Cloud would look like this: 
+When configuring domains, the assumed starting state is that there is already a site working in "example.com" and you have access to manage DNS. CX Cloud is then installed to utilize this same domain to explore its possibilities. So the target state with CX Cloud would look like this:
 
- - newsite.example.com (customer front-end)
- - admin.newsite.example.com ("admin panel")
- - developer.newsite.examle.com (developer portal)
- - newsite.example.com/api/commerce/v1/ (commerce service API)
- - newsite.example.com/api/content/v1/ (content service API)
- - newsite.example.com/api/search/v1/ (search service API)
- - newsite.example.com/api/auth/v1/ (auth service API)
+* newsite.example.com \(customer front-end\)
+* admin.newsite.example.com \("admin panel"\)
+* developer.newsite.examle.com \(developer portal\)
+* newsite.example.com/api/commerce/v1/ \(commerce service API\)
+* newsite.example.com/api/content/v1/ \(content service API\)
+* newsite.example.com/api/search/v1/ \(search service API\)
+* newsite.example.com/api/auth/v1/ \(auth service API\)
 
-We have used this assumption in our documentation and configuration examples. Below you see the different scenarios to manage domains. 
-
+We have used this assumption in our documentation and configuration examples. Below you see the different scenarios to manage domains.
 
 ## Configuring a domain for the Kubernetes Cluster
 
@@ -119,8 +118,5 @@ kubectl get service nginx-ingress-controller -o=jsonpath='{.status.loadBalancer.
 ```
 
 * Now you have to create an `ALIAS` or `CNAME` record in Route53 pointing to that hostname.
-
   * More information on how to create an `ALIAS` record in Route53 on AWS [here](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-to-elb-load-balancer.html)
-
-
 

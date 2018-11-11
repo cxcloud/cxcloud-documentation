@@ -1,4 +1,4 @@
-# Install CXCloud CLI
+# Install CX Cloud CLI
 
 ## Installing CXCloud CLI Tools
 
@@ -12,7 +12,7 @@ Once you have installed Node.js and you confirm that NPM is working using `npm -
 $ npm install -g cxcloud
 ```
 
-If you need to update CX Cloud CLI, run this command`:
+If you need to update CX Cloud CLI, run this command\`:
 
 ```text
 $ npm i -g cxcloud@latest
@@ -29,5 +29,4 @@ Or if you don't want to install cxcloud globally, you can call it directly using
 ```text
 $ npx cxcloud --version
 ```
-
 

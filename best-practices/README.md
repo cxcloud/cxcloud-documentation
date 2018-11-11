@@ -1,4 +1,4 @@
-# Best practices
+# Best Practices
 
 * [Multivendor coordination](multivendor-coordination.md)
 * How to participate in developing CX Cloud? 
@@ -11,3 +11,4 @@
 * After set-up, what to manage manually and when to use CX CLoud CLI or Kops
 * API-portal for external developers/partners
 * Reusability and separation of concerns with a modular design
+

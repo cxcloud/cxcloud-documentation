@@ -33,7 +33,7 @@ Before you start, you need to have Kubernetes and it's tools installed on your c
 $ brew install kubernetes-cli
 ```
 
-CXCloud cli uses Kops to create and configure your Kubernetes cluster. You can install it on your Mac using `homebrew`: 
+CXCloud cli uses Kops to create and configure your Kubernetes cluster. You can install it on your Mac using `homebrew`:
 
 ```bash
 $ brew update && brew install kops
