@@ -1,4 +1,4 @@
-# Generating a Frontend
+# Generating a Frontend Demo
 
 Cool, You now have infra and services up and running! For front-end, CX Cloud CLI allows you to generate a front-end demo to test the concept with end-to-end functionality. Currently, we support Angular 7 and React is coming soon. In the future, we will also provide accelerators to be used as basis for customer specific implementation.
 

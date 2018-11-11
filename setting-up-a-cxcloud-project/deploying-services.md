@@ -25,7 +25,7 @@ deployment:
   name: my-frontend
   image:
     name: my-frontend-image
-    repository: 307365680736.dkr.ecr.eu-west-1.amazonaws.com/cluster.cxcloud.com
+    repository: YOUR_AWS_ECR_REPOSITORY_URL_HERE
     version: 1.1.1
   containerPort: 80
   replicas: 2
@@ -51,13 +51,13 @@ The `.cxcloud.yaml` file has different configurable sections:
 
 | Option | Description |
 | :--- | :--- |
-| deployment.name | The name of your service to be saved in Kubernetes \(can be anything\) |
-| deployment.image.name | The name of your docker image \(can be anything\) |
-| deployment.image.repository | Your AWS ECR Repository |
-| deployment.image.version | A version to tag your docker image with |
-| deployment.containerPort | Your Dockerfile's exposed port |
-| deployment.replicas | Number of replicas to be made \(usually more than 1 just to be safe\) |
-| env | A list of environment variables that will be attached to your deployment |
+| `deployment.name` | The name of your service to be saved in Kubernetes |
+| `deployment.image.name` | The name of your docker image |
+| `deployment.image.repository` | Your AWS ECR Repository |
+| `deployment.image.version` | A version to tag your docker image with |
+| `deployment.containerPort` | Your Dockerfile's exposed port |
+| `deployment.replicas` | Number of replicas to be made \(usually more than 1 just to be safe\) |
+| `env` | A list of environment variables that will be attached to your deployment |
 
 You can use Bash environment variables anywhere in this file. Just prefix a string with `$` to denote it:
 
@@ -103,5 +103,5 @@ You can pass multiple environment variables using commas.
 
 ### Routing
 
-Now that you have deployed your service, you can make it available to the world by creating a routing manifest. Read more about that in it's section.
+Now that you have deployed your service, you can make it available to the world by creating a routing manifest. [Read more about that in it's section](routing-manifest.md).
 
