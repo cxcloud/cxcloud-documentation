@@ -4,9 +4,9 @@ Routing manifest is needed to make multiple services public on the same domain.
 
 For example, let's assume you have created 3 services and you want them all to be available on the same domain:
 
-* `myexample.com/` should load `frontend` service
-* `myexample.com/api/commerce/` should load `service-commerce` service
-* `myexample.com/api/auth` should load `service-auth` service
+* `newsite.example.com/` should load `frontend` service
+* `newsite.example.com/api/commerce/` should load `service-commerce` service
+* `newsite.example.com/api/auth` should load `service-auth` service
 
 You have to create a routing manifest to achieve this.
 
@@ -16,7 +16,7 @@ In your `infra` directory, create a directory named `routing` and place a file c
 {% code-tabs-item title="infra/routing/.cxcloud.yaml" %}
 ```yaml
 routing:
-  domain: myexample.com
+  domain: newsite.example.com
   ssl: true
   rules:
     - path: /api/commerce
