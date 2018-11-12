@@ -22,3 +22,8 @@
 * [Best Practices](best-practices/README.md)
   * [Multivendor coordination](best-practices/multivendor-coordination.md)
 
+## Manual Deployment Guideline
+
+* [Manually Deploying Services](manual-deployment-guideline/manually-deploying-services.md)
+* [Manually Defining Routing](manual-deployment-guideline/manually-defining-routing.md)
+

@@ -1,93 +1,47 @@
 # Routing Manifest
 
-Now that you have created your Kubernetes infrastructure and deployed your services to it, you can make them public using a routing profile:
+Routing manifest is needed to make multiple services public on the same domain.
 
-* First navigate to your `infra` folder and create a new directory called `routing`:
+For example, let's assume you have created 3 services and you want them all to be available on the same domain:
+
+* `myexample.com/` should load `frontend` service
+* `myexample.com/api/commerce/` should load `service-commerce` service
+* `myexample.com/api/auth` should load `service-auth` service
+
+You have to create a routing manifest to achieve this.
+
+In your `infra` directory, create a directory named `routing` and place a file called `.cxcloud.yaml` inside it:
+
+{% code-tabs %}
+{% code-tabs-item title="infra/routing/.cxcloud.yaml" %}
+```yaml
+routing:
+  domain: myexample.com
+  ssl: true
+  rules:
+    - path: /api/commerce
+      serviceName: service-commerce
+      servicePort: 4003
+    - path: /api/auth
+      serviceName: service-auth
+      servicePort: 4003
+    - path: /
+      serviceName: frontend
+      servicePort: 80
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+Now navigate to the `routing` directory and run `cxcloud deploy`:
 
 ```bash
-$ cd infra
-$ mkdir routing
-$ cd routing 
+$ cd infra/routing
+$ cxcloud deploy
 ```
 
-* Create a file named `cert.yaml` with the following content:
+This command will "Deploy" your routing manifest to your Kubernetes cluster. 
 
-{% code-tabs %}
-{% code-tabs-item title="cert.yaml" %}
-```yaml
-apiVersion: certmanager.k8s.io/v1alpha1
-kind: Certificate
-metadata:
-  name: my-app-certificate
-spec:
-  secretName: my-app-certificate
-  dnsNames:
-  - sample.myproject.com
-  acme:
-    config:
-    - http01:
-        ingressClass: nginx
-      domains:
-      - sample.myproject.com
-  issuerRef:
-    name: letsencrypt-production
-    kind: ClusterIssuer
-
-```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
-
-Be sure to replace `my-app-certificate` with a more appropriate name and `sample.myproject.com` with a domain that you have configured to be used with your cluster.
-
-* Now create a file named `routing.yaml` with the following content:
-
-{% code-tabs %}
-{% code-tabs-item title="routing.yaml" %}
-```yaml
-apiVersion: extensions/v1beta1
-kind: Ingress
-metadata:
-  name: my-app-routing
-  namespace: applications
-  annotations:
-    kubernetes.io/ingress.class: "nginx"
-    certmanager.k8s.io/cluster-issuer: letsencrypt-production
-spec:
-  tls:
-  - hosts:
-    - sample.myproject.com
-    secretName: my-app-certificate
-  rules:
-  - host: sample.myproject.com
-    http:
-      paths:
-      - path: /api/commerce
-        backend:
-          serviceName: service-commerce
-          servicePort: 4003
-      - path: /
-        backend:
-          serviceName: frontend
-          servicePort: 80
-
-```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
-
-Again, replace `my-app-certificate`, `my-app-routing` and `sample.myproject.com` with your own values.
-
-In the `spec.rules` section, you can specify routing information for each domain name that you want. In this example:
-
-1. `sample.myproject.com/` loads `frontend` service on port `80`
-2. `sample.myproject.com/api/commerce` loads `service-commerce` service on port `4003` 
-
-* After you have done setting the values, run the the following command to apply your changes \(make sure you are still in `routing` directory\)
-
-```text
-$ kubectl apply -f ./
-```
-
-Your domain will be configured and after a few minutes an SSL certificate will be issued using The LetsEncrypt service.
-
-
+{% hint style="info" %}
+If you are interested to know what does this command do, please read the [manual routing setup guide](../manual-deployment-guideline/manually-defining-routing.md).
+{% endhint %}
 
