@@ -6,7 +6,7 @@ For example, let's assume you have created 3 services and you want them all to b
 
 * `newsite.example.com/` should load `frontend` service
 * `newsite.example.com/api/commerce/` should load `service-commerce` service
-* `newsite.example.com/api/auth` should load `service-auth` service
+* `newsite.example.com/api/content` should load `service-content` service
 
 You have to create a routing manifest to achieve this.
 
@@ -22,8 +22,8 @@ routing:
     - path: /api/commerce
       serviceName: service-commerce
       servicePort: 4003
-    - path: /api/auth
-      serviceName: service-auth
+    - path: /api/content
+      serviceName: service-content
       servicePort: 4003
     - path: /
       serviceName: frontend
