@@ -117,7 +117,10 @@ After you have tested the API, if you chose `deploy to cluster` option, you can 
 $ cxcloud deploy
 ```
 
-Read more about deployment and it's options in [Deploying a Service](deploying-services.md) page. After deployment, you can make your service available to the world using a [Routing Manifest](routing-manifest.md).
+## Routing 
+
+After deployment, you can make your service available to the world using a [Routing Manifest](routing-manifest.md).
+
 
 ## Commit
 
