@@ -1,7 +1,5 @@
 # Table of contents
 
-## Guideline for CX Cloud 
-
 * [Welcome to CX Cloud](README.md)
 * [Requirements](getting-started/README.md)
   * [Prepare Your Environment](getting-started/prepare-your-environment.md)
