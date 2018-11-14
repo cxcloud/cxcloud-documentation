@@ -6,7 +6,6 @@
   * [Install CX Cloud CLI](getting-started/install-cxcloud-cli.md)
   * [Git Repository Conventions](getting-started/create-a-git-repository.md)
 * [Setting up a CX Cloud Project](setting-up-a-cxcloud-project/README.md)
-  * [Configuring Domain](setting-up-a-cxcloud-project/configuring-domain.md)
   * [Generating Infrastructure](setting-up-a-cxcloud-project/generating-infrastructure.md)
   * [Generating Core services](setting-up-a-cxcloud-project/generating-core-services.md)
   * [Generating a Frontend Demo](setting-up-a-cxcloud-project/generating-a-frontend.md)
