@@ -2,7 +2,7 @@
 
 ### Deployment Basics
 
-CX Cloud makes it really easy for you to deploy any Docker-based service. You just need to follow a few simple steps to deploy a service:
+In addition to Core Services, CX Cloud makes it really easy for you to deploy any Docker-based service. You just need to follow a few simple steps to deploy a service:
 
 * Make sure your project has a `Dockerfile` \(this is just an example\):
 
@@ -103,5 +103,5 @@ You can pass multiple environment variables using commas.
 
 ### Routing
 
-Now that you have deployed your service, you can make it available to the world by creating a routing manifest. [Read more about that in it's section](routing-manifest.md).
+Now that you have deployed your service, you can make it available to the world by creating a routing manifest. [Read more about that in it's section](manually-defining-routing.md).
 
