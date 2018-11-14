@@ -4,7 +4,10 @@
 Make sure you have generated infrastructure and exported your AWS profile before continuing. [Read the docs](generating-infrastructure.md) to find out how.
 {% endhint %}
 
-CX Cloud provides support for selected ready-made services \(e.g. commerce, content, search, authentication\) which can be generated and added to the project using CLI. These can of course be customized later on. CX Cloud also provides simple service templates to facilitate the creation of full custom microservices with various technologies \(e.g. Java, Node.js, Scala, Groovy\). To create multiple services to your project, just run CLI multiple times. 
+CX Cloud provides selected ready-made services \(e.g. commerce, content, search, authentication\) which can be generated and added to the project using CLI. These can of course be customized later on. To create multiple services to your project, just run CLI multiple times. 
+
+Also, CX Cloud enables you to deploy any custom services. Read more about that [here](guidelines-for-custom-services/deploying-services.md).
+
 
 ## Service generation
 
