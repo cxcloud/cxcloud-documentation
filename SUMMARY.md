@@ -1,5 +1,7 @@
 # Table of contents
 
+## Guideline for CX Cloud 
+
 * [Welcome to CX Cloud](README.md)
 * [Requirements](getting-started/README.md)
   * [Prepare Your Environment](getting-started/prepare-your-environment.md)
@@ -8,10 +10,9 @@
 * [Setting up a CX Cloud Project](setting-up-a-cxcloud-project/README.md)
   * [Configuring Domains](setting-up-a-cxcloud-project/configuring-domains.md)
   * [Generating Infrastructure](setting-up-a-cxcloud-project/generating-infrastructure.md)
-  * [Generating a Service](setting-up-a-cxcloud-project/generating-a-service.md)
-  * [Deploying Services](setting-up-a-cxcloud-project/deploying-services.md)
-  * [Routing Manifest](setting-up-a-cxcloud-project/routing-manifest.md)
+  * [Generating Core services](setting-up-a-cxcloud-project/generating-core-services.md)
   * [Generating a Frontend Demo](setting-up-a-cxcloud-project/generating-a-frontend.md)
+  * [Routing Manifest](setting-up-a-cxcloud-project/routing-manifest.md)
   * [Configuring CI/CD pipeline](setting-up-a-cxcloud-project/configuring-cicd.md)
 * [Architecture](architecture/README.md)
   * [Overview](architecture/architecture-overview.md)
@@ -22,8 +23,8 @@
 * [Best Practices](best-practices/README.md)
   * [Multivendor coordination](best-practices/multivendor-coordination.md)
 
-## Manual Deployment Guideline
-
+## Guidelines for custom services
+* [Deploying Custom Services](manual-deployment-guideline/deploying-services.md)
 * [Manually Deploying Services](manual-deployment-guideline/manually-deploying-services.md)
 * [Manually Defining Routing](manual-deployment-guideline/manually-defining-routing.md)
 
