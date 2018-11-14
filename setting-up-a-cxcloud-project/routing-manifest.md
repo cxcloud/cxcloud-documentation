@@ -34,8 +34,7 @@ routing:
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-Please note that `path` should match the path you defined when generating the service with CLI.   
-
+Please note that `path` should match the path you defined when generating the service with CLI.
 
 ## Deployment
 

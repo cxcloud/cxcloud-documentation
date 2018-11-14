@@ -5,7 +5,7 @@ Windows is not supported. You can only generate the infrastructure using a Unix 
 {% endhint %}
 
 {% hint style="info" %}
-Make sure you have setup a domain to be used by this tool before continuing. [Read the docs](configuring-domains.md#configuring-a-domain-for-the-kubernetes-cluster) to find out how.
+Make sure you have setup a domain to be used by this tool before continuing. [Read the docs](configuring-domain.md) to find out how.
 {% endhint %}
 
 Make sure you have [installed all the requirements](../getting-started/prepare-your-environment.md) on your computer and have exported the proper AWS profile:
@@ -41,7 +41,30 @@ After answering the questions the tool asks you, it will start bootstrapping you
 
 if the setup is successful, the command displays the load balancer URL which you need to use to point your domains to.
 
-[More information on how to point a domain to this load balancer](configuring-domains.md#configuring-a-domain-for-your-service).
+## Configuring a domain for your online service <a id="configuring-a-domain-for-your-online-service"></a>
+
+After you have generated infra, you want to assign a domain to your future online service.  
+
+The assumed starting state is that there is already a site working in "example.com" and you have access to manage its DNS. CX Cloud is to be configured to utilize this same domain to explore its possibilities. So the target state with CX Cloud would look like this:
+
+* newsite.example.com \(customer front-end\)
+* newsite.example.com/api/commerce/v1/ \(commerce service API\)
+* newsite.example.com/api/content/v1/ \(content service API\)
+* newsite.example.com/api/search/v1/ \(search service API\)
+* newsite.example.com/api/auth/v1/ \(auth service API\)
+* admin.newsite.example.com \("admin panel"\)
+* developer.newsite.examle.com \(developer portal\)
+
+We have used this assumption in our documentation and configuration examples. Most of these configurations are done with a routing manifest later so at this stage we only need to point the domain to Kubernetes load balancer like this:
+
+* Figure out what your Load Balancer URL is. The URL is displayed after generating the infrastructure. But you can also find it using:
+
+```text
+kubectl get service nginx-ingress-controller -o=jsonpath='{.status.loadBalancer.ingress[0].hostname}'
+```
+
+* Now you have to create an `ALIAS` or `CNAME` record in Route53 pointing to that hostname.
+  * More information on how to create an `ALIAS` record in Route53 on AWS [here](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-to-elb-load-balancer.html)​
 
 ## Commit
 

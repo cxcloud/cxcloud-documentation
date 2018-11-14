@@ -7,7 +7,7 @@ Now that you have created your Kubernetes infrastructure and deployed your servi
 ```bash
 $ cd infra
 $ mkdir routing
-$ cd routing 
+$ cd routing
 ```
 
 * Create a file named `cert.yaml` with the following content:
@@ -32,7 +32,6 @@ spec:
   issuerRef:
     name: letsencrypt-production
     kind: ClusterIssuer
-
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
@@ -69,7 +68,6 @@ spec:
         backend:
           serviceName: frontend
           servicePort: 80
-
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
@@ -79,9 +77,8 @@ Again, replace `my-app-certificate`, `my-app-routing` and `newsite.example.com` 
 In the `spec.rules` section, you can specify routing information for each domain name that you want. In this example:
 
 1. `newsite.example.com/` loads `frontend` service on port `80`
-2. `newsite.example.com/api/commerce` loads `service-commerce` service on port `4003` 
-
-* After you have done setting the values, run the the following command to apply your changes \(make sure you are still in `routing` directory\)
+2. `newsite.example.com/api/commerce` loads `service-commerce` service on port `4003`
+3. After you have done setting the values, run the the following command to apply your changes \(make sure you are still in `routing` directory\)
 
 ```text
 $ kubectl apply -f ./

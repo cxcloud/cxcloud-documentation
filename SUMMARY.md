@@ -27,3 +27,4 @@
 * [Domains for Kubernetes](guidelines-for-custom-services/domains-for-kubernetes.md)
 * [Manually Deploying Services](guidelines-for-custom-services/manually-deploying-services.md)
 * [Manually Defining Routing](guidelines-for-custom-services/manually-defining-routing.md)
+

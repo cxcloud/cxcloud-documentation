@@ -1,4 +1,4 @@
-# Configuring Domains
+# Configuring Domain
 
 ## Target state
 
@@ -12,8 +12,7 @@ When configuring domains, the assumed starting state is that there is already a 
 * newsite.example.com/api/search/v1/ \(search service API\)
 * newsite.example.com/api/auth/v1/ \(auth service API\)
 
-We have used this assumption in our documentation and configuration examples. 
-
+We have used this assumption in our documentation and configuration examples.
 
 ## Configuring a domain for your online service
 
