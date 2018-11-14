@@ -2,13 +2,14 @@
 
 Routing manifest is needed to make multiple services public on the same domain.
 
-For example, let's assume you have created 3 services and you want them all to be available on the same domain:
+For example, let's assume you have created a front-end and 3 microservices and you want them all to be available on the same domain:
 
 * `newsite.example.com/` should load `frontend` service
 * `newsite.example.com/api/commerce/` should load `service-commerce` service
 * `newsite.example.com/api/content` should load `service-content` service
+* `newsite.example.com/api/search` should load `service-search` service
 
-You have to create a routing manifest to achieve this.
+You have to create a routing manifest to achieve this. \(In addition to pointing the domain in question to your Kubernetes cluster during [infra generation](generating-infrastructure.md#configuring-a-domain-for-your-online-service)\)
 
 ## Create manifest
 
@@ -26,6 +27,9 @@ routing:
       servicePort: 4003
     - path: /api/content
       serviceName: service-content
+      servicePort: 4003
+    - path: /api/search
+      serviceName: service-search
       servicePort: 4003
     - path: /
       serviceName: frontend
