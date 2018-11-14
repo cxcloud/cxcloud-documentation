@@ -10,6 +10,8 @@ For example, let's assume you have created 3 services and you want them all to b
 
 You have to create a routing manifest to achieve this.
 
+## Create manifest
+
 In your `infra` directory, create a directory named `routing` and place a file called `.cxcloud.yaml` inside it:
 
 {% code-tabs %}
@@ -33,6 +35,9 @@ routing:
 {% endcode-tabs %}
 
 Please note that `path` should match the path you defined when generating the service with CLI.   
+
+
+## Deployment
 
 Now navigate to the `routing` directory and run `cxcloud deploy`:
 
