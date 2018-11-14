@@ -38,7 +38,10 @@ Run the following command to deploy your frontend demo:
 $ cxcloud deploy
 ```
 
-Check [Deploying Service](deploying-services.md) and [Routing Manifest](routing-manifest.md) sections for more information on deployment and routing.
+## Routing
+
+After deployment, you can make your service available to the world using a [Routing Manifest](routing-manifest.md).
+
 
 ## Commit
 
