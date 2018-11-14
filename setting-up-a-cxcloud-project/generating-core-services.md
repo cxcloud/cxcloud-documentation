@@ -1,13 +1,12 @@
-# Generating core services
+# Generating Core services
 
 {% hint style="info" %}
 Make sure you have generated infrastructure and exported your AWS profile before continuing. [Read the docs](generating-infrastructure.md) to find out how.
 {% endhint %}
 
-CX Cloud provides selected ready-made services \(e.g. commerce, content, search, authentication\) which can be generated and added to the project using CLI. These can of course be customized later on. To create multiple services to your project, just run CLI multiple times. 
+CX Cloud provides selected ready-made services \(e.g. commerce, content, search, authentication\) which can be generated and added to the project using CLI. These can of course be customized later on. To create multiple services to your project, just run CLI multiple times.
 
-Also, CX Cloud enables you to deploy any custom services. Read more about that [here](/guidelines-for-custom-services/deploying-services.md).
-
+Also, CX Cloud enables you to deploy any custom services. Read more about that [here](../guidelines-for-custom-services/deploying-services.md).
 
 ## Service generation
 
@@ -100,14 +99,16 @@ Example configurations for Search:
 
 ## Local test
 
-After generation is finished and configurations are set, the generated service will be working as a single API. You should be able to see Swagger API documentation at `http://localhost:4003/api/v1/api-docs` \(Please note the application port for your service\). To do that, run the following set of commands at the root of your repository with service:
+After generation is finished and configurations are set, the generated service will be working as a single API. To test locally, run the following set of commands at the root of your repository with the service:
 
 ```bash
 $ npm run build
 $ npm run start
 ```
 
-It will build your Swagger documentation and start the local server for you to be able to test your configurations. Swagger provides an interface for testing right in the browser.
+It will build your Swagger documentation and start the local server for you to be able to test your configurations. Swagger provides an interface for testing right in the browser. 
+
+In case for  example "service-commerce", you should be able to see Swagger API documentation at `http://localhost:4003/api/service-commerce/v1/api-docs` 
 
 ## Deployment
 
@@ -117,10 +118,9 @@ After you have tested the API, if you chose `deploy to cluster` option, you can 
 $ cxcloud deploy
 ```
 
-## Routing 
+## Routing
 
 After deployment, you can make your service available to the world using a [Routing Manifest](routing-manifest.md).
-
 
 ## Commit
 

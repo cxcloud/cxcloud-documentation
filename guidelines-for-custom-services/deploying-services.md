@@ -1,6 +1,6 @@
-# Deploying Services
+# Deploying Custom Services
 
-### Deployment Basics
+## Deployment Basics
 
 In addition to Core Services, CX Cloud makes it really easy for you to deploy any Docker-based service. You just need to follow a few simple steps to deploy a service:
 
@@ -32,7 +32,6 @@ deployment:
   env:
     - name: NODE_ENV
       value: production
-
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
@@ -45,7 +44,7 @@ $ cxcloud deploy
 
 Your service will be deployed to your Kubernetes cluster.
 
-### Deployment Manifest Options
+## Deployment Manifest Options
 
 The `.cxcloud.yaml` file has different configurable sections:
 
@@ -79,7 +78,7 @@ For example you can set those environment variables on runtime:
 $ MY_BASH_ENV=frontend cxcloud deploy
 ```
 
-### Deployment Environment Variables
+## Deployment Environment Variables
 
 The `deployment.env` option in the deployment manifest can be used to pass environment variables to your docker container when it's deployed to your Kubernetes cluster. This can be useful for passing things like secrets, environment config, etc.
 
@@ -101,7 +100,7 @@ $ cxcloud deploy -e MY_SECRET_KEY=something
 
 You can pass multiple environment variables using commas.
 
-### Routing
+## Routing
 
 Now that you have deployed your service, you can make it available to the world by creating a routing manifest. [Read more about that in it's section](manually-defining-routing.md).
 

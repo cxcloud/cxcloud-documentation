@@ -39,9 +39,9 @@ $ cd infra/routing
 $ cxcloud deploy
 ```
 
-This command will "Deploy" your routing manifest to your Kubernetes cluster. 
+This command will "Deploy" your routing manifest to your Kubernetes cluster.
 
 {% hint style="info" %}
-If you are interested to know what does this command do, please read the [manual routing setup guide](../manual-deployment-guideline/manually-defining-routing.md).
+If you are interested to know what does this command do, please read the [manual routing setup guide](../guidelines-for-custom-services/manually-defining-routing.md).
 {% endhint %}
 

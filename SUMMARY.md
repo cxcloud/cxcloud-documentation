@@ -22,7 +22,8 @@
   * [Multivendor coordination](best-practices/multivendor-coordination.md)
 
 ## Guidelines for custom services
-* [Deploying Custom Services](manual-deployment-guideline/deploying-services.md)
-* [Manually Deploying Services](manual-deployment-guideline/manually-deploying-services.md)
-* [Manually Defining Routing](manual-deployment-guideline/manually-defining-routing.md)
+
+* [Deploying Custom Services](guidelines-for-custom-services/deploying-services.md)
+* [Manually Deploying Services](guidelines-for-custom-services/manually-deploying-services.md)
+* [Manually Defining Routing](guidelines-for-custom-services/manually-defining-routing.md)
 

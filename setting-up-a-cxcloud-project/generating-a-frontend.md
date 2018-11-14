@@ -42,7 +42,6 @@ $ cxcloud deploy
 
 After deployment, you can make your service available to the world using a [Routing Manifest](routing-manifest.md).
 
-
 ## Commit
 
 As a final step, commit changes to your Github repository by running the following commands:
