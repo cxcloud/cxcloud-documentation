@@ -32,6 +32,8 @@ routing:
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
+Please note that `path` should match the path you defined when generating the service with CLI.   
+
 Now navigate to the `routing` directory and run `cxcloud deploy`:
 
 ```bash
