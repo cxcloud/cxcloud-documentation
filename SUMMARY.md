@@ -6,7 +6,7 @@
   * [Install CX Cloud CLI](getting-started/install-cxcloud-cli.md)
   * [Git Repository Conventions](getting-started/create-a-git-repository.md)
 * [Setting up a CX Cloud Project](setting-up-a-cxcloud-project/README.md)
-  * [Configuring Domains](setting-up-a-cxcloud-project/configuring-domains.md)
+  * [Configuring Domain](setting-up-a-cxcloud-project/configuring-domain.md)
   * [Generating Infrastructure](setting-up-a-cxcloud-project/generating-infrastructure.md)
   * [Generating Core services](setting-up-a-cxcloud-project/generating-core-services.md)
   * [Generating a Frontend Demo](setting-up-a-cxcloud-project/generating-a-frontend.md)
@@ -24,6 +24,6 @@
 ## Guidelines for custom services
 
 * [Deploying Custom Services](guidelines-for-custom-services/deploying-services.md)
+* [Domains for Kubernetes](guidelines-for-custom-services/domains-for-kubernetes.md)
 * [Manually Deploying Services](guidelines-for-custom-services/manually-deploying-services.md)
 * [Manually Defining Routing](guidelines-for-custom-services/manually-defining-routing.md)
-
