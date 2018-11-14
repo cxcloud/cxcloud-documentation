@@ -4,7 +4,8 @@ Great, you have now [prepared your environment and configured the tools needed](
 
 1. [Configuring domains](configuring-domains.md)
 2. [Generating your infrastructure](generating-infrastructure.md)
-3. [Generating a service](generating-a-service.md)
+3. [Generating core services](generating-core-services.md)
 4. [Generating a frontend](generating-a-frontend.md)
-5. [Configuring CI/CD pipeline](https://github.com/cxcloud/docs/tree/c91f222fee3cc47172b729f9ea354eea7defae2a/setting-up-a-cxcloud-project/configuring-cicd.md)
+5. [Routing manifest](generating-a-frontend.md)
+6. [Configuring CI/CD pipeline](configuring-cicd.md)
 
