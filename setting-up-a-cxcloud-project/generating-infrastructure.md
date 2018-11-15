@@ -70,14 +70,14 @@ kubectl get service nginx-ingress-controller -o=jsonpath='{.status.loadBalancer.
 ```
 
 * Now you have to point your own domain name to this load balancer URL. To do this:
-  * If you manage your domain using a provider that's not AWS, navigate to your domain's management panel and create an `CNAME` record pointing to the load balancer URL.
+  * If you manage your domain using a provider that's not AWS, navigate to your domain's management panel and create an `CNAME` record for `newsite.example.com` pointing to the load balancer URL.
     * [GoDaddy guide](https://fi.godaddy.com/help/add-a-cname-record-19236)
     * [Namecheap guide](https://www.namecheap.com/support/knowledgebase/article.aspx/9646/2237/how-can-i-set-up-a-cname-record-for-my-domain)
     * [Name.com guide](https://www.name.com/support/articles/115004895548-Adding-a-CNAME-Record)
-  * If you manage your domain using AWS's route53 service, create an `ALIAS` record in Route53 pointing to that hostname.
+  * If you manage your domain using AWS's route53 service, create an `ALIAS` record for `newsite.example.com` in Route53 pointing to that hostname.
     * More information on how to create an `ALIAS` record in Route53 on AWS [here](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-to-elb-load-balancer.html)​
 
-If you want all the subdomains under a certain domain or subdomain to be available to you later during service creation, you can create a `CNAME` or `ALIAS` record for `*.newsite.example.com`
+If you want all the subdomains under a certain domain or subdomain to be available to you later during service creation, you can also create a `CNAME` or `ALIAS` record for `*.newsite.example.com`
 
 ## Commit
 
