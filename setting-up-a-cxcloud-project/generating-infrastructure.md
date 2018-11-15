@@ -25,13 +25,13 @@ If you have enabled Multi-Factor Authentication on your AWS account or you are a
 {% endhint %}
 
 {% hint style="success" %}
-The CLI tool will ask you what domain you want to set as your cluster's domain. For most cases, you can use a "gossip-based" cluster configuration in which case you don't need an actual domain for your cluster. If you want to do this, enter the domain using the following format:
+The CLI tool will ask you what domain you want to set as your cluster's domain. For most cases, you can use a "gossip-based" cluster configuration in which case you don't need an actual domain for your cluster. So enter the domain using the following format:
 
 cluster-name**.k8s.local**
 
-For example, you might want to name your cluster `mygreatcluster` then enter the domain name `mygreatcluster.k8s.local` 
+For example, you might want to name your cluster `mygreatcluster` then enter the domain name `mygreatcluster.k8s.local`
 
-If you actually want to set a real domain for your cluster, you have to follow [this guide](../guidelines-for-custom-services/domains-for-kubernetes.md) to delegate your domain to AWS's Route53 service and then use it.
+\(If you actually want to set a real domain for your cluster, you have to follow [this guide](../guidelines-for-custom-services/domains-for-kubernetes.md) to delegate your domain to AWS's Route53 service and then use it.\)
 {% endhint %}
 
 After answering the questions the tool asks you, it will start bootstrapping your environment on AWS. It does the following steps automatically for you:
@@ -47,11 +47,11 @@ After answering the questions the tool asks you, it will start bootstrapping you
 
 If the setup is successful, the command displays the load balancer URL which you need to use to point your domains to.
 
-## Configuring a domain for your online service <a id="configuring-a-domain-for-your-online-service"></a>
+## Configuring a domain for your online service  <a id="configuring-a-domain-for-your-online-service"></a>
 
 After you have generated the Kubernetes infrastructure, you would want to assign a domain to your future online service \(or services\)
 
-The assumed starting state is that you have access to manage  "example.com" DNS. CX Cloud is to be configured to utilize this domain to explore its possibilities. As there might already be a site running in www.example.com, the target state with CX Cloud would look like this:
+The assumed starting state is that you have access to manage "example.com" DNS. CX Cloud is to be configured to utilize this domain to explore its possibilities. As there might already be a site running in www.example.com, the target state with CX Cloud would look like this:
 
 * `newsite.example.com` \(customer front-end\)
 * `newsite.example.com/api/commerce/v1/` \(commerce service API\)
@@ -63,13 +63,13 @@ The assumed starting state is that you have access to manage  "example.com" DNS.
 
 We have used this assumption in our documentation and configuration examples. Most of these configurations are done with a routing manifest later and at this stage we only need to point the domain to Kubernetes load balancer like this:
 
-* Figure out what your Load Balancer URL is. The URL is displayed after generating the infrastructure. But you can also find it using:
+* First figure out what your Load Balancer URL is. The URL is displayed after generating the infrastructure. But you can also find it using:
 
 ```text
 kubectl get service nginx-ingress-controller -o=jsonpath='{.status.loadBalancer.ingress[0].hostname}'
 ```
 
-* Now you have to point your own domain name to this load balancer URL. To do this:
+* Then you have to point your own domain name to this load balancer URL. To do this:
   * If you manage your domain using a provider that's not AWS, navigate to your domain's management panel and create an `CNAME` record for `newsite.example.com` pointing to the load balancer URL.
     * [GoDaddy guide](https://fi.godaddy.com/help/add-a-cname-record-19236)
     * [Namecheap guide](https://www.namecheap.com/support/knowledgebase/article.aspx/9646/2237/how-can-i-set-up-a-cname-record-for-my-domain)
