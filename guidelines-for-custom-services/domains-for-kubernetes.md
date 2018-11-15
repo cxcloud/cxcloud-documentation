@@ -2,6 +2,10 @@
 
 ## Configuring a domain for the Kubernetes Cluster
 
+{% hint style="info" %}
+The DNS configuration for Kubernetes is optional. Instead, a gossip-based cluster can be easily created. The only requirement to trigger this is to have the cluster name end with `.k8s.local`. If a gossip-based cluster is created then you can skip this section.
+{% endhint %}
+
 In order to build a Kubernetes cluster with `cxcloud`, we need to prepare somewhere to build the required DNS records. There are three scenarios below and you should choose the one that most closely matches your AWS situation:
 
 ### Scenario 1a: A Domain purchased/hosted via AWS
