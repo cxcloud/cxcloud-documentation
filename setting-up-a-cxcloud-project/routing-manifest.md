@@ -51,6 +51,8 @@ $ cxcloud deploy
 
 This command will "deploy" your routing manifest to your Kubernetes cluster. 
 
+## Test
+
 To test for example commerce service,  `newsite.example.com/api/commerce/` should return {"health":"OK"} and `newsite.example.com/api/commerce/v1/api-docs` should present you Swagger. 
 
 {% hint style="info" %}
