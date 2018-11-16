@@ -1,4 +1,4 @@
-# Best Practices & guidelines
+# Best Practices
 
 * [What is missing from CX Cloud?](what-is-missing.md)
 * [How to participate in CX Cloud development?](how-to-participate.md)
