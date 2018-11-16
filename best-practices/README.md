@@ -1,7 +1,7 @@
 # Best Practices & guidelines
 
 * [What is missing from CX Cloud?](what-is-missing.md)
-* How to participate in CX Cloud development? 
+* [How to participate in CX Cloud development?](how-to-participate.md)
 * When to use API GW
 * Docker vs. Lambda
 * Why/How to use Process engine
