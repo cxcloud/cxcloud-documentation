@@ -18,6 +18,8 @@
 * [NPM Modules](npm-modules/README.md)
   * [Process Engine](npm-modules/process-engine.md)
 * [Best Practices](best-practices/README.md)
+  * [What is missing?](best-practices/what-is-missing.md)
+  * [How to participate?](best-practices/how-to-participate.md)
   * [Multivendor coordination](best-practices/multivendor-coordination.md)
 
 ## Guidelines for custom services
