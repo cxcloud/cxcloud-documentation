@@ -1,6 +1,6 @@
 # Best Practices & guidelines
 
-* What is missing form CX Cloud?
+* [What is missing from CX Cloud?](what-is-missing.md)
 * How to participate in CX Cloud development? 
 * When to use API GW
 * Docker vs. Lambda
