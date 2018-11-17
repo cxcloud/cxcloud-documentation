@@ -1,9 +1,7 @@
 # Best practices and guidelines
 
 * [What is missing from CX Cloud?](what-is-missing.md)
-* Customizing core services
-* Creating a custom service 
-* Creating a custom front-end
+* Customizing core services and demo front-end
 * [How to participate in CX Cloud development?](how-to-participate.md)
 * When to use API GW
 * Docker vs. Serverless
