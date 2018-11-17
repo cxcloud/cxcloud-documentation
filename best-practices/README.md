@@ -1,6 +1,6 @@
 # Best practices and guidelines
 
-* Customizing core services and demo front-end
+* [Customizing core services and demo front-end](customize-core-demo.md)
 * [What is missing from CX Cloud?](what-is-missing.md)
 * [How to participate in CX Cloud development?](how-to-participate.md)
 * When to use API GW
