@@ -1,4 +1,4 @@
-# Best Practices
+# Best practices and guidelines
 
 * [What is missing from CX Cloud?](what-is-missing.md)
 * Customizing CX Cloud core services
