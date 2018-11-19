@@ -1,6 +1,6 @@
 # Git Repository Conventions
 
-While CXCloud CLI generates the project and infrastructure code for you, you need to create the repositories on Github \(or the Git host of your choice eg. Bitbucket\).
+While CX Cloud CLI generates the project and infrastructure code for you, you need to create the repositories on Github \(or the Git host of your choice eg. Bitbucket\).
 
 For example, if you want to create a simple search API, create a repository on Github named `service-search`. It is recommended to follow the following conventions when naming repositories:
 
