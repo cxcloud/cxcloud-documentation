@@ -12,3 +12,4 @@
 * API-portal for external developers/partners
 * Reusability and separation of concerns with a modular design
 * [Multivendor coordination](multivendor-coordination.md)
+

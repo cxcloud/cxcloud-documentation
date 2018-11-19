@@ -22,7 +22,6 @@
   * [What is missing from CX Cloud?](best-practices/what-is-missing.md)
   * [How to participate?](best-practices/how-to-participate.md)
   * [Multivendor coordination](best-practices/multivendor-coordination.md)
-  
 
 ## Guidelines for custom services
 
