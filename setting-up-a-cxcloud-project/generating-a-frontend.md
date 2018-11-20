@@ -16,7 +16,7 @@ You will go through a set of simple questions and receive an end-to-end working 
 
 ## Configuration
 
-B default, the generated demo uses our live test API including end points with pre-filled sets of data for Commerce, Content and Search services. 
+By default, the generated demo uses our live test API including end points with pre-filled sets of data for Commerce, Content and Search services. 
 
 In order to enable the frontend demo to work with the APIs you have generated and deployed, configuration files need to be modified. Configuration files can be found in this project directory `/src/environments/`. 
 
