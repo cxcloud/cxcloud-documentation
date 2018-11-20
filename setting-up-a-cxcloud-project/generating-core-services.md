@@ -4,9 +4,9 @@
 Make sure you have generated infrastructure and exported your AWS profile before continuing. [Read the docs](generating-infrastructure.md) to find out how.
 {% endhint %}
 
-CX Cloud provides selected ready-made services \(e.g. commerce, content, search, authentication\) which can be generated and added to the project using CLI. These can of course be customized later on. To create multiple services to your project, just run CLI multiple times.
+CX Cloud provides selected ready-made \(Node.js\) core services \(e.g. commerce, content, search, authentication\) which can be generated and added to the project using CLI. These can of course be customized later on. To create multiple services to your project, just run CLI multiple times.
 
-Also, CX Cloud enables you to deploy any custom services. Read more about that [here](../guidelines-for-custom-services/deploying-services.md).
+Also, CX Cloud enables you to deploy any custom services with any tech stack. Read more about that [here](../guidelines-for-custom-services/deploying-services.md).
 
 ## Service generation
 
@@ -18,20 +18,20 @@ $ cd service-commerce
 $ cxcloud generate service
 ```
 
-You will go through a number of questions and get to choose which service to create. At this point, CX Cloud CLI won't deploy anything yet, though it might ask to perform some authentefication steps for AWS.
+You will go through a number of questions and get to choose which service to create. At this point, CX Cloud CLI won't deploy anything yet, though it might ask to perform some authentication steps for AWS.
 
 To enable ready-made functionality for services, CX Cloud provides a set of core modules that can be used when generating services. To enable desired level of granularity, one can use multiple core modules for one service or create multiple services based on same core module. It should be noted that if generating a service with multiple core modules, some services might conflict with each other. In this case you will get a warning. Example of such conflict is Commerce and Auth services. Commerce includes own authentication service, making Auth in this case redundant.
 
 Currently CLI supports the following core modules:
 
-* Commerce \(Commercetools\)
+* Commerce \(commercetools\)
 * Content \(Contentful\)
 * Auth \(AWS Cognito\)
 * Search \(Algolia\)
 
 ## Configuration
 
-After you have generated the service, it's time to provide it with configurations. We are using Node-config for providing different configurations based on environment. Documentation for Node-config can be foud [here](https://www.npmjs.com/package/config).
+After you have generated the service, it's time to provide it with configurations. We are using Node-config for providing different configurations based on environment. Documentation for Node-config can be found [here](https://www.npmjs.com/package/config).
 
 Create file `\config\development.json` and add necessary configurations there. Each service should have its own object with configurations. Make sure to check the application port there as well. For production, you should create `\config\production.json` respectively. These files will override configurations from the `\config\default.json`, but keep the non-sensitive configurations there \(like `defaultCurrency`\) and add the environment-related keys to `development.json` or `production.json` files.
 
