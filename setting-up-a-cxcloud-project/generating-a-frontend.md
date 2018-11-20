@@ -20,6 +20,28 @@ It should be noted that our Angular demo is using one API/service, with the Comm
 
 Generated demo will be using our live test API including end points with pre-filled sets of data for Commerce, Content and Search services. Later we will provide a guide to configure your front-end to connect to your own services, with set level of granularity, running in your AWS.
 
+In order the frontend demo works with listed above APIs, configuration files should be modified. Configuration files can be found in this project directory `/src/environments/`. To connect with existing APIs, change the value of `apiUrl` for each service (notice that environments files should be modified depending on the used environment).
+
+```
+export const environment = {
+  production: false,
+  siteName: 'CXCloud DEV',
+  commerce: {
+    apiUrl: 'https://<YOUR_URL>/api/v1',
+    indexName: 'dev_COMMERCE'
+  },
+  content: {
+    apiUrl: 'https://<YOUR_URL>/api/v1/content',
+    indexName: 'dev_CONTENT'
+  },
+  auth: {
+    apiUrl: 'https://<YOUR_URL>/api/v1/auth'
+  },
+  search: {
+    apiUrl: 'https://<YOUR_URL>/api/v1/search'
+  }
+};
+```
 ## Local test
 
 In case of Angular demo, to explore it, from inside of the project folder you should run the following command:
