@@ -1,6 +1,6 @@
 # Generating a Frontend Demo
 
-Cool, You now have infra and core services up and running! For front-end, CX Cloud CLI allows you to generate a front-end demo to test the concept with end-to-end functionality. Currently, we provide Angular 7 demo. React is coming soon. 
+Cool, You now have infra and core services up and running! For front-end, CX Cloud CLI allows you to generate a front-end demo to test the concept with end-to-end functionality. Currently, we provide Angular 7 demo. React is coming soon.
 
 ## Front-end generation
 
@@ -14,15 +14,15 @@ $ cxcloud generate demo
 
 You will go through a set of simple questions and receive an end-to-end working demo.
 
-It should be noted that our Angular demo is using one API/service, with the Commerce \(commercetools\), Content \(Contenful\) and Search \(Algolia\) core modules enabled. Authentication is implemented via Commerce core module in this case, which is good for simple eCommerce project.
-
 ## Configuration
 
-Generated demo will be using our live test API including end points with pre-filled sets of data for Commerce, Content and Search services. Later we will provide a guide to configure your front-end to connect to your own services, with set level of granularity, running in your AWS.
+B default, the generated demo uses our live test API including end points with pre-filled sets of data for Commerce, Content and Search services. 
 
-In order the frontend demo works with listed above APIs, configuration files should be modified. Configuration files can be found in this project directory `/src/environments/`. To connect with existing APIs, change the value of `apiUrl` for each service (notice that environments files should be modified depending on the used environment).
+In order to enable the frontend demo to work with the APIs you have generated and deployed, configuration files need to be modified. Configuration files can be found in this project directory `/src/environments/`. 
 
-```
+To connect with new APIs, change the value of `apiUrl` for each service \(notice that environments files should be modified depending on the used environment\).
+
+```text
 export const environment = {
   production: false,
   siteName: 'CXCloud DEV',
@@ -42,6 +42,7 @@ export const environment = {
   }
 };
 ```
+
 ## Local test
 
 In case of Angular demo, to explore it, from inside of the project folder you should run the following command:
