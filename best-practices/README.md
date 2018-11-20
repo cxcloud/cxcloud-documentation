@@ -3,6 +3,8 @@
 * [Customizing core services and demo front-end](customize-core-demo.md)
 * [What is missing from CX Cloud?](what-is-missing.md)
 * [How to participate in CX Cloud development?](how-to-participate.md)
+* Creating and deploying custom services
+* Creating custom front-end 
 * When to use API GW
 * Docker vs. Serverless
 * Why/How to use Process engine
