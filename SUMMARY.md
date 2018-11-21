@@ -15,8 +15,6 @@
   * [Overview](architecture/architecture-overview.md)
   * [How to use CX Cloud](architecture/how_to_use.md)
   * [Change log](architecture/changelog.md)
-* [NPM Modules](npm-modules/README.md)
-  * [Process Engine](npm-modules/process-engine.md)
 * [Best practices and guidelines](best-practices/README.md)
   * [Customizing core services and demo front-end](best-practices/customize-core-demo.md)
   * [What is missing from CX Cloud?](best-practices/what-is-missing.md)
@@ -34,4 +32,8 @@
 ## Troubleshooting
 
 * [AWS Multi Factor Authentication Issues](troubleshooting/aws-multi-factor-authentication-issues.md)
+
+## NPM Modules
+
+* [Process Engine](npm-modules/process-engine.md)
 
