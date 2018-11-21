@@ -25,11 +25,11 @@
 
 ## Guides
 
-* [Getting access to an already running Infrastructure](guidelines-for-custom-services/getting-access-to-an-already-running-infrastructure.md)
-* [Deploying Custom Services](guidelines-for-custom-services/deploying-services.md)
-* [Domains for Kubernetes](guidelines-for-custom-services/domains-for-kubernetes.md)
-* [Manually Deploying Services](guidelines-for-custom-services/manually-deploying-services.md)
-* [Manually Defining Routing](guidelines-for-custom-services/manually-defining-routing.md)
+* [Getting access to an already running Infrastructure](guides/getting-access-to-an-already-running-infrastructure.md)
+* [Deploying Custom Services](guides/deploying-services.md)
+* [Domains for Kubernetes](guides/domains-for-kubernetes.md)
+* [Manually Deploying Services](guides/manually-deploying-services.md)
+* [Manually Defining Routing](guides/manually-defining-routing.md)
 
 ## Troubleshooting
 

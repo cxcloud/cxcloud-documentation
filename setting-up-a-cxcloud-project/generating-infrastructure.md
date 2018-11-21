@@ -31,7 +31,7 @@ cluster-name**.k8s.local**
 
 For example, you might want to name your cluster `mygreatcluster` then enter the domain name `mygreatcluster.k8s.local`
 
-\(If you actually want to set a real domain for your cluster, you have to follow [this guide](../guidelines-for-custom-services/domains-for-kubernetes.md) to delegate your domain to AWS's Route53 service and then use it.\)
+\(If you actually want to set a real domain for your cluster, you have to follow [this guide](../guides/domains-for-kubernetes.md) to delegate your domain to AWS's Route53 service and then use it.\)
 {% endhint %}
 
 After answering the questions the tool asks you, it will start bootstrapping your environment on AWS. It does the following steps automatically for you:

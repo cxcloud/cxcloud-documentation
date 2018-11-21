@@ -6,7 +6,7 @@ Make sure you have generated infrastructure and exported your AWS profile before
 
 CX Cloud provides selected ready-made \(Node.js\) core services \(e.g. commerce, content, search, authentication\) which can be generated and added to the project using CLI. These can of course be customized later on. To create multiple services to your project, just run CLI multiple times.
 
-Also, CX Cloud enables you to deploy any custom services with any tech stack. Read more about that [here](../guidelines-for-custom-services/deploying-services.md).
+Also, CX Cloud enables you to deploy any custom services with any tech stack. Read more about that [here](../guides/deploying-services.md).
 
 ## Service generation
 
