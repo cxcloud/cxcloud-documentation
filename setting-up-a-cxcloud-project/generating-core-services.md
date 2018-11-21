@@ -33,7 +33,7 @@ Currently CLI supports the following core modules:
 
 After you have generated the service, it's time to provide it with configurations. We are using `node-config` for providing different configurations based on environment. Documentation for Node-config can be found [here](https://www.npmjs.com/package/config).
 
-Create file `config/development.json` and add necessary configurations there. Each service should have its own object with configurations. Make sure to check the application port there as well. For production, you should create `config/production.json` respectively. These files will override configurations from the `config/default.json`, but keep the non-sensitive configurations there \(like `defaultCurrency`\) and add the environment-related keys to `development.json` or `production.json` files.
+Create file `config/development.json` and add necessary configurations there. Each service should have its own object with configurations. Make sure to check the application port there as well. For production, you should create `config/production.json` respectively. These files will override configurations from the `config/default.json`, but keep the non-sensitive configurations there \(like `defaultCurrency`\) and add the environment-related keys to `development.json` or `production.json` files. The environment name for deployment can be configured in `.cxcloud.yaml` file \(`production` by default\)
 
 `development.json` file will be automatically loaded when you are testing at your local environment while `production.json` will be used if you deploy the services to AWS.
 
