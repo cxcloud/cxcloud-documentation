@@ -7,7 +7,7 @@
   * [Git Repository Conventions](getting-started/create-a-git-repository.md)
 * [Setting up a CX Cloud Project](setting-up-a-cxcloud-project/README.md)
   * [Generating Infrastructure](setting-up-a-cxcloud-project/generating-infrastructure.md)
-  * [Generating Core services](setting-up-a-cxcloud-project/generating-core-services.md)
+  * [Generating Core Services](setting-up-a-cxcloud-project/generating-core-services.md)
   * [Generating a Frontend Demo](setting-up-a-cxcloud-project/generating-a-frontend.md)
   * [Routing Manifest](setting-up-a-cxcloud-project/routing-manifest.md)
   * [Configuring CI/CD pipeline](setting-up-a-cxcloud-project/configuring-cicd.md)

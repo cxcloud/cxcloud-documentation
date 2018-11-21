@@ -1,4 +1,4 @@
-# Generating Core services
+# Generating Core Services
 
 {% hint style="info" %}
 Make sure you have generated infrastructure and exported your AWS profile before continuing. [Read the docs](generating-infrastructure.md) to find out how.
@@ -31,9 +31,9 @@ Currently CLI supports the following core modules:
 
 ## Configuration
 
-After you have generated the service, it's time to provide it with configurations. We are using Node-config for providing different configurations based on environment. Documentation for Node-config can be found [here](https://www.npmjs.com/package/config).
+After you have generated the service, it's time to provide it with configurations. We are using `node-config` for providing different configurations based on environment. Documentation for Node-config can be found [here](https://www.npmjs.com/package/config).
 
-Create file `\config\development.json` and add necessary configurations there. Each service should have its own object with configurations. Make sure to check the application port there as well. For production, you should create `\config\production.json` respectively. These files will override configurations from the `\config\default.json`, but keep the non-sensitive configurations there \(like `defaultCurrency`\) and add the environment-related keys to `development.json` or `production.json` files.
+Create file `config/development.json` and add necessary configurations there. Each service should have its own object with configurations. Make sure to check the application port there as well. For production, you should create `config/production.json` respectively. These files will override configurations from the `config/default.json`, but keep the non-sensitive configurations there \(like `defaultCurrency`\) and add the environment-related keys to `development.json` or `production.json` files.
 
 `development.json` file will be automatically loaded when you are testing at your local environment while `production.json` will be used if you deploy the services to AWS.
 
@@ -42,7 +42,9 @@ CXCloud does not provide any testable configurations for 3rd party solutions. Yo
 {% endhint %}
 
 {% hint style="warning" %}
-If you use public repository for versioning, make sure to encrypt the `development.json` and `production.json` files \(for instance, with git-crypt\).
+**Do Not** commit sensitive information such as API keys to GitHub or other versioning systems. 
+
+If you use public repository for versioning, make sure to encrypt the `development.json` and `production.json` files \(for instance, with [git-crypt](https://github.com/lorenwest/node-config/wiki/Securing-Production-Config-Files)\).
 {% endhint %}
 
 Example configurations for Commerce:
