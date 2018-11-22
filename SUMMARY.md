@@ -15,7 +15,7 @@
   * [Overview](architecture/architecture-overview.md)
   * [How to use CX Cloud](architecture/how_to_use.md)
   * [Change log](architecture/changelog.md)
-* [Best practices and guidelines](best-practices/README.md)
+* [Best practices](best-practices/README.md)
   * [Customizing core services and demo front-end](best-practices/customize-core-demo.md)
   * [What is missing from CX Cloud?](best-practices/what-is-missing.md)
   * [How to participate?](best-practices/how-to-participate.md)
