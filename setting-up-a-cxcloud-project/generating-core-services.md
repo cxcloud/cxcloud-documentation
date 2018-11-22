@@ -45,6 +45,8 @@ CXCloud does not provide any testable configurations for 3rd party solutions. Yo
 **Do Not** commit sensitive information such as API keys to GitHub or other versioning systems. 
 
 If you use public repository for versioning, make sure to encrypt the `development.json` and `production.json` files \(for instance, with [git-crypt](https://github.com/lorenwest/node-config/wiki/Securing-Production-Config-Files)\).
+
+You can find an example of using Kubernetes' secrets to configure your project [here](../guides/storing-secrets-in-kubernetes.md#example-storing-and-using-secrets-in-nodejs-and-node-config-module).
 {% endhint %}
 
 Example configurations for Commerce:

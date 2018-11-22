@@ -52,7 +52,7 @@ console.log(process.env.PROD_DB_PASSWORD); // Y4nys7f11
 
 For more information about Kubernetes secrets, [visit this article](https://kubernetes.io/docs/concepts/configuration/secret/).
 
-#### Example: Storing and using secrets in NodeJS and \`node-config\` module
+### Example: Storing and using secrets in NodeJS and \`node-config\` module
 
 One of the services that you can generate using the CX Cloud CLI is **CommerceTools** service, which requires some configurations \(like API key, etc\). We can take advantage of Kubernetes secrets explained above to store these information without having to publish them to GitHub.
 
