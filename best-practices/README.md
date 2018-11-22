@@ -1,4 +1,4 @@
-# Best practices and guidelines
+# Best practices
 
 * [Customizing core services and demo front-end](customize-core-demo.md)
 * [What is missing from CX Cloud?](what-is-missing.md)
