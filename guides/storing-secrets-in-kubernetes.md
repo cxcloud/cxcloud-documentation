@@ -54,9 +54,9 @@ For more information about Kubernetes secrets, [visit this article](https://kube
 
 ### Example: Storing and using secrets in NodeJS and \`node-config\` module
 
-One of the services that you can generate using the CX Cloud CLI is **CommerceTools** service, which requires some configurations \(like API key, etc\). We can take advantage of Kubernetes secrets explained above to store these information without having to publish them to GitHub.
+One of the core services that you can generate using the CX Cloud CLI is Commerce service. It is communicating with **commercetools** platform and thus requires some configurations \(like API key, etc\). We can take advantage of Kubernetes secrets explained above to store these information without having to publish them to GitHub.
 
-First, generate a service using the CLI and choose CommerceTools, [as explained in it's section](../setting-up-a-cxcloud-project/generating-core-services.md).
+First, generate a service using the CLI and choose Commercetools, [as explained in its section](../setting-up-a-cxcloud-project/generating-core-services.md).
 
 Then, according to `node-config`'s [documentation](https://github.com/lorenwest/node-config/wiki/Environment-Variables#custom-environment-variables), create a file named `custom-environment-variables.json` in the `config` folder of the generated service with the following content:
 
