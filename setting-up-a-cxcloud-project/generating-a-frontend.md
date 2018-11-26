@@ -20,25 +20,25 @@ By default, the generated demo uses our live test API including end points with 
 
 In order to enable the frontend demo to work with the APIs you have generated and deployed, configuration files need to be modified. Configuration files can be found in this project directory `/src/environments/`. 
 
-To connect with new APIs, change the value of `apiUrl` for each service \(notice that environments files should be modified depending on the used environment\).
+To connect with new APIs, change the value of `apiUrl` for each service \(notice that environments files should be modified depending on the used environment\). Assuming your CX Cloud URL is `newsite.example.com`, your environment.development.ts should look like this:   
 
 ```text
 export const environment = {
   production: false,
   siteName: 'CXCloud DEV',
   commerce: {
-    apiUrl: 'https://<YOUR_URL>/api/v1',
+    apiUrl: 'https://newsite.example.com/api/commerce/v1',
     indexName: 'dev_COMMERCE'
   },
   content: {
-    apiUrl: 'https://<YOUR_URL>/api/v1/content',
+    apiUrl: 'https://newsite.example.com/api/content/v1',
     indexName: 'dev_CONTENT'
   },
   auth: {
-    apiUrl: 'https://<YOUR_URL>/api/v1/auth'
+    apiUrl: 'https://newsite.example.com/api/auth/v1'
   },
   search: {
-    apiUrl: 'https://<YOUR_URL>/api/v1/search'
+    apiUrl: 'https://newsite.example.com/api/search/v1'
   }
 };
 ```
