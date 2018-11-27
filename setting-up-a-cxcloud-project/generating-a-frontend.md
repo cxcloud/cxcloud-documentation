@@ -16,11 +16,11 @@ You will go through a set of simple questions and receive an end-to-end working 
 
 ## Configuration
 
-By default, the generated demo uses our live test API including end points with pre-filled sets of data for Commerce, Content and Search services. 
+By default, the generated demo uses our live test API including end points with pre-filled sets of data for Commerce, Content and Search services.
 
-In order to enable the frontend demo to work with the APIs you have generated and deployed, configuration files need to be modified. Configuration files can be found in this project directory `/src/environments/`. 
+In order to enable the frontend demo to work with the APIs you have generated and deployed, configuration files need to be modified. Configuration files can be found in this project directory `/src/environments/`.
 
-To connect with new APIs, change the value of `apiUrl` for each service \(notice that environments files should be modified depending on the used environment\). Assuming your CX Cloud URL is `newsite.example.com`, your environment.development.ts should look like this:   
+To connect with new APIs, change the value of `apiUrl` for each service \(notice that environments files should be modified depending on the used environment\). Assuming your CX Cloud URL is `newsite.example.com`, your environment.development.ts should look like this:
 
 ```text
 export const environment = {
