@@ -4,7 +4,7 @@
 * Creating and deploying custom services
 * Creating and deploying custom front-end 
 * Creating and deploying serverless functions
-* [Managing your infra and Kubernetes](http://how-to-run-infra.md)
+* [Managing your infra and Kubernetes](how-to-run-infra.md)
 * [What is missing from CX Cloud?](what-is-missing.md)
 * [How to participate in CX Cloud development?](how-to-participate.md)
 * When & how to use API GW
