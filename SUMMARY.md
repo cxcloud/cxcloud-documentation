@@ -17,6 +17,7 @@
   * [Change log](architecture/changelog.md)
 * [Best practices](best-practices/README.md)
   * [Customizing core services and demo front-end](best-practices/customize-core-demo.md)
+  * [Managing your infra and Kubernetes](best-practices/how-to-run-infra.md)
   * [What is missing from CX Cloud?](best-practices/what-is-missing.md)
   * [How to participate?](best-practices/how-to-participate.md)
   * [Multivendor coordination](best-practices/multivendor-coordination.md)
