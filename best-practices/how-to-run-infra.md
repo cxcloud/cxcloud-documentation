@@ -8,10 +8,10 @@ But to manage your infra and Kubernetes cluster, there are a couple of tools you
 
 | Task | CX Cloud CLI | Kops | Dahsboard | kubectl | AWS | Comments |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Create cluster | x |  |  |  |  |  |
-| View pods |  |  |  |  |  |  |
-| Delete pod |  |  |  |  |  |  |
-| Delete cluster |  |  |  |  |  |  |
+| Create cluster | x | x |  |  |  |  |
+| View pods |  |  |  | x |  |  |
+| Delete pod |  |  |  | x |  |  |
+| Delete cluster |  | x |  |  |  |  |
 |  |  |  |  |  |  |  |
 |  |  |  |  |  |  |  |
 
