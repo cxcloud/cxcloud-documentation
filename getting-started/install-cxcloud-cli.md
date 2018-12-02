@@ -3,10 +3,10 @@
 ## Installing CX Cloud CLI Tools
 
 {% hint style="info" %}
-You need to have Node.js and NPM installed. Follow [this guide](prepare-your-environment.md#install-node-js-and-npm) for installing them.
+Before proceeding, make sure you have prepared your local environment as instructed  in [this guide](prepare-your-environment.md).
 {% endhint %}
 
-Once you have installed Node.js and you confirm that NPM is working using `npm --version` you can install CX Cloud CLI:
+Install CX Cloud CLI by running the following command:
 
 ```bash
 $ npm install -g cxcloud
