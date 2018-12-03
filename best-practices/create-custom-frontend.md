@@ -1,8 +1,10 @@
-# Customizing core services and demo front-end
+# Create and deploy a custom front-end
 
-When you have created your "default" CX Cloud, as a next step you might want to customize it a bit for example to create a demo for a specific use case. Here are some pointers for that.
+For an actual customer project, your team might want to start with a "clean" project and not use CX Cloud demo frontend as a starter. You can of course check our Angular and React demos for some guidance. But as both Angular and React provide nice skeleton apps to start with, we have provided you with guides on how to start working with those. 
 
-## Customize core services
+## Angular
+Please refer to our Angular accelerator guide. 
 
-## Customize front-end demo
+## React
+TBA
 
