@@ -1,7 +1,7 @@
 # Best practices
 
 * [Customizing core services and demo front-end](customize-core-demo.md)
-* [Creating and deploying custom front-end](create-custom-frontend.md) 
+* [Creating and deploying custom front-end](https://github.com/cxcloud/docs/tree/70e921a9f9d48dbb0d665efd2c2d768a58a70310/best-practices/create-custom-frontend.md) 
 * Creating and deploying custom services
 * Creating and deploying serverless functions
 * [Managing your infra and Kubernetes](how-to-run-infra.md)
