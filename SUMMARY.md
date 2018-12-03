@@ -26,6 +26,7 @@
 
 * [Getting access to an already running Infrastructure](guides/getting-access-to-an-already-running-infrastructure.md)
 * [Deploying Custom Services](guides/deploying-services.md)
+* [Frontend Accelerators](guides/frontend-accelerators.md)
 * [Storing Secrets in Kubernetes](guides/storing-secrets-in-kubernetes.md)
 * [Domains for Kubernetes](guides/domains-for-kubernetes.md)
 * [Manually Deploying Services](guides/manually-deploying-services.md)
