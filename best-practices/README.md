@@ -1,8 +1,8 @@
 # Best practices
 
 * [Customizing core services and demo front-end](customize-core-demo.md)
+* [Creating and deploying custom front-end](create-custom-frontend.md) 
 * Creating and deploying custom services
-* Creating and deploying custom front-end 
 * Creating and deploying serverless functions
 * [Managing your infra and Kubernetes](how-to-run-infra.md)
 * [What is missing from CX Cloud?](what-is-missing.md)
