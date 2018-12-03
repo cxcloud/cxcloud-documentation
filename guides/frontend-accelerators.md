@@ -1,5 +1,11 @@
 # Frontend Accelerators
 
+Make sure you have [installed all the requirements](https://docs.cxcloud.com/getting-started/prepare-your-environment) on your computer and have exported the proper AWS profile:
+
+```text
+$ export AWS_PROFILE=my-cxcloud-dev
+```
+
 ## Create Github repo and clone
 
 You start by creating a new repository for the service in Github, named for example `cx-frontend`. Then clone it to your project folder:
@@ -10,17 +16,15 @@ $ git clone git@github.com:myorganization/cx-frontend.git
 
 ## Getting started with Angular
 
-{% hint style="info" %}
-You need to have Node.js and NPM installed. Follow [this guide](https://github.com/cxcloud/docs/tree/2cd80c83178a85df7ad94d40d800013b5d6ec4db/guides/prepare-your-environment.md#install-node-js-and-npm) for installing them.
-{% endhint %}
-
-### Generate skeleton and local demo
+### Install Angular CLI
 
 ```bash
 npm install -g @angular/cli
 ```
 
-You can verify that the Angular CLI has been installed correctly by checking its version using: `ng -v`.
+You can verify that the Angular CLI has been installed correctly by checking its version using: `ng --version`.
+
+### Generate skeleton
 
 In the parent directory of the `cx-frontend` folder the `git clone` command above generated, create a workspace with an application project using the Angular CLI command in :
 
@@ -28,9 +32,9 @@ In the parent directory of the `cx-frontend` folder the `git clone` command abov
 ng new cx-frontend
 ```
 
-When prompted, select Yes for Angular routing. And preferably SCSS, SASS or LESS for the stylesheet format.
+When prompted, select Yes for Angular routing. And preferably SCSS, SASS or LESS for the stylesheet format. The CLI will then generate the basic skeleton for your application, and install the packages necessary for the application to run.
 
-The CLI will generate the basic skeleton for your application, and install the packages necessary for the application to run.
+### Local test
 
 Switch to the generated directory `cd cx-frontend`.
 
@@ -43,7 +47,6 @@ You can access the project by typing [http://localhost:4200/](http://localhost:4
 * Environment setup
 
 For the frontend to work with the APIs, you need to configure the environment files found in at the project directory `/src/environments/`. Refer to [Configuring Frontend](https://docs.cxcloud.com/setting-up-a-cxcloud-project/generating-a-frontend#configuration) for more information.
-
 
 * Make sure your project has a `Dockerfile` \(this is just an example\):
 
@@ -87,15 +90,16 @@ $ cxcloud deploy
 
 ### Routing
 
-Adapt the routing manifest to use the right service name for the frontend. Refer to  [Routing Manifest](./../setting-up-a-cxcloud-project/routing-manifest.md).
+Adapt the routing manifest to use the right service name for the frontend. Refer to [Routing Manifest](../setting-up-a-cxcloud-project/routing-manifest.md).
 
 For example, you want to have the following rule:
 
-```
+```text
 - path: /
   serviceName: cx-frontend
   servicePort: 80
-````
+`
+```
 
 ### Commit
 
@@ -131,7 +135,7 @@ Use TypeScript. Angular itself is written in Typescript.
 
 Install [Husky](https://github.com/typicode/husky) using `npm install husky --save-dev`
 
-* Husky prevents bad commits by adding pre-commit hooks in package.json. 
+* Husky prevents bad commits by adding pre-commit hooks in package.json.
 
   The configuration below runs prettier and a `git add` before before commiting to Git.
 
@@ -165,4 +169,8 @@ Use [Internalization](https://angular.io/guide/i18n).
 ### Angular specific styleguide
 
 Angular has [documented](https://angular.io/guide/styleguide) a set of best practices to follow when developer Angular applications. It is highly recommended that you read the styleguide before starting the frontend development to be in line with the syntax, conventions, and application structure.
+
+## Getting started with React
+
+TBA. 
 
