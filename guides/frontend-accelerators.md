@@ -1,6 +1,6 @@
 # Frontend Accelerators
 
-Make sure you have [installed all the requirements](https://docs.cxcloud.com/getting-started/prepare-your-environment) on your computer and have exported the proper AWS profile:
+Make sure you have [installed all the requirements](../getting-started/prepare-your-environment.md) on your computer and have exported the proper AWS profile:
 
 ```text
 $ export AWS_PROFILE=my-cxcloud-dev
