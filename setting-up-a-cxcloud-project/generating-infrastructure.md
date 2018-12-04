@@ -54,10 +54,10 @@ After you have generated the Kubernetes infrastructure, you would want to assign
 The assumed starting state is that you have access to manage "example.com" DNS. CX Cloud is to be configured to utilize this domain to explore its possibilities. As there might already be a site running in www.example.com, the target state with CX Cloud would look like this:
 
 * `newsite.example.com` \(customer front-end\)
-* `newsite.example.com/api/commerce/v1/` \(commerce service API\)
-* `newsite.example.com/api/content/v1/` \(content service API\)
-* `newsite.example.com/api/search/v1/` \(search service API\)
-* `newsite.example.com/api/auth/v1/` \(auth service API\)
+* `newsite.example.com/api/service-commerce/v1/` \(commerce service API\)
+* `newsite.example.com/api/service-content/v1/` \(content service API\)
+* `newsite.example.com/api/service-search/v1/` \(search service API\)
+* `newsite.example.com/api/service-auth/v1/` \(auth service API\)
 * `admin.newsite.example.com` \("admin panel"\)
 * `developer.newsite.examle.com` \(developer portal\)
 

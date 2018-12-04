@@ -112,7 +112,7 @@ $ npm run start
 
 It will build your Swagger documentation and start the local server for you to be able to test your configurations. Swagger provides an interface for testing right in the browser.
 
-In case of `service-commerce` and default settings \(by default, CX Cloud CLI suggest service name as the API prefix\), you should be able to see Swagger API documentation at `http://localhost:4003/api/service-commerce/v1/api-docs`
+In case of `service-commerce` and default settings, you should be able to see Swagger API documentation at `http://localhost:4003/api/service-commerce/v1/api-docs`
 
 ## Deployment
 
