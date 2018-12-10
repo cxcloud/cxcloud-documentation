@@ -66,11 +66,11 @@ EXPOSE 80
 {% code-tabs-item title=".cxcloud.yaml" %}
 ```yaml
 deployment:
-  name: cx-frontend
+  name: $APP_VERSION
   image:
-    name: cx-frontend-image
+    name: $APP_VERSION
     repository: YOUR_AWS_ECR_REPOSITORY_URL_HERE
-    version: 1.1.1
+    version: $APP_VERSION
   containerPort: 80
   replicas: 2
   env:
@@ -79,6 +79,105 @@ deployment:
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
+
+### Add docker scripts
+
+In the root folder of the frontend application, create a folder called _scripts_, and inside it create the following files.
+
+* `extract-config.ts`
+
+```
+import * as fs from 'fs';
+import * as path from 'path';
+import * as mkdirp from 'mkdirp';
+
+const DIR = path.join(__dirname, '../dist/config');
+const ENVS = ['production', 'development'];
+
+mkdirp.sync(DIR);
+
+function escape(str) {
+  if (typeof str !== 'string') {
+    return str;
+  }
+  return str.replace(/[\/$'"]/g, '\\$&');
+}
+
+ENVS.forEach(env => {
+  const { environment } = require(`../src/environments/environment.${env}.ts`);
+  const output = Object.keys(environment)
+    .map(key => `${key} ${JSON.stringify(escape(environment[key]))}`)
+    .join('\n');
+  fs.writeFileSync(path.join(DIR, `${env}.cfg`), `${output}\n`);
+});
+```
+
+* `nginx.conf`
+
+```
+server {
+
+  listen 80;
+
+  sendfile on;
+
+  default_type application/octet-stream;
+
+
+  gzip on;
+  gzip_http_version 1.1;
+  gzip_disable      "MSIE [1-6]\.";
+  gzip_min_length   256;
+  gzip_vary         on;
+  gzip_proxied      expired no-cache no-store private auth;
+  gzip_types        text/plain text/css application/json application/javascript application/x-javascript text/xml application/xml application/xml+rss text/javascript;
+  gzip_comp_level   9;
+
+
+  root /usr/share/nginx/html;
+
+
+  location / {
+    try_files $uri $uri/ /index.html =404;
+  }
+
+}
+```
+
+* `nginx.sh`
+
+```
+#!/bin/bash
+
+chmod +x /usr/share/nginx/html/config/replace.sh
+/usr/share/nginx/html/config/replace.sh
+
+nginx -g 'daemon off;'
+
+```
+
+* `replace.sh`
+
+```
+#!/bin/bash
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+CONFIG=$DIR/$NODE_ENV.cfg
+BUNDLE=$DIR/../main.*.js
+
+echo $BUNDLE
+
+if [ ! -f $CONFIG ]; then
+  echo "NODE_ENV is not set. Exiting."
+  exit 1
+fi
+
+while read var value
+do
+  echo $var=$value
+  sed -i "s|$var:\"__PLACEHOLDER__\"|$var:$value|g" $BUNDLE
+done < $CONFIG
+```
 
 ### Deployment
 
