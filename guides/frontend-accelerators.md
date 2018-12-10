@@ -80,7 +80,7 @@ deployment:
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-### Add docker scripts
+### Add Docker and Nginx scripts
 
 In the root folder of the frontend application, create a folder called _scripts_, and inside it create the following files.
 
