@@ -20,15 +20,47 @@ But to manage your infra and Kubernetes cluster, there are a couple of tools you
 
 ## Notes about tasks
 
-| Task | Comments |
-| :--- | :--- |
-| Create K8s cluster |  |
-| View K8s pods |  |
-| Delete K8s pods |  |
-| Delete K8s cluster |  |
-| Add API GW |  |
-| Manage AWS capacity |  |
-|  |  |
+#### Create K8s cluster
+
+One uses CX Cloud CLI to both generate the cluster and then generate and deploy services to it. One can also use kops manually to create the cluster. 
+
+
+
+#### View & Delete pods / services
+
+One uses kubectl for these tasks. Some examples: 
+
+See what deployments you have  
+"kubectl get deployments -n applications" \(assuming namespace is applications\)  
+  
+Delete selected deployment  
+"kubectl delete deployment SELECTED\_DEPLOYMENT -n applications"  
+  
+See what services you have  
+"kubectl get services -n applications"  
+  
+Delete selected service  
+"kubectl delete service SELECTED\_SERVICE -n applications"
+
+
+
+#### Delete K8s cluster
+
+One uses kops to delete the whole cluster. 
+
+
+
+#### Add API Gateway
+
+One uses Terraform to add API GW to the tech stack.  
+
+
+
+#### Manage AWS / Azure capacity 
+
+One uses Terraform to manage the infrastructure powering K8s cluster. 
+
+
 
 ## Other useful tools 
 

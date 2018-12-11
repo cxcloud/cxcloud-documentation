@@ -86,7 +86,7 @@ In the root folder of the frontend application, create a folder called _scripts_
 
 * `extract-config.ts`
 
-```
+```text
 import * as fs from 'fs';
 import * as path from 'path';
 import * as mkdirp from 'mkdirp';
@@ -114,7 +114,7 @@ ENVS.forEach(env => {
 
 * `nginx.conf`
 
-```
+```text
 server {
 
   listen 80;
@@ -146,19 +146,18 @@ server {
 
 * `nginx.sh`
 
-```
+```text
 #!/bin/bash
 
 chmod +x /usr/share/nginx/html/config/replace.sh
 /usr/share/nginx/html/config/replace.sh
 
 nginx -g 'daemon off;'
-
 ```
 
 * `replace.sh`
 
-```
+```text
 #!/bin/bash
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
@@ -271,5 +270,5 @@ Angular has [documented](https://angular.io/guide/styleguide) a set of best prac
 
 ## Getting started with React
 
-TBA. 
+TBA.
 
