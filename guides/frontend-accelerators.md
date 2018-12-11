@@ -98,9 +98,9 @@ CMD ["bash", "/run.sh"]
 {% code-tabs-item title=".cxcloud.yaml" %}
 ```yaml
 deployment:
-  name: $APP_VERSION
+  name: $APP_NAME
   image:
-    name: $APP_VERSION
+    name: $APP_NAME
     repository: YOUR_AWS_ECR_REPOSITORY_URL_HERE
     version: $APP_VERSION
   containerPort: 80
