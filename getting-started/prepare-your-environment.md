@@ -25,6 +25,8 @@ Export your AWS profile to an environment variable. This variable is used by CXC
 $ export AWS_PROFILE=myproject
 ```
 
+CX Cloud CLI supports preset AWS API keys as environment variables. This is useful for example when running [AWS Vault](https://github.com/99designs/aws-vault) for storing the AWS secrets in your operating system's secure keystore. The `AWS_PROFILE` doesn't need to be exported in case AWS Vault is used.
+
 ## Install Kubernetes and Kops
 
 Before you start, you need to have Kubernetes and it's tools installed on your computer. Follow [this guide](https://kubernetes.io/docs/tasks/tools/install-kubectl/) to Install those. On Mac, you can install Kubernetes tools using `homebrew`:
@@ -80,4 +82,3 @@ Once you have installed Node, you can confirm that NPM is working using `npm --v
 ## Install Docker
 
 To be able to compose a deployable image you have to install Docker. Head over to [this page](https://docs.docker.com/install/#supported-platforms) and get the Docker for your system. You'll need to create a Docker account as well.
-

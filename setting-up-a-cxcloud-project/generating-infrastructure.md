@@ -24,6 +24,10 @@ $ cxcloud generate infra
 If you have enabled Multi-Factor Authentication on your AWS account or you are assuming another role which does, you might be asked to enter your MFA token \(using your Authenticator app\) in this step.
 {% endhint %}
 
+{% hint style="info" %}
+CX Cloud CLI will by default set temporary AWS API keys as environment variables. However, it is also possible to run CLI with preset API keys as environment variables. This is useful for example when running [AWS Vault](https://github.com/99designs/aws-vault) for storing the secrets in your operating system's secure keystore. The `AWS_PROFILE` environment variable doesn't need to be exported in case AWS Vault is used.
+{% endhint %}
+
 {% hint style="success" %}
 The CLI tool will ask you what domain you want to set as your cluster's domain. For most cases, you can use a "gossip-based" cluster configuration in which case you don't need an actual domain for your cluster. So enter the domain using the following format:
 
@@ -92,4 +96,3 @@ $ git push
 ## Demo
 
 {% embed url="https://www.youtube.com/watch?v=ADE\_TyaGLeo&feature=youtu.be" caption="" %}
-
