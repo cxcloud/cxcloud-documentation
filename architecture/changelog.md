@@ -4,15 +4,17 @@
 
 We constantly develop Tieto CX Cloud based on customer projects, internal ideas and partner contributions. Naturally you can follow progress via Github but here are quarterly summaries of the most important changes and improvements.
 
-## Planned for Q4/2018
+## Planned for Q1/2019
 
-Add GraphQL to basic set-up. Create more templates to enable custom microservices generation with various technologies \(e.g. Node, Java, Groovy\) using CX Cloud CLI. Create default CI/CD pipeline between Github and AWS. Add Azure support for CLI infra generation.
+Add GraphQL to basic set-up. Create more templates to enable custom microservices generation with various technologies \(e.g. Node, Java, Groovy\) using CX Cloud CLI. Create default CI/CD pipeline between Github and AWS. Add Azure support for CLI infra generation. Create new core service for Reach marketplace. 
 
 ## Changes in 2018
 
-### Q3/2018
+### Q4/2018
+Created AWS Cognito core service and enabled creation of Auth service with CLI. Improved CX Cloud documentation. Implemented front-end demo based on React. 
 
-Created CX Cloud CLI to enable more easy project set-up with infra, service and front-end generation. Switched from AWS ECS to Kubernetes. Created AWS Cognito core module and enabled creation of Auth service with CLI.
+### Q3/2018
+Created CX Cloud CLI to enable more easy project set-up with infra, service and front-end generation. Switched from AWS ECS to Kubernetes. 
 
 ### Q2/2018
 
