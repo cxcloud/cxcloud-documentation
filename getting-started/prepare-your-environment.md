@@ -5,7 +5,7 @@
 Currently, our Cli only supports GitHub as a versioning system. Once you have installed Git client of your preference, make sure to configure global `username` and `email` properties with values from your GitHub account like this:
 
 ```bash
-git config --global user.username "username"
+git config --global user.name "username"
 git config --global user.email "example@email.com"
 ```
 
