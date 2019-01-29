@@ -71,6 +71,9 @@ There are a few special environment variables that are available to be used:
 | :--- | :--- |
 | `$APP_NAME` | The `name` field of your `package.json` \(if available\) |
 | `$APP_VERSION` | The `version` field of your `package.json` \(if available\) |
+| `$GIT_COMMIT_ID` | Full Commit ID of latest commit. eg. `0fa68a9c4a5452567524db6da8e9304e3d7512c0` |
+| `$GIT_SHORT_COMMIT_ID` | Short Commit ID of latest commit. eg. `0fa68a9` |
+| `$GIT_BRANCH` | Current Git branch. eg. `master` |
 
 For example you can set those environment variables on runtime:
 

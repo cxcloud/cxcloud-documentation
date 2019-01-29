@@ -51,7 +51,7 @@ After answering the questions the tool asks you, it will start bootstrapping you
 
 If the setup is successful, the command displays the load balancer URL which you need to use to point your domains to.
 
-## Configuring a domain for your online service  <a id="configuring-a-domain-for-your-online-service"></a>
+## Configuring a domain for your online service   <a id="configuring-a-domain-for-your-online-service"></a>
 
 After you have generated the Kubernetes infrastructure, you would want to assign a domain to your future online service \(or services\)
 
@@ -96,3 +96,4 @@ $ git push
 ## Demo
 
 {% embed url="https://www.youtube.com/watch?v=ADE\_TyaGLeo&feature=youtu.be" caption="" %}
+
