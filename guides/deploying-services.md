@@ -50,12 +50,16 @@ The `.cxcloud.yaml` file has different configurable sections:
 
 | Option | Description |
 | :--- | :--- |
+| `namespace` | Namespace to store deployment resources |
 | `deployment.name` | The name of your service to be saved in Kubernetes |
 | `deployment.image.name` | The name of your docker image |
 | `deployment.image.repository` | Your AWS ECR Repository |
 | `deployment.image.version` | A version to tag your docker image with |
 | `deployment.containerPort` | Your Dockerfile's exposed port |
 | `deployment.replicas` | Number of replicas to be made \(usually more than 1 just to be safe\) |
+| `deployment.routing.domain` | Standalone domain pointing to the current deployment |
+| `deployment.routing.path` | Which path on the domain should deployment respond to |
+| `deployment.routing.ssl` | Enable SSL for the domain |
 | `env` | A list of environment variables that will be attached to your deployment |
 
 You can use Bash environment variables anywhere in this file. Just prefix a string with `$` to denote it:
@@ -105,5 +109,28 @@ You can pass multiple environment variables using commas.
 
 ## Routing
 
-Now that you have deployed your service, you can make it available to the world by creating a routing manifest. [Read more about that in it's section](manually-defining-routing.md).
+#### Routing for one service only
+
+If you need to assign a domain to the current deployment, you can do so in the deployment manifest under the `deployment` key:
+
+{% code-tabs %}
+{% code-tabs-item title=".cxcloud.yaml" %}
+```yaml
+deployment:
+  # ...
+  routing:
+    domain: service.example.com
+    path: /
+    ssl: false
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+{% hint style="info" %}
+You have to make sure that the `service.example.com` \(or your domain\) is pointed to your load balancer. [You can read how to do so here](../setting-up-a-cxcloud-project/generating-infrastructure.md#configuring-a-domain-for-your-online-service).
+{% endhint %}
+
+#### Routing for multiple services
+
+[Read about routing to multiple services in it's section](../setting-up-a-cxcloud-project/routing-manifest.md).
 
