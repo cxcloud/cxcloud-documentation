@@ -56,6 +56,7 @@ The `.cxcloud.yaml` file has different configurable sections:
 | `deployment.image.repository` | Your AWS ECR Repository |
 | `deployment.image.version` | A version to tag your docker image with |
 | `deployment.containerPort` | Your Dockerfile's exposed port |
+| `deployment.port` | If omitted, it will be the same as `containerPort` but if provided it will change the service's inbound port |
 | `deployment.replicas` | Number of replicas to be made \(usually more than 1 just to be safe\) |
 | `deployment.routing.domain` | Standalone domain pointing to the current deployment |
 | `deployment.routing.path` | Which path on the domain should deployment respond to |
