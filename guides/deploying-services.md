@@ -61,7 +61,7 @@ The `.cxcloud.yaml` file has different configurable sections:
 | `deployment.routing.domain` | Standalone domain pointing to the current deployment |
 | `deployment.routing.path` | Which path on the domain should deployment respond to |
 | `deployment.routing.ssl` | Enable SSL for the domain |
-| `env` | A list of environment variables that will be attached to your deployment |
+| `deployment.env` | A list of environment variables that will be attached to your deployment |
 
 You can use Bash environment variables anywhere in this file. Just prefix a string with `$` to denote it:
 
