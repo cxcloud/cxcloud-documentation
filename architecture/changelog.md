@@ -4,9 +4,18 @@
 
 We constantly develop Tieto CX Cloud based on customer projects, internal ideas and partner contributions. Naturally you can follow progress via Github but here are quarterly summaries of the most important changes and improvements.
 
-## Planned for Q1/2019
+### Planned for H1/2019
 
-Add GraphQL to basic set-up. Create more templates to enable custom microservices generation with various technologies \(e.g. Node, Java, Groovy\) using CX Cloud CLI. Create default CI/CD pipeline between Github and AWS. Add Azure support for CLI infra generation. Create new core service for Reach marketplace.
+* CI/CD pipeline between Github and AWS. 
+* Data Engine 1.0 for log management. 
+* New core service for Reach marketplace.
+
+### Planned for H2/2019
+
+* Add GraphQL to basic set-up. 
+* Create more templates to enable custom microservices generation with various technologies \(e.g. Node, Java, Groovy\) using CX Cloud CLI. 
+* Add Azure support for CLI infra generation. 
+
 
 ## Changes in 2018
 
