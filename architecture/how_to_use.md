@@ -1,8 +1,8 @@
 # How to use CX Cloud
 
-CX Cloud is a solution accelerator to create online solutions with microservices & API-first architecture. Example solutions include web shops, customer self-service solutions, content rich web sites and API-layer for mobile apps and other clients. Solution implementation can also be part of "decomposing the monolith" program where your customer targets to create new online solutions with modern omni-channel architecture while at the same time reducing the scope of legacy platforms.
+CX Cloud is a solution accelerator for cloud native architecture. It is based on API-first approach, microservices and cloud infrastructure providing fast time-to-market, agility in development and automated scalability. Example solutions include web shops, customer self-service solutions, content rich web sites and API-layer for mobile apps and other clients. Solution implementation can also be part of "decomposing the monolith" program where your customer targets to create new online solutions with modern omni-channel architecture while at the same time reducing the scope of legacy platforms.
 
-It is good to remember that even if CX Cloud provices accelerators to create an end-to-end online solution including infra, services and front-end's, it is not a ready-made solution. It is more of a framework and its granularity of accelerators enable you to hand pick only the ones you need. For example, you can just use the infra part to get your team up and running in one day and then continue with customizing the rest of the stack.
+It is good to remember that even if CX Cloud provices accelerators to create an end-to-end online solution including infra, services and front-end's, it is not a ready-made solution. It is more of a framework and its granularity of accelerators enable you to hand pick only the ones you need. For example, you can just use the infra and CI/CD part to get your team up and running in one day and then continue with customizing the rest of the stack.
 
 In high level, there are three main scenarios for usage.
 
@@ -26,7 +26,7 @@ In this case, you can have a clean start for your project using CX Cloud CLI and
 
 ## 3. Add capabilities for your existing microservice stack
 
-In this scenario, there is already a microservices architecture in place, including centralized API Gateway, version control and DevOps pipeline. Your task might be for example to add additional capabilities \(e.g. commerce, content, search\) to the existing stack. And in this area CX Cloud services might come handy.
+In this scenario, there is already a microservices architecture in place, typically including centralized API Gateway, version control and DevOps pipeline. Your task might be for example to add additional capabilities \(e.g. commerce, content, search\) to the existing stack. And in this area CX Cloud services might come handy.
 
 In this case, you can copy needed services from [https://github.com/cxcloud-demos](https://github.com/cxcloud-demos) to your own version control and configure DevOps pipeline manually. The repos in our "CX Cloud Demos" GitHub account are created automatically every night by running CX Cloud CLI with default settings.
 
