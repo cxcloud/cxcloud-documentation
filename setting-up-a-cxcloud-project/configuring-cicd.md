@@ -24,9 +24,7 @@ The CX Cloud CI/CD pipeline has been designed with the following development wor
 - Jenkins with preinstalled plugins
 - Monorepo architecture of the micro services
 
-### How to use the pipeline
-
-The pipeline has been developed for Jenkins. A customized Jenkins image can be build from our [Jenkins repository](https://github.com/cxcloud/jenkins). More detailed instructions below.
+### Configure the services for the pipeline
 
 The Pipeline requires that the development strategy uses a monorepo in order to deploy all services. The directory structure for the monorepo should look like:
 
@@ -120,3 +118,15 @@ deployment:
 ```
 
 ## Jenkins
+
+The pipeline has been developed for Jenkins. A customized Jenkins image can be build from our [Jenkins repository](https://github.com/cxcloud/jenkins).
+
+The docker image is tailored for Kubernetes and all required plugins will be preinstalled in the Docker image. The Docker pod itself will not run the CI/CD pipeline but a dependency worker will be launched when needed and perform all the steps for the pipeline. The worker will be terminated after the jobs is finished. Several workers can run at the same time as long as the underlying infra can handle the load.
+
+The Jenkins configuration and installation is in detail explained on the [Jenkins repository](https://github.com/cxcloud/jenkins).
+
+## CI/CD Pipeline
+
+{% hint style="info" %}
+There will be soon a working example of the pipeline for our demo app
+{% endhint %}
