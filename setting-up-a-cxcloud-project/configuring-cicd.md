@@ -127,6 +127,56 @@ The Jenkins configuration and installation is in detail explained on the [Jenkin
 
 ## CI/CD Pipeline
 
-{% hint style="info" %}
-There will be soon a working example of the pipeline for our demo app
-{% endhint %}
+A working example of the CI/CD pipeline is in the CX Cloud demo application, [cxcloud-monorepo-angular](https://github.com/cxcloud/cxcloud-monorepo-angular).
+
+### Jenkinsfile structure
+
+The [Jenkinsfile](https://github.com/cxcloud/cxcloud-monorepo-angular/blob/master/Jenkinsfile) structure for the CX Cloud demo explained here is a guideline and should be modified depending on technologies and deployment strategies used. The important part is that the Jenkinsfile should be configured as a multibranch pipeline in Jenkins and that there are different actions specified e.g. for normal branches, pull requests and base branch.
+
+#### Variables
+
+The pipeline starts with defining the variables for all environments, DEV/TEST (pull requests), staging (base branch, master) and production (git tag).
+
+The first stage in the pipeline, `populate variables` will set the values for many of the variables that has to be calculated while the pipeline is running. E.g. some values for pull requests can only be populated in case the job execution is an actual pull request.
+
+#### Code Quality
+
+The following stage, `run tests` will run the tests. The pipeline will stop in case any of the tests fails. When we work in a branch all tests will run for all projects. However, when a pull requests is created, only tests for modified projects will be executed. When deploying a release tag, none of the tests will run, since all tests had already to pass previously in the base branch.
+
+Stage `SonarQube analysis` will run sonar-scanner and analyse the projects on SonarQube. The pipeline will not check at this stage if the code quality for the projects pass or fail.
+
+Stage `SonarQube quality gate` ensure that all the projects has passed the SonarQube analysis. The pipeline will fail and send notifications in case any of the projects doesn't pass the "quality gate".
+
+#### Create Kubernetes namespace
+
+The pipeline will deploy all of the services into a new dev/test environment or to the staging or production environment. Stage `Create namespace` will create a new kubernetes namespace for the deployment in case it doesn't already exist.
+
+#### Copy namespace secrets
+
+The CX Cloud demo uses the namespace `applications` for storing secrets for the test/dev environments. Stage `Copy namespace secrets to DEV/TEST environment` will copy the secrets from the application namespace into the test/dev environments.
+
+Secrets will only be copied for pull requests. Secrets for other environments (staging and production) has to be created independently of the pipeline.
+
+#### Deploy projects
+
+Stage `Deploy projects` will use the cxcloud command line tool, [cxcloud-cli](https://github.com/cxcloud/cxcloud-cli) to deploy the projects. The command will create docker images, upload them to a private docker registry and deploy the new services into the Kubernetes cluster.
+
+The pipeline will take care of only deploying modified projects unless it's to a new namespace. Also deployments to staging and production will deploy all of the services.
+
+#### Clean up test environments
+
+It is vital to delete old environment since every pull request will create a new dev/test environment. Stage `Cleanup development environments` will delete all dev/test environment for pull requests that has been closed. This stage will only be executed in case any new code will be pushed to the base branch, master.
+
+#### Post actions
+
+The post actions will always run in the end of job. The pipeline for the CX Cloud demo will always notify Flowdock if the execution succeeded or failed. The notification will contain details about the url to the running environment, GitHub url, Jenkins execution url and git commit messages.
+
+The post section can easily be modified to send notifications to other destinations like Slack.
+
+In case the job fails, the post action will delete the namespace if it was created during the same execution.
+
+### Example
+
+Below is a Jenkins screenshot of a deployment to staging for the [CX Cloud demo application](https://github.com/cxcloud/cxcloud-monorepo-angular).
+
+![Deployment to Staging](../.gitbook/assets/deploy-to-staging.png)
