@@ -7,4 +7,4 @@ Great, you have now [prepared your environment and configured the tools needed](
 3. [Generating a frontend](generating-a-frontend.md)
 4. [Routing manifest](generating-a-frontend.md)
 5. [Configuring CI/CD pipeline](configuring-cicd.md)
-
+6. [Configuring Data Engine 1.0 (logging)](data-engine.md)
