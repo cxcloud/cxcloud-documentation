@@ -11,6 +11,7 @@
   * [Generating a Frontend Demo](setting-up-a-cxcloud-project/generating-a-frontend.md)
   * [Routing Manifest](setting-up-a-cxcloud-project/routing-manifest.md)
   * [Configuring CI/CD pipeline](setting-up-a-cxcloud-project/configuring-cicd.md)
+  * [Configuring Data Engine 1.0 (logging)](setting-up-a-cxcloud-project/data-engine.md)
 * [Architecture](architecture/README.md)
   * [Overview](architecture/architecture-overview.md)
   * [How to use CX Cloud](architecture/how_to_use.md)
