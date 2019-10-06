@@ -1,16 +1,29 @@
-# Git Repository Conventions
+# Git Development Strategy
 
-<!-- While CX Cloud CLI generates the project and infrastructure code for you, you need to create the repositories on Github \(or the Git host of your choice eg. Bitbucket\).
+The development strategy required to use a "monorepo" in order to deploy all services using CI/CD pipeline. The repository contains multiple packages (microservices) that can but do not have to be related.
 
-For example, if you want to create a simple search API, create a repository on Github named `service-search`. It is recommended to follow the following conventions when naming repositories:
+## Project structure
 
-* Infrastructure code: `infra`
-* Microservices and API: `service-NAME` \(eg. `service-content`\)
-* Serverless functions: `function-NAME` \(eg. `function-emails`\)
-* Frontend/UI code: `ui-NAME` \(eg. `ui-webshop`\)
+The file structure for the monorepo should look like:
 
-## What's Next?
+```console
+my-monorepo
+├── packages
+|   ├── package 1
+|   |   ├── .cxcloud.yaml
+|   |   └── ...
+|   ├── package 2
+|   |   ├── .cxcloud.yaml
+|   |   └── ...
+|   └── package n
+|       ├── .cxcloud.yaml
+|       └── ...
+├── .cxcloud.yaml
+└── ...
+```
 
-Now that you have your environment ready, it's time for bootstrapping the infrastructure on AWS. -->
+Every microservice folder should include `.cxcloud.yaml` file with the configuration for Kubernetes.
 
-TBA
+There is no naming convention for the packages, but it is recommended to add a prefix to the microservice such as `"package-"` or `"service-"`.
+
+In order to simplify and optimize the workflow around development with the multi-package repository, the managing tool such as [Lerna](https://lerna.js.org/) can be in use.
