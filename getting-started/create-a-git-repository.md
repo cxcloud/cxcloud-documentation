@@ -1,6 +1,6 @@
 # Git Repository Conventions
 
-While CX Cloud CLI generates the project and infrastructure code for you, you need to create the repositories on Github \(or the Git host of your choice eg. Bitbucket\).
+<!-- While CX Cloud CLI generates the project and infrastructure code for you, you need to create the repositories on Github \(or the Git host of your choice eg. Bitbucket\).
 
 For example, if you want to create a simple search API, create a repository on Github named `service-search`. It is recommended to follow the following conventions when naming repositories:
 
@@ -11,5 +11,6 @@ For example, if you want to create a simple search API, create a repository on G
 
 ## What's Next?
 
-Now that you have your environment ready, it's time for bootstrapping the infrastructure on AWS.
+Now that you have your environment ready, it's time for bootstrapping the infrastructure on AWS. -->
 
+TBA

@@ -4,11 +4,11 @@ Welcome to CX Cloud. This site will help you through the journey of setting up a
 
 ## What is CX Cloud?
 
-CX Cloud is an idea for creating micro-services based architecture on AWS Cloud. This project is created and maintained by [Tieto CEM](https://www.tieto.com/cem) unit. We use this idea, accelerators, architecture and 3rd party tools \(e.g. commercetools, Algolia, Contentful\) for creating high quality online services for our customers.
+CX Cloud is an idea for creating microservices based architecture on AWS Cloud. This project is created and maintained by [Tieto CEM](https://www.tieto.com/cem) unit. We use this idea, accelerators, architecture and 3rd party tools \(e.g. commercetools, Algolia, Contentful\) for creating high quality online services for our customers.
 
-For additional information, see CX Cloud [architecture](architecture/) and [implementation scenarios](architecture/how_to_use.md). Check also our [Change log](architecture/changelog.md) for quarterly summaries of the most important changes and improvements.
+For additional information, see CX Cloud [architecture](architecture/architecture-overview.md) and [implementation scenarios](architecture/how_to_use.md). Check also our [Changelog](architecture/changelog.md) for quarterly summaries of the most important changes and improvements.
 
-And although our CX Cloud CLI is built for AWS, there is no deep dependency to AWS in CX Cloud in general. You are most welcomed to run CX Cloud with MS Azure or Google Cloud as well.
+And although our CX Cloud CLI is built for AWS, there is no deep dependency on AWS in CX Cloud in general. You are most welcomed to run CX Cloud with MS Azure or Google Cloud as well.
 
 ## Getting Started
 
@@ -17,15 +17,14 @@ For getting started, check out the [Getting Started](getting-started/) guide. Af
 ## Online demo
 
 Front-end: [https://demo.cxcloud.com/](https://demo.cxcloud.com/)  
-Content API: [https://demo.cxcloud.com/api/content/v1/api-docs/](https://demo.cxcloud.com/api/content/v1/api-docs/) ·   
-Search API: [https://demo.cxcloud.com/api/search/v1/api-docs/](https://demo.cxcloud.com/api/search/v1/api-docs/) ·   
+Content API: [https://demo.cxcloud.com/api/content/v1/api-docs/](https://demo.cxcloud.com/api/content/v1/api-docs/) ·  
+Search API: [https://demo.cxcloud.com/api/search/v1/api-docs/](https://demo.cxcloud.com/api/search/v1/api-docs/) ·  
 Commerce API: [https://demo.cxcloud.com/api/commerce/v1/api-docs/](https://demo.cxcloud.com/api/commerce/v1/api-docs/)
 
 ## Source code
 
-CX Cloud components are available at [GitHub](https://github.com/cxcloud). The online demo is created by running the CX Cloud CLI with default settings. The CLI generated source code for the demo is also available at [GitHub](https://github.com/cxcloud-demos).
+CX Cloud components and demo infra and services are available at [GitHub](https://github.com/cxcloud).
 
 ## License
 
 CX Cloud and its components are released under the MIT license.
-

@@ -2,14 +2,14 @@
 
 ## Install Git client
 
-Currently, our Cli only supports GitHub as a versioning system. Once you have installed Git client of your preference, make sure to configure global `username` and `email` properties with values from your GitHub account like this:
+Currently, our CLI only supports GitHub as a versioning system. Once you have installed Git client of your preference, make sure to configure global `username` and `email` properties with values from your GitHub account like this:
 
 ```bash
 git config --global user.name "username"
 git config --global user.email "example@email.com"
 ```
 
-## Install and Configure the AWS Cli tools
+## Install and Configure the AWS CLI tools
 
 You naturally need an AWS account. For quick testing, You can create your own [AWS Free Tier account](https://aws.amazon.com/free/). Then install the AWS Cli tools using [this guide](https://docs.aws.amazon.com/cli/latest/userguide/installing.html) and configure a profile:
 
@@ -17,9 +17,9 @@ You naturally need an AWS account. For quick testing, You can create your own [A
 $ aws configure --profile myproject
 ```
 
-Check [this guide](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html) for more information on configuring AWS Cli.
+Check [this guide](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html) for more information on configuring AWS CLI.
 
-Export your AWS profile to an environment variable. This variable is used by CXCloud tools to interact with your AWS account:
+Export your AWS profile to an environment variable. This variable is used by CX Cloud tools to interact with your AWS account:
 
 ```bash
 $ export AWS_PROFILE=myproject
@@ -35,7 +35,7 @@ Before you start, you need to have Kubernetes and it's tools installed on your c
 $ brew install kubernetes-cli
 ```
 
-CXCloud cli uses Kops to create and configure your Kubernetes cluster. You can install it on your Mac using `homebrew`:
+CXCloud CLI uses Kops to create and configure your Kubernetes cluster. You can install it on your Mac using `homebrew`:
 
 ```bash
 $ brew update && brew install kops
@@ -82,4 +82,3 @@ Once you have installed Node, you can confirm that NPM is working using `npm --v
 ## Install Docker
 
 To be able to compose a deployable image you have to install Docker. Head over to [this page](https://docs.docker.com/install/#supported-platforms) and get the Docker for your system. You'll need to create a Docker account as well.
-
