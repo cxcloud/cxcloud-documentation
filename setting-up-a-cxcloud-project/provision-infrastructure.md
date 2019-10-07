@@ -6,13 +6,27 @@ The CX Cloud demo setup will install the infra with Kubernetes, running on AWS. 
 
 ## Getting stated with CX Cloud Demo
 
+{% hint style="warning" %}
+Windows is not supported. You can only provision the infrastructure using a Unix based OS. Eg. macOS or Linux.
+{% endhint %}
+
+Make sure you have [installed all the requirements](../getting-started/prepare-your-environment.md) on your computer.
+
 ### Installation steps
 
 There are few steps that has to be done in order to install the infrastructure. Follow the instructions from the following steps:
 
-1) [Provision the infra](https://github.com/cxcloud/demo-cxcloud-k8s/blob/master/terraform/README.md).
-2) [Install OpenVPN](https://github.com/cxcloud/demo-cxcloud-k8s/blob/master/openvpn-ansible/README.md) in order to access services in the private subnets on AWS.
-3) [Install Kubernetes](https://github.com/cxcloud/demo-cxcloud-k8s/blob/master/kubernetes/README.md).
+1. [Provision the infra](https://github.com/cxcloud/demo-cxcloud-k8s/blob/master/terraform/README.md).
+2. [Install OpenVPN](https://github.com/cxcloud/demo-cxcloud-k8s/blob/master/openvpn-ansible/README.md) in order to access services in the private subnets on AWS.
+3. [Install Kubernetes](https://github.com/cxcloud/demo-cxcloud-k8s/blob/master/kubernetes/README.md).
+
+{% hint style="info" %}
+If you have enabled Multi-Factor Authentication on your AWS account or you are assuming another role which does, you might be asked to enter your MFA token \(using your Authenticator app\) in this step.
+{% endhint %}
+
+{% hint style="info" %}
+AWS credentials has to be [configured](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html) in order to provision the infra for CX Cloud demo. It is possible to provision with preset API keys as environment variables. This is useful for example when running [AWS Vault](https://github.com/99designs/aws-vault) for storing the secrets in your operating system's secure keystore.
+{% endhint %}
 
 ### Configuring a domain for your online service
 
