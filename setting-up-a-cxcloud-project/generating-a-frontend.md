@@ -4,10 +4,10 @@ Cool, You now have infra and core services up and running! For front-end, CX Clo
 
 ## Front-end generation
 
-You start by creating a new package repository for the service in git monorepo, named for example `frontend-demo`. Then navigate to this folder and start front-end demo generation by running the following commands:
+You start by creating a new package repository for the service in git monorepo, named for example `package-frontend`. Then navigate to this folder and start front-end demo generation by running the following commands:
 
 ```bash
-$ cd frontend-demo
+$ cd package-frontend
 $ cxcloud generate demo
 ```
 

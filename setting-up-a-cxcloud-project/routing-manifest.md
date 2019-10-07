@@ -1,63 +1,57 @@
 # Routing Manifest
 
-Routing manifest is needed to make multiple services public on the same domain.
+Routing manifest is needed to make multiple services available in the same domain.
 
 For example, let's assume you have created a front-end and 3 microservices and you want them all to be available on the same domain:
 
-* `newsite.example.com/` should load `frontend` service
-* `newsite.example.com/api/service-commerce/` should load `service-commerce` service
-* `newsite.example.com/api/service-content` should load `service-content` service
-* `newsite.example.com/api/service-search` should load `service-search` service
+- `newsite.example.com/` should load `frontend` service
+- `newsite.example.com/api/service-commerce/` should load `package-commerce` service
+- `newsite.example.com/api/service-content` should load `package-content` service
+- `newsite.example.com/api/service-search` should load `package-search` service
 
 You have to create a routing manifest to achieve this. \(In addition to pointing the domain in question to your Kubernetes cluster during [infra generation](generating-infrastructure.md#configuring-a-domain-for-your-online-service)\)
 
 ## Create manifest
 
-In your `infra` directory, create a directory named `routing` and place a file called `.cxcloud.yaml` inside it:
+Add `.cxcloud.yaml` to the root folder of your monorepo.
 
 {% code-tabs %}
-{% code-tabs-item title="infra/routing/.cxcloud.yaml" %}
+{% code-tabs-item title="my-monorepo/.cxcloud.yaml" %}
+
 ```yaml
+namespace: $GIT_BRANCH
 routing:
-  domain: newsite.example.com
-  ssl: true
+  domain: $GIT_BRANCH.dev.newsite.example.com
+  ingressClass: $INGRESS_CLASS
+  lbCert: $LB_CERT
+  scheme: $SCHEME
+  ssl: false
   rules:
     - path: /api/service-commerce
-      serviceName: service-commerce
+      serviceName: package-commerce
       servicePort: 4003
     - path: /api/service-content
-      serviceName: service-content
+      serviceName: package-content
       servicePort: 4003
     - path: /api/service-search
-      serviceName: service-search
+      serviceName: package-search
       servicePort: 4003
     - path: /
-      serviceName: frontend
+      serviceName: package-frontend
       servicePort: 80
 ```
+
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-Please note that `path` should match the API prefix you defined when generating the service with CLI. By default, during service generation CX Cloud CLI suggests service name as the API prefix. 
+Please note that `path` should match the API prefix you defined when generating the service with CLI. By default, during service generation, CX Cloud CLI suggests service name as the API prefix.
 
-## Deployment
-
-Now navigate to the `routing` directory and run `cxcloud deploy`:
-
-```bash
-$ cd infra/routing
-$ cxcloud deploy
-```
-
-This command will "deploy" your routing manifest to your Kubernetes cluster. It shoudn't take more than a few seconds for the changes to be applied. 
+After committing changes to Git repository, CI/CD pipeline will deploy changes automatically.
 
 ## Test
 
-To test for example commerce service,  `newsite.example.com/api/service-commerce/` should return {"health":"OK"} and `newsite.example.com/api/service-commerce/v1/api-docs` should present you Swagger. 
+To test for example commerce service, `newsite.example.com/api/service-commerce/` should return {"health":"OK"} and `newsite.example.com/api/service-commerce/v1/api-docs` should present to you Swagger documentation.
 
-{% hint style="info" %}
+<!--{% hint style="info" %}
 If you are interested to know what does this command do, please read the [manual routing setup guide](../guides/manually-defining-routing.md).
-{% endhint %}
-
-
-
+{% endhint %}-->
