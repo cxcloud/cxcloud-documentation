@@ -22,8 +22,6 @@
   * [Customizing core services and demo front-end](best-practices/customize-core-demo.md)
   * [Creating and deploying custom front-end](best-practices/create-custom-frontend.md)
   * [Managing your infra and Kubernetes](best-practices/how-to-run-infra.md)
-  * [What is missing from CX Cloud?](best-practices/what-is-missing.md)
-  * [How to participate?](best-practices/how-to-participate.md)
   * [Multivendor coordination](best-practices/multivendor-coordination.md)
 
 ## Guides
@@ -44,4 +42,9 @@
 ## NPM Modules
 
 * [Process Engine](npm-modules/process-engine.md)
+
+## Further development
+
+* [What is missing from CX Cloud?](further-development/what-is-missing.md)
+* [How to participate?](further-development/how-to-participate.md)
 
