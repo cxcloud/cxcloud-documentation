@@ -134,7 +134,7 @@ In case of `commerce` service and default settings, you should be able to see Sw
 
 ## Deployment
 
-CI/CD pipeline handles the deployment of microservices within the monorepo. Therefore CI/CD pipeline should be set up and configured. More information about CI/CD pipeline configuration and configuration of monorepo for deployment can be read [here](configuring-cicd.md).
+CI/CD pipeline handles the deployment of microservices within the monorepo. Therefore, CI/CD pipeline should be set up and configured prior deployment of the services. More information about CI/CD pipeline configuration and monorepo settings for deployment can be found [here](configuring-cicd.md).
 
 {% hint style="info" %}
 When applications is deployed, all sensitive information such as keys, secrets or tokens are stored as Kubernetes secret object in the intended namespace. You can find an example of using Kubernetes' secrets to configure your project [here](../guides/storing-secrets-in-kubernetes.md#example-storing-and-using-secrets-in-nodejs-and-node-config-module).

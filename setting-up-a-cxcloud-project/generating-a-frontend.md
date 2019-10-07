@@ -4,10 +4,9 @@ Cool, You now have infra and core services up and running! For front-end, CX Clo
 
 ## Front-end generation
 
-You start by creating a new repository for the service in Github, named for example `frontend-demo`. Then clone it to your project folder and start front-end demo generation by running the following commands:
+You start by creating a new package repository for the service in git monorepo, named for example `frontend-demo`. Then navigate to this folder and start front-end demo generation by running the following commands:
 
 ```bash
-$ git clone git@github.com:myorganization/frontend-demo.git
 $ cd frontend-demo
 $ cxcloud generate demo
 ```
@@ -20,25 +19,25 @@ By default, the generated demo uses our live test API including end points with 
 
 In order to enable the frontend demo to work with the APIs you have generated and deployed, configuration files need to be modified. Configuration files can be found in this project directory `/src/environments/`.
 
-To connect with new APIs, change the value of `apiUrl` for each service \(notice that environments files should be modified depending on the used environment\). Assuming your CX Cloud URL is `newsite.example.com`, your environment.development.ts should look like this:
+To connect with new APIs, change the value of `apiUrl` for each service \(notice that environments files should be modified depending on the used environment\). If frontend and APIs running on the same domain, it is enough to use only relative paths to the APIs:
 
-```text
+```javascript
 export const environment = {
   production: false,
-  siteName: 'CXCloud DEV',
+  siteName: "CXCloud DEV",
   commerce: {
-    apiUrl: 'https://newsite.example.com/api/service-commerce/v1',
-    indexName: 'dev_COMMERCE'
+    apiUrl: "/api/service-commerce/v1",
+    indexName: "dev_COMMERCE"
   },
   content: {
-    apiUrl: 'https://newsite.example.com/api/service-content/v1',
-    indexName: 'dev_CONTENT'
+    apiUrl: "/api/service-content/v1",
+    indexName: "dev_CONTENT"
   },
   auth: {
-    apiUrl: 'https://newsite.example.com/api/service-auth/v1'
+    apiUrl: "/api/service-auth/v1"
   },
   search: {
-    apiUrl: 'https://newsite.example.com/api/service-search/v1'
+    apiUrl: "/api/service-search/v1"
   }
 };
 ```
@@ -55,11 +54,7 @@ By default, your demo will be available at `http://localhost:4200/` but check th
 
 ## Deployment
 
-Run the following command to deploy your frontend demo:
-
-```bash
-$ cxcloud deploy
-```
+CI/CD pipeline handles the deployment of microservices within the monorepo. Therefore, CI/CD pipeline should be set up and configured prior deployment of the services. More information about CI/CD pipeline configuration and monorepo settings for deployment can be found [here](configuring-cicd.md).
 
 ## Routing
 
@@ -67,11 +62,11 @@ After deployment, you can make your service available to the world using a [Rout
 
 ## Commit
 
-As a final step, commit changes to your Github repository by running the following commands:
+As a final step, add git remote origin corresponding to your monorepo and commit changes to your Github repository by running the following commands:
 
 ```bash
+$ git remote add origin https://github.com/user/my-monorepo.git
 $ git add .
 $ git commit -m "initial commit"
 $ git push
 ```
-
