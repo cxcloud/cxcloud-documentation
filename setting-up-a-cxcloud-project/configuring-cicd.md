@@ -127,11 +127,11 @@ The Jenkins configuration and installation is in detail explained on the [Jenkin
 
 ## CI/CD Pipeline
 
-A working example of the CI/CD pipeline is in the CX Cloud demo application, [cxcloud-monorepo-angular](https://github.com/cxcloud/cxcloud-monorepo-angular).
+A working example of the CI/CD pipeline is in the CX Cloud demo application, [cxcloud-monorepo-angular](https://github.com/cxcloud/demo-cxcloud-monorepo-angular).
 
 ### Jenkinsfile structure
 
-The [Jenkinsfile](https://github.com/cxcloud/cxcloud-monorepo-angular/blob/master/Jenkinsfile) structure for the CX Cloud demo explained here is a guideline and should be modified depending on technologies and deployment strategies used. The important part is that the Jenkinsfile should be configured as a multibranch pipeline in Jenkins and that there are different actions specified e.g. for normal branches, pull requests and base branch.
+The [Jenkinsfile](https://github.com/cxcloud/demo-cxcloud-monorepo-angular/blob/master/Jenkinsfile) structure for the CX Cloud demo explained here is a guideline and should be modified depending on technologies and deployment strategies used. The important part is that the Jenkinsfile should be configured as a multibranch pipeline in Jenkins and that there are different actions specified e.g. for normal branches, pull requests and base branch.
 
 #### Variables
 
@@ -177,6 +177,6 @@ In case the job fails, the post action will delete the namespace if it was creat
 
 ### Example
 
-Below is a Jenkins screenshot of a deployment to staging for the [CX Cloud demo application](https://github.com/cxcloud/cxcloud-monorepo-angular).
+Below is a Jenkins screenshot of a deployment to staging for the [CX Cloud demo application](https://github.com/cxcloud/demo-cxcloud-monorepo-angular).
 
 ![Deployment to Staging](../.gitbook/assets/deploy-to-staging.png)
