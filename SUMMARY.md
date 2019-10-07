@@ -29,17 +29,17 @@
 ## Guides
 
 * [Getting access to an already running Infrastructure](guides/getting-access-to-an-already-running-infrastructure.md)
-* [Deploying Custom Services](guides/deploying-services.md)
+<!-- * [Deploying Custom Services](guides/deploying-services.md) -->
 * [Deleting deployments](guides/deleting-deployments.md)
-* [Frontend Accelerators](guides/frontend-accelerators.md)
+<!-- * [Frontend Accelerators](guides/frontend-accelerators.md) -->
 * [Storing Secrets in Kubernetes](guides/storing-secrets-in-kubernetes.md)
-* [Domains for Kubernetes](guides/domains-for-kubernetes.md)
-* [Manually Deploying Services](guides/manually-deploying-services.md)
-* [Manually Defining Routing](guides/manually-defining-routing.md)
+<!-- * [Domains for Kubernetes](guides/domains-for-kubernetes.md) -->
+<!-- * [Manually Deploying Services](guides/manually-deploying-services.md) -->
+<!-- * [Manually Defining Routing](guides/manually-defining-routing.md) -->
 
-## Troubleshooting
+<!-- ## Troubleshooting -->
 
-* [AWS Multi Factor Authentication Issues](troubleshooting/aws-multi-factor-authentication-issues.md)
+<!-- * [AWS Multi Factor Authentication Issues](troubleshooting/aws-multi-factor-authentication-issues.md) -->
 
 ## NPM Modules
 

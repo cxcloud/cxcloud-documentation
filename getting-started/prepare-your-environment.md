@@ -82,3 +82,13 @@ Once you have installed Node, you can confirm that NPM is working using `npm --v
 ## Install Docker
 
 To be able to compose a deployable image you have to install Docker. Head over to [this page](https://docs.docker.com/install/#supported-platforms) and get the Docker for your system. You'll need to create a Docker account as well.
+
+## Install Ansible
+
+To be able to access the private services in Kubernetes an VPN solution is needed. Ansible is used to install OpenVPN for the CX Cloud Demo.
+
+[Install Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html) on your machine. On Mac this can be done using `homebrew`:
+
+```text
+$ brew install ansible
+```
