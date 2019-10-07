@@ -25,23 +25,19 @@ The assumed starting state is that you have access to manage "example.com" DNS. 
 * `newsite.example.com/api/service-content/v1/` \(content service API\)
 * `newsite.example.com/api/service-search/v1/` \(search service API\)
 * `newsite.example.com/api/service-auth/v1/` \(auth service API\)
-* `admin.newsite.example.com` \("admin panel"\)
-* `developer.newsite.examle.com` \(developer portal\)
+* `*.dev.newsite.example.com` \(Pull Request environments\)
 
 We have used this assumption in our documentation and configuration examples. Most of these configurations are done with a routing manifest later and at this stage we only need to point the domain to Kubernetes load balancer like this:
 
-* First figure out what your Load Balancer URL is. The URL is displayed after generating the infrastructure. But you can also find it using:
+* First figure out your Load Balancer\(s\) URL. The URL\(s\) are displayed after generating the infrastructure. But you can also find them using:
 
 ```text
-kubectl get service nginx-ingress-controller -o=jsonpath='{.status.loadBalancer.ingress[0].hostname}'
+kubectl get ingress --all-namespaces
 ```
 
 * Then you have to point your own domain name to this load balancer URL. To do this:
+  * If you manage your domain using AWS' route53 service, update the settings in [terraform.tfvars](example_vars/terraform.tfvars) and re-run the `terraform apply` command in order to update the domain name aliases. Follow the instructions from [Install Kubernetes](https://github.com/cxcloud/demo-cxcloud-k8s/blob/master/kubernetes/README.md).
   * If you manage your domain using a provider that's not AWS, navigate to your domain's management panel and create an `CNAME` record for `newsite.example.com` pointing to the load balancer URL.
     * [GoDaddy guide](https://fi.godaddy.com/help/add-a-cname-record-19236)
     * [Namecheap guide](https://www.namecheap.com/support/knowledgebase/article.aspx/9646/2237/how-can-i-set-up-a-cname-record-for-my-domain)
     * [Name.com guide](https://www.name.com/support/articles/115004895548-Adding-a-CNAME-Record)
-  * If you manage your domain using AWS's route53 service, create an `ALIAS` record for `newsite.example.com` in Route53 pointing to that hostname.
-    * More information on how to create an `ALIAS` record in Route53 on AWS [here](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-to-elb-load-balancer.html)​
-
-If you want all the subdomains under a certain domain or subdomain to be available to you later during service creation, you can also create a `CNAME` or `ALIAS` record for `*.newsite.example.com`
