@@ -40,9 +40,10 @@
 
 * [Process Engine](npm-modules/process-engine.md)
 
-## [Changelog](further-development/changelog.md)
 
 ## Further development
-* [What is missing from CX Cloud?](further-development/what-is-missing.md)
+
+* [Changelog](further-development/changelog.md)
+<!-- * [What is missing from CX Cloud?](further-development/what-is-missing.md)-->
 * [How to participate?](further-development/how-to-participate.md)
 
