@@ -1,6 +1,8 @@
 # Table of contents
 
 * [Welcome to CX Cloud](README.md)
+  * [testing1](README.md)
+    * [testing2](README.md)
 * [Requirements](getting-started/README.md)
   * [Prepare Your Environment](getting-started/prepare-your-environment.md)
   * [Install CX Cloud CLI](getting-started/install-cxcloud-cli.md)
