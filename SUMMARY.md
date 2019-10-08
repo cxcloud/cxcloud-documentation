@@ -1,6 +1,9 @@
 # Table of contents
 
 * [Welcome to CX Cloud](README.md)
+  * [Implementaton Scenarios](architecture/how_to_use.md)
+  * [Architecture Overview](architecture/architecture-overview.md)
+  
 * [Requirements](getting-started/README.md)
   * [Prepare Your Environment](getting-started/prepare-your-environment.md)
   * [Install CX Cloud CLI](getting-started/install-cxcloud-cli.md)
@@ -12,9 +15,9 @@
   * [Routing Manifest](setting-up-a-cxcloud-project/routing-manifest.md)
   * [Configuring CI/CD pipeline](setting-up-a-cxcloud-project/configuring-cicd.md)
   * [Configuring Data Engine 1.0 (logging)](setting-up-a-cxcloud-project/data-engine.md)
-* [Architecture](architecture/README.md)
-  * [Overview](architecture/architecture-overview.md)
-  * [How to use CX Cloud](architecture/how_to_use.md)
+<!--  [Architecture](architecture/README.md) -->
+ 
+ 
 <!-- * [Best practices](best-practices/README.md) -->
 <!--  * [Customizing core services and demo front-end](best-practices/customize-core-demo.md)-->
 <!--  * [Creating and deploying custom front-end](best-practices/create-custom-frontend.md)-->
