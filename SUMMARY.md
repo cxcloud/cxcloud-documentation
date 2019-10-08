@@ -3,7 +3,7 @@
 * [Welcome to CX Cloud](README.md)
 * [Implementaton Scenarios](architecture/how_to_use.md)
 * [Architecture Overview](architecture/architecture-overview.md)
-* [Architecture Overview](architecture/architecture-overview.md)
+  * [Architecture Overview](architecture/architecture-overview.md)
 
 
 
