@@ -8,7 +8,7 @@ CX Cloud is an idea for creating scalable microservices based architecture on AW
 
 CX Cloud is not a ready-made product, but more of a collection of accelerators and best practices to help project teams get up and running more quickly. In our approach, we emphasize the optimal balance between centralized governance and team level autonomy. Targeting to enable coprorate-wide usage of cloud native technologies for optimal flexibility and solution specific needs, in addition to long-term sustainability and optimal TCO.   
 
-For additional information, see CX Cloud [architecture](introduction/architecture-overview.md) and [implementation scenarios](introduction/how_to_use.md). Check also our [Changelog](introduction/changelog.md) for quarterly summaries of the most important changes and improvements.
+For additional information, see CX Cloud [implementation scenarios](introduction/how_to_use.md) and [architecture](introduction/architecture-overview.md). Check also our [Changelog](introduction/changelog.md) for quarterly summaries of the most important changes and improvements.
 
 And although our CX Cloud CLI is built for AWS, there is no deep dependency on AWS in CX Cloud in general. You are most welcomed to run CX Cloud with MS Azure or Google Cloud as well.
 
