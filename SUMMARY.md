@@ -1,6 +1,6 @@
 # Table of contents
 
-##
+## Welcome
 
 * [Welcome to CX Cloud](README.md)
   * [Implementaton Scenarios](architecture/how_to_use.md)
