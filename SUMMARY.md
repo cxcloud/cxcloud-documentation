@@ -33,7 +33,7 @@
 * [Deleting deployments](guides/deleting-deployments.md)
 <!-- * [Frontend Accelerators](guides/frontend-accelerators.md) -->
 * [Storing Secrets in Kubernetes](guides/storing-secrets-in-kubernetes.md)
-  * [Testing groups](guides/storing-secrets-in-kubernetes.md)
+
 <!-- * [Domains for Kubernetes](guides/domains-for-kubernetes.md) -->
 <!-- * [Manually Deploying Services](guides/manually-deploying-services.md) -->
 <!-- * [Manually Defining Routing](guides/manually-defining-routing.md) -->
