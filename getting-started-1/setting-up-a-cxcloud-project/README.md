@@ -1,6 +1,6 @@
 # Setting up a CX Cloud Project
 
-Great, you have now [prepared your environment and configured the tools needed](). So the next phase is to set up your own CX Cloud project following these steps:
+Great, you have now [prepared your environment and configured the tools needed](../getting-started/). So the next phase is to set up your own CX Cloud project following these steps:
 
 1. [Provision Infrastructure](provision-infrastructure.md)
 2. [Generating core services](generating-core-services.md)

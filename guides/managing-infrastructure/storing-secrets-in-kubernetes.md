@@ -1,4 +1,4 @@
-# Storing Secrets in Kubernetes
+# Managing Secrets
 
 Kubernetes has the capability to store secrets and make them available to your services. You can store different secrets and use them through your CX Cloud deployment environment variables. To store a secret in `applications` namespace \(it's the default namespace for CX Cloud apps\) run the following command:
 

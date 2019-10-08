@@ -10,7 +10,7 @@ The CX Cloud demo setup will install the infra with Kubernetes, running on AWS. 
 Windows is not supported. You can only provision the infrastructure using a Unix based OS. Eg. macOS or Linux.
 {% endhint %}
 
-Make sure you have [installed all the requirements]() on your computer.
+Make sure you have [installed all the requirements](../getting-started/prepare-your-environment.md) on your computer.
 
 ### Installation steps
 

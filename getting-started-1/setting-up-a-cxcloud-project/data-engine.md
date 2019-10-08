@@ -1,4 +1,4 @@
-# Configuring Data Engine 1.0 \(logging\)
+# Configuring Data Engine
 
 The CX Cloud Kubernetes cluster provisioned with kops doesn't come out of the box with centralized logging for the Pods or application. Hence, the data engine 1.0 mostly focus on logging but with a data lake possibility.
 

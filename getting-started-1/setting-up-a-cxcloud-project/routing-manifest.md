@@ -1,4 +1,4 @@
-# Routing Manifest
+# Configuring Routing Manifest
 
 Routing manifest is needed to make multiple services available in the same domain.
 

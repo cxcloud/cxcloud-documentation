@@ -1,4 +1,4 @@
-# Prepare Your Environment
+# Prepare Local Environment
 
 ## Install Git client
 

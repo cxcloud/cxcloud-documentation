@@ -1,4 +1,4 @@
-# Configuring CI/CD pipeline
+# Configuring CI/CD Pipeline
 
 When using CX Cloud CLI, it is fairly easy for one to both create and then deploy CX Cloud infra, selected services and demo frontends to AWS. This is typically enough for testing and exploration needs. We also have [tools and guidelines](https://github.com/cxcloud/cxcloud-documentation/tree/7585ecd6d3f3a8c408f0919987af56c53decff01/best-practices/how-to-run-infra.md) for DevOps engineer to manually manage your environment.
 

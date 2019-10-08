@@ -1,4 +1,4 @@
-# Getting access to an already running Infrastructure
+# Getting Access To An Already Running Infrastructure
 
 In most real world cases, you haven't probably generated and set up the Kubernetes infrastructure yourself. But you might need to access it to deploy services or change settings.
 

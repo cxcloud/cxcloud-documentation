@@ -1,4 +1,4 @@
-# Implementaton Scenarios
+# Why CX Cloud?
 
 CX Cloud is a solution accelerator for cloud native architecture. It is based on API-first approach, microservices and cloud infrastructure providing fast time-to-market, agility in development and automated scalability. Example solutions include web shops, customer self-service solutions, content rich web sites and API-layer for mobile apps and other clients. Solution implementation can also be part of "decomposing the monolith" program where your customer targets to create new online solutions with modern omni-channel architecture while at the same time reducing the scope of legacy platforms.
 

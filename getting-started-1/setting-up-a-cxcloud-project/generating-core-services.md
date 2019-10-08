@@ -4,7 +4,7 @@ CX Cloud provides selected ready-made \(Node.js\) core services \(e.g. commerce,
 
 ## Requirements
 
-It is required to use a monorepo structure in order to deploy all microservices with CI/CD pipeline. More information about monorepo development strategy can be found [here]().
+It is required to use a monorepo structure in order to deploy all microservices with CI/CD pipeline. More information about monorepo development strategy can be found [here](../../guides/application-development/create-a-git-repository.md).
 
 ## Service generation
 
@@ -133,7 +133,7 @@ In case of `commerce` service and default settings, you should be able to see Sw
 CI/CD pipeline handles the deployment of microservices within the monorepo. Therefore, CI/CD pipeline should be set up and configured prior deployment of the services. More information about CI/CD pipeline configuration and monorepo settings for deployment can be found [here](configuring-cicd.md).
 
 {% hint style="info" %}
-When applications is deployed, all sensitive information such as keys, secrets or tokens are stored as Kubernetes secret object in the intended namespace. You can find an example of using Kubernetes' secrets to configure your project [here](../../guides/storing-secrets-in-kubernetes.md#example-storing-and-using-secrets-in-nodejs-and-node-config-module).
+When applications is deployed, all sensitive information such as keys, secrets or tokens are stored as Kubernetes secret object in the intended namespace. You can find an example of using Kubernetes' secrets to configure your project [here](../../guides/managing-infrastructure/storing-secrets-in-kubernetes.md#example-storing-and-using-secrets-in-nodejs-and-node-config-module).
 {% endhint %}
 
 ## Routing
