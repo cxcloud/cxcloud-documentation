@@ -4,12 +4,6 @@
 * [Implementaton Scenarios](architecture/how_to_use.md)
 * [Architecture Overview](architecture/architecture-overview.md)    
 
-* [Requirements](getting-started/README.md)
-  * [Prepare Your Environment](getting-started/prepare-your-environment.md)
-  * [Install CX Cloud CLI](getting-started/install-cxcloud-cli.md)
-  * [Git Repository Conventions](getting-started/create-a-git-repository.md)
-  
-  
 
 ## Getting Started
 
