@@ -1,8 +1,6 @@
 # Table of contents
 
 * [Welcome to CX Cloud](README.md)
-  * [testing1](README.md)
-    * [testing2](README.md)
 * [Requirements](getting-started/README.md)
   * [Prepare Your Environment](getting-started/prepare-your-environment.md)
   * [Install CX Cloud CLI](getting-started/install-cxcloud-cli.md)
@@ -17,31 +15,35 @@
 * [Architecture](architecture/README.md)
   * [Overview](architecture/architecture-overview.md)
   * [How to use CX Cloud](architecture/how_to_use.md)
-  * [Change log](architecture/changelog.md)
-* [Best practices](best-practices/README.md)
+<!-- * [Best practices](best-practices/README.md) 
   * [Customizing core services and demo front-end](best-practices/customize-core-demo.md)
   * [Creating and deploying custom front-end](best-practices/create-custom-frontend.md)
   * [Managing your infra and Kubernetes](best-practices/how-to-run-infra.md)
-  * [What is missing from CX Cloud?](best-practices/what-is-missing.md)
-  * [How to participate?](best-practices/how-to-participate.md)
-  * [Multivendor coordination](best-practices/multivendor-coordination.md)
+  * [Multivendor coordination](best-practices/multivendor-coordination.md) -->
 
 ## Guides
 
 * [Getting access to an already running Infrastructure](guides/getting-access-to-an-already-running-infrastructure.md)
-* [Deploying Custom Services](guides/deploying-services.md)
+<!-- * [Deploying Custom Services](guides/deploying-services.md) -->
 * [Deleting deployments](guides/deleting-deployments.md)
-* [Frontend Accelerators](guides/frontend-accelerators.md)
+<!-- * [Frontend Accelerators](guides/frontend-accelerators.md) -->
 * [Storing Secrets in Kubernetes](guides/storing-secrets-in-kubernetes.md)
-* [Domains for Kubernetes](guides/domains-for-kubernetes.md)
-* [Manually Deploying Services](guides/manually-deploying-services.md)
-* [Manually Defining Routing](guides/manually-defining-routing.md)
+<!-- * [Domains for Kubernetes](guides/domains-for-kubernetes.md) -->
+<!-- * [Manually Deploying Services](guides/manually-deploying-services.md) -->
+<!-- * [Manually Defining Routing](guides/manually-defining-routing.md) -->
 
-## Troubleshooting
+<!-- ## Troubleshooting -->
 
-* [AWS Multi Factor Authentication Issues](troubleshooting/aws-multi-factor-authentication-issues.md)
+<!-- * [AWS Multi Factor Authentication Issues](troubleshooting/aws-multi-factor-authentication-issues.md) -->
 
 ## NPM Modules
 
 * [Process Engine](npm-modules/process-engine.md)
+
+
+## Further development
+
+* [Changelog](further-development/changelog.md)
+<!-- * [What is missing from CX Cloud?](further-development/what-is-missing.md)-->
+* [How to participate?](further-development/how-to-participate.md)
 
