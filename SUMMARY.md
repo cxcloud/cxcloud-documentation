@@ -1,16 +1,17 @@
 # Table of contents
 
-* Welcome
-  * [Welcome to CX Cloud](README.md)
-  * [Implementaton Scenarios](architecture/how_to_use.md)
-  * [Architecture Overview](architecture/architecture-overview.md)    
+* [Welcome to CX Cloud](README.md)
+* [Implementaton Scenarios](architecture/how_to_use.md)
+* [Architecture Overview](architecture/architecture-overview.md)    
   
-## Getting started  
-
 * [Requirements](getting-started/README.md)
   * [Prepare Your Environment](getting-started/prepare-your-environment.md)
   * [Install CX Cloud CLI](getting-started/install-cxcloud-cli.md)
   * [Git Repository Conventions](getting-started/create-a-git-repository.md)
+
+## Getting Started
+
+
 * [Setting up a CX Cloud Project](setting-up-a-cxcloud-project/README.md)
   * [Provision Infrastructure](setting-up-a-cxcloud-project/provision-infrastructure.md)
   * [Generating Core Services](setting-up-a-cxcloud-project/generating-core-services.md)
