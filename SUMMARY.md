@@ -6,7 +6,6 @@
 * [Architecture Overview](architecture/architecture-overview.md)
 
 
-
 ## Getting Started
 
 * [Requirements](getting-started/README.md)
