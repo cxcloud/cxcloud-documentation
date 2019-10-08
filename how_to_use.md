@@ -1,4 +1,4 @@
-# How to use CX Cloud
+# Implementaton Scenarios
 
 CX Cloud is a solution accelerator for cloud native architecture. It is based on API-first approach, microservices and cloud infrastructure providing fast time-to-market, agility in development and automated scalability. Example solutions include web shops, customer self-service solutions, content rich web sites and API-layer for mobile apps and other clients. Solution implementation can also be part of "decomposing the monolith" program where your customer targets to create new online solutions with modern omni-channel architecture while at the same time reducing the scope of legacy platforms.
 
@@ -6,11 +6,9 @@ It is good to remember that even if CX Cloud provides guidance and accelerators 
 
 In high level, there are three main scenarios for usage.
 
-- A green field project to create a new solution or replace existing solution
-- Use CX Cloud for a "decomposing the monolith" program
-- Add CX Cloud capablities to an existing microservices stack
-
-<!-- [](../.gitbook/assets/cxcloud_github.png) -->
+* A green field project to create a new solution or replace existing solution
+* Use CX Cloud for a "decomposing the monolith" program
+* Add CX Cloud capablities to an existing microservices stack
 
 ## 1. "Greenfield"
 
@@ -29,3 +27,4 @@ In this case, you can make a clean start for your project using [Kubernetes Infr
 In this scenario, there is already a microservices architecture in place, typically including centralized API Gateway, version control, and DevOps pipeline. Your task might be for example to add additional capabilities \(e.g. commerce, content, search, process-engine\) to the existing stack. And in this area, CX Cloud services might come handy.
 
 In this case, you can generate required services or service template using [CX Cloud CLI](https://github.com/cxcloud/cxcloud-cli). More information about generating core services can be found here: [Generating Core Services](https://docs.cxcloud.com/setting-up-a-cxcloud-project/generating-core-services).
+

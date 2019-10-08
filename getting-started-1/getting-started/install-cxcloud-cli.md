@@ -3,7 +3,7 @@
 ## Installing CX Cloud CLI Tools
 
 {% hint style="info" %}
-Before proceeding, make sure you have prepared your local environment as instructed  in [this guide](prepare-your-environment.md).
+Before proceeding, make sure you have prepared your local environment as instructed in [this guide](prepare-your-environment.md).
 {% endhint %}
 
 Install CX Cloud CLI by running the following command:

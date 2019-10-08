@@ -4,12 +4,12 @@ Routing manifest is needed to make multiple services available in the same domai
 
 For example, let's assume you have created a front-end and 3 microservices and you want them all to be available on the same domain:
 
-- `newsite.example.com/` should load `frontend` service
-- `newsite.example.com/api/service-commerce/` should load `package-commerce` service
-- `newsite.example.com/api/service-content` should load `package-content` service
-- `newsite.example.com/api/service-search` should load `package-search` service
+* `newsite.example.com/` should load `frontend` service
+* `newsite.example.com/api/service-commerce/` should load `package-commerce` service
+* `newsite.example.com/api/service-content` should load `package-content` service
+* `newsite.example.com/api/service-search` should load `package-search` service
 
-You have to create a routing manifest to achieve this. \(In addition to pointing the domain in question to your Kubernetes cluster during [infra generation](generating-infrastructure.md#configuring-a-domain-for-your-online-service)\)
+You have to create a routing manifest to achieve this. \(In addition to pointing the domain in question to your Kubernetes cluster during [infra generation](https://github.com/cxcloud/cxcloud-documentation/tree/7585ecd6d3f3a8c408f0919987af56c53decff01/setting-up-a-cxcloud-project/generating-infrastructure.md#configuring-a-domain-for-your-online-service)\)
 
 ## Create manifest
 
@@ -17,7 +17,6 @@ Add `.cxcloud.yaml` to the root folder of your monorepo.
 
 {% code-tabs %}
 {% code-tabs-item title="my-monorepo/.cxcloud.yaml" %}
-
 ```yaml
 namespace: $GIT_BRANCH
 routing:
@@ -40,7 +39,6 @@ routing:
       serviceName: package-frontend
       servicePort: 80
 ```
-
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
@@ -52,6 +50,3 @@ After committing changes to Git repository, CI/CD pipeline will deploy changes a
 
 To test for example commerce service, `newsite.example.com/api/service-commerce/` should return {"health":"OK"} and `newsite.example.com/api/service-commerce/v1/api-docs` should present to you Swagger documentation.
 
-<!--{% hint style="info" %}
-If you are interested to know what does this command do, please read the [manual routing setup guide](../guides/manually-defining-routing.md).
-{% endhint %}-->

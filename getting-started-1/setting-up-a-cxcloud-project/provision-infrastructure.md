@@ -10,7 +10,7 @@ The CX Cloud demo setup will install the infra with Kubernetes, running on AWS. 
 Windows is not supported. You can only provision the infrastructure using a Unix based OS. Eg. macOS or Linux.
 {% endhint %}
 
-Make sure you have [installed all the requirements](../getting-started/prepare-your-environment.md) on your computer.
+Make sure you have [installed all the requirements]() on your computer.
 
 ### Installation steps
 
@@ -50,8 +50,9 @@ kubectl get ingress --all-namespaces
 ```
 
 * Then you have to point your own domain name to this load balancer URL. To do this:
-  * If you manage your domain using AWS' route53 service, update the settings in [terraform.tfvars](example_vars/terraform.tfvars) and re-run the `terraform apply` command in order to update the domain name aliases. Follow the instructions from [Install Kubernetes](https://github.com/cxcloud/demo-cxcloud-k8s/blob/master/kubernetes/README.md).
+  * If you manage your domain using AWS' route53 service, update the settings in [terraform.tfvars](https://github.com/cxcloud/cxcloud-documentation/tree/7585ecd6d3f3a8c408f0919987af56c53decff01/setting-up-a-cxcloud-project/example_vars/terraform.tfvars) and re-run the `terraform apply` command in order to update the domain name aliases. Follow the instructions from [Install Kubernetes](https://github.com/cxcloud/demo-cxcloud-k8s/blob/master/kubernetes/README.md).
   * If you manage your domain using a provider that's not AWS, navigate to your domain's management panel and create an `CNAME` record for `newsite.example.com` pointing to the load balancer URL.
     * [GoDaddy guide](https://fi.godaddy.com/help/add-a-cname-record-19236)
     * [Namecheap guide](https://www.namecheap.com/support/knowledgebase/article.aspx/9646/2237/how-can-i-set-up-a-cname-record-for-my-domain)
     * [Name.com guide](https://www.name.com/support/articles/115004895548-Adding-a-CNAME-Record)
+

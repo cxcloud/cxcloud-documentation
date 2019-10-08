@@ -1,16 +1,16 @@
 # Generating Core Services
 
-CX Cloud provides selected ready-made \(Node.js\) core services \(e.g. commerce, content, search, authentication\) which can be generated and added to the project using CX Cloud CLI. These can, of course, be customized later on. <!-- Also, CX Cloud enables you to deploy any custom services with any tech stack. Read more about that [here](../guides/deploying-services.md). -->
+CX Cloud provides selected ready-made \(Node.js\) core services \(e.g. commerce, content, search, authentication\) which can be generated and added to the project using CX Cloud CLI. These can, of course, be customized later on. 
 
 ## Requirements
 
-It is required to use a monorepo structure in order to deploy all microservices with CI/CD pipeline. More information about monorepo development strategy can be found [here](../getting-started/create-a-git-repository.md).
+It is required to use a monorepo structure in order to deploy all microservices with CI/CD pipeline. More information about monorepo development strategy can be found [here]().
 
 ## Service generation
 
 You can start by creating a new folder for a new service in monorepo `packages` folder, for example:
 
-```console
+```text
 my-monorepo
 ├── packages
 |   ├── package-commerce
@@ -32,10 +32,10 @@ To enable ready-made functionality for services, CX Cloud provides a set of core
 
 Currently CLI supports the following core modules:
 
-- Commerce \(commercetools\)
-- Content \(Contentful\)
-- Auth \(AWS Cognito\)
-- Search \(Algolia\)
+* Commerce \(commercetools\)
+* Content \(Contentful\)
+* Auth \(AWS Cognito\)
+* Search \(Algolia\)
 
 ## Configuration
 
@@ -43,7 +43,7 @@ After you have generated the service, it's time to provide it with configuration
 
 Create a `.env` file in the root directory of the monorepo and add environment-specific variables on new lines in the form `NAME=VALUE`. For example:
 
-```env
+```text
 CONTENTFUL_API_KEY=12345
 CTP_CLIENT_ID=qwerty-567
 AUTH_URL=https://auth.example.com
@@ -133,7 +133,7 @@ In case of `commerce` service and default settings, you should be able to see Sw
 CI/CD pipeline handles the deployment of microservices within the monorepo. Therefore, CI/CD pipeline should be set up and configured prior deployment of the services. More information about CI/CD pipeline configuration and monorepo settings for deployment can be found [here](configuring-cicd.md).
 
 {% hint style="info" %}
-When applications is deployed, all sensitive information such as keys, secrets or tokens are stored as Kubernetes secret object in the intended namespace. You can find an example of using Kubernetes' secrets to configure your project [here](../guides/storing-secrets-in-kubernetes.md#example-storing-and-using-secrets-in-nodejs-and-node-config-module).
+When applications is deployed, all sensitive information such as keys, secrets or tokens are stored as Kubernetes secret object in the intended namespace. You can find an example of using Kubernetes' secrets to configure your project [here](../../guides/storing-secrets-in-kubernetes.md#example-storing-and-using-secrets-in-nodejs-and-node-config-module).
 {% endhint %}
 
 ## Routing
@@ -150,3 +150,4 @@ $ git add .
 $ git commit -m "initial commit"
 $ git push
 ```
+

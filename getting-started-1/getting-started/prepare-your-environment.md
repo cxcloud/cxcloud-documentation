@@ -92,3 +92,4 @@ To be able to access the private services in Kubernetes an VPN solution is neede
 ```text
 $ brew install ansible
 ```
+
