@@ -1,4 +1,4 @@
-# Storing Secrets in Kubernetes
+# Managing Secrets
 
 Kubernetes has the capability to store secrets and make them available to your services. You can store different secrets and use them through your CX Cloud deployment environment variables. To store a secret in `applications` namespace \(it's the default namespace for CX Cloud apps\) run the following command:
 
@@ -52,11 +52,11 @@ console.log(process.env.PROD_DB_PASSWORD); // Y4nys7f11
 
 For more information about Kubernetes secrets, [visit this article](https://kubernetes.io/docs/concepts/configuration/secret/).
 
-### Example: Storing and using secrets in NodeJS and \`node-config\` module
+## Example: Storing and using secrets in NodeJS and \`node-config\` module
 
 One of the core services that you can generate using the CX Cloud CLI is Commerce service. It is communicating with **commercetools** platform and thus requires some configurations \(like API key, etc\). We can take advantage of Kubernetes secrets explained above to store these information without having to publish them to GitHub.
 
-First, generate a service using the CLI and choose Commercetools, [as explained in its section](../setting-up-a-cxcloud-project/generating-core-services.md).
+First, generate a service using the CLI and choose Commercetools, [as explained in its section]().
 
 Then, according to `node-config`'s [documentation](https://github.com/lorenwest/node-config/wiki/Environment-Variables#custom-environment-variables), create a file named `custom-environment-variables.json` in the `config` folder of the generated service with the following content:
 
@@ -76,7 +76,7 @@ Then, according to `node-config`'s [documentation](https://github.com/lorenwest/
 }
 ```
 
-This file will tell `node-config` to look for those environment variables and map them to certain keys. For example the configuration key `commerceTools.admin.clientId` will map to `COMMRCETOOLS_ADMIN_CLIENT_ID` and so on. 
+This file will tell `node-config` to look for those environment variables and map them to certain keys. For example the configuration key `commerceTools.admin.clientId` will map to `COMMRCETOOLS_ADMIN_CLIENT_ID` and so on.
 
 Now we have to store those data in Kubernetes and make them available to our service using the specified environment variables. To do that, first let's create a secret in `applications` namespace:
 
@@ -133,7 +133,6 @@ deployment:
         secretKeyRef:
           name: prod-commercetools
           key: userClientSecret
-
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
@@ -143,6 +142,4 @@ When done, increase the version in your `package.json` file and run:
 ```bash
 $ cxcloud deploy
 ```
-
-
 

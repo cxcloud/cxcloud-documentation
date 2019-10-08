@@ -1,6 +1,8 @@
 # Generating Infrastructure
 
-{% hint style="warning" %}
+TBA
+
+<!-- {% hint style="warning" %}
 Windows is not supported. You can only generate the infrastructure using a Unix based OS. Eg. macOS or Linux.
 {% endhint %}
 
@@ -97,3 +99,4 @@ $ git push
 
 {% embed url="https://www.youtube.com/watch?v=ADE\_TyaGLeo&feature=youtu.be" caption="" %}
 
+-->

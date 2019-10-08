@@ -1,4 +1,4 @@
-# Getting access to an already running Infrastructure
+# Getting Access To An Already Running Infrastructure
 
 In most real world cases, you haven't probably generated and set up the Kubernetes infrastructure yourself. But you might need to access it to deploy services or change settings.
 
@@ -16,11 +16,7 @@ $ kops export kubecfg somecluster.k8s.local --state=s3://somecluster.k8s.local
 
 This command will download the configuration to your system and sets up a Kubernetes `context` for easier use. Now you can run any `kubectl` or `cxcloud` command to interact with your cluster.
 
-{% hint style="warning" %}
-If you have MFA activated on your AWS account, run the above command and see an error related to AWS environment, please check the [AWS MFA troubleshooting guide](../troubleshooting/aws-multi-factor-authentication-issues.md).
-{% endhint %}
-
-### Kubernetes Contexts
+## Kubernetes Contexts
 
 In case you have access to more than one Kubernetes cluster, you can use `kubectl config` tool and switch between different contexts.
 
@@ -37,6 +33,4 @@ To switch between contexts, run:
 ```bash
 $ kubectl config use-context mycluster.k8s.local
 ```
-
-
 

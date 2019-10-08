@@ -1,6 +1,6 @@
-# Configuring CI/CD pipeline
+# Configuring CI/CD Pipeline
 
-When using CX Cloud CLI, it is fairly easy for one to both create and then deploy CX Cloud infra, selected services and demo frontends to AWS. This is typically enough for testing and exploration needs. We also have [tools and guidelines](../best-practices/how-to-run-infra.md) for DevOps engineer to manually manage your environment. 
+When using CX Cloud CLI, it is fairly easy for one to both create and then deploy CX Cloud infra, selected services and demo frontends to AWS. This is typically enough for testing and exploration needs. We also have [tools and guidelines](https://github.com/cxcloud/cxcloud-documentation/tree/7585ecd6d3f3a8c408f0919987af56c53decff01/best-practices/how-to-run-infra.md) for DevOps engineer to manually manage your environment.
 
 But when preparing for customer project development phase, creating a CI/CD pipeline between your Github \(or the Git host of your choice eg. Bitbucket\) and various environments in AWS \(or selected cloud provider eg. Azure\) is the next thing to do. As this area can be very dependent on customer preferences and existing set up, you probably will customize your pipeline. Regardless, we have created this basic set up.
 
@@ -8,27 +8,24 @@ But when preparing for customer project development phase, creating a CI/CD pipe
 
 The CX Cloud CI/CD pipeline has been designed with the following development workflow in mind.
 
-![Development workflow](../.gitbook/assets/dev-workflow.png)
+![Development workflow](../../.gitbook/assets/dev-workflow.png)
 
 1. A new feature branch is created, the pipeline will checkout the code and run unit tests and perform code quality analysis. This step will be repeated every time a new commit is pushed to the branch..
-
 2. When the feature is ready for review and testing a pull request \(PR\) is created. The pipeline will automatically run tests and code quality analysis. The pipeline will fail in case the tests fails or if the quality analysis doesn't pass the specified quality level. The pipeline will continue with building the micro services and deploy them into a Kubernetes namespace specific for the PR. The pipeline will send notifications to communication channels and publish the web url as a comment to the PR. Now the PR is ready for code review and quality assurance. New commits pushed to the PR will only analyze and deploy the modified projects.
-
 3. When the pull request has passed all steps, it's possible to merge to master. When new code is pushed to master the pipeline will run almost the same steps as for pull requests except this time the pipeline will deploy to the staging environment \(or Kubernetes namespace staging\).
-
 4. The process has been designed so that master is alway deployable to production. To deploy to production a release tag has to be made. The pipeline will automatically recognize all git tags and any of the tags can be with one click in Jenkins build and deployed to production.
 
 ### Requirements for the pipeline
 
-- Kubernetes cluster
-- Jenkins with preinstalled plugins
-- Monorepo architecture of the micro services
+* Kubernetes cluster
+* Jenkins with preinstalled plugins
+* Monorepo architecture of the micro services
 
 ### Configure the services for the pipeline
 
 The Pipeline requires that the development strategy uses a monorepo in order to deploy all services. The directory structure for the monorepo should look like:
 
-```console
+```text
 .
 ├── packages
 |   ├── service 1
@@ -51,7 +48,7 @@ In the root of the repository should be two files, `Jenkinsfile` and `.cxcloud.y
 
 Example of the `.cxcloud.yaml` file in the root of the repository:
 
-```sh
+```bash
 namespace: $GIT_BRANCH
 routing:
   domain: $GIT_BRANCH.dev.cxcloud.com
@@ -79,7 +76,7 @@ Kubernetes secrets should be stored in the namespace they are intended for. Howe
 
 Example of the content in the `.cxcloud.yaml` file for a microservice:
 
-```sh
+```bash
 namespace: $GIT_BRANCH
 deployment:
   name: $APP_NAME
@@ -127,15 +124,15 @@ The Jenkins configuration and installation is in detail explained on the [Jenkin
 
 ## CI/CD Pipeline
 
-A working example of the CI/CD pipeline is in the CX Cloud demo application, [cxcloud-monorepo-angular](https://github.com/cxcloud/cxcloud-monorepo-angular).
+A working example of the CI/CD pipeline is in the CX Cloud demo application, [cxcloud-monorepo-angular](https://github.com/cxcloud/demo-cxcloud-monorepo-angular).
 
 ### Jenkinsfile structure
 
-The [Jenkinsfile](https://github.com/cxcloud/cxcloud-monorepo-angular/blob/master/Jenkinsfile) structure for the CX Cloud demo explained here is a guideline and should be modified depending on technologies and deployment strategies used. The important part is that the Jenkinsfile should be configured as a multibranch pipeline in Jenkins and that there are different actions specified e.g. for normal branches, pull requests and base branch.
+The [Jenkinsfile](https://github.com/cxcloud/demo-cxcloud-monorepo-angular/blob/master/Jenkinsfile) structure for the CX Cloud demo explained here is a guideline and should be modified depending on technologies and deployment strategies used. The important part is that the Jenkinsfile should be configured as a multibranch pipeline in Jenkins and that there are different actions specified e.g. for normal branches, pull requests and base branch.
 
 #### Variables
 
-The pipeline starts with defining the variables for all environments, DEV/TEST (pull requests), staging (base branch, master) and production (git tag).
+The pipeline starts with defining the variables for all environments, DEV/TEST \(pull requests\), staging \(base branch, master\) and production \(git tag\).
 
 The first stage in the pipeline, `populate variables` will set the values for many of the variables that has to be calculated while the pipeline is running. E.g. some values for pull requests can only be populated in case the job execution is an actual pull request.
 
@@ -155,7 +152,7 @@ The pipeline will deploy all of the services into a new dev/test environment or 
 
 The CX Cloud demo uses the namespace `applications` for storing secrets for the test/dev environments. Stage `Copy namespace secrets to DEV/TEST environment` will copy the secrets from the application namespace into the test/dev environments.
 
-Secrets will only be copied for pull requests. Secrets for other environments (staging and production) has to be created independently of the pipeline.
+Secrets will only be copied for pull requests. Secrets for other environments \(staging and production\) has to be created independently of the pipeline.
 
 #### Deploy projects
 
@@ -177,6 +174,7 @@ In case the job fails, the post action will delete the namespace if it was creat
 
 ### Example
 
-Below is a Jenkins screenshot of a deployment to staging for the [CX Cloud demo application](https://github.com/cxcloud/cxcloud-monorepo-angular).
+Below is a Jenkins screenshot of a deployment to staging for the [CX Cloud demo application](https://github.com/cxcloud/demo-cxcloud-monorepo-angular).
 
-![Deployment to Staging](../.gitbook/assets/deploy-to-staging.png)
+![Deployment to Staging](../../.gitbook/assets/deploy-to-staging.png)
+

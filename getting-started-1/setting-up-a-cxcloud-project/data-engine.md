@@ -1,4 +1,4 @@
-# Configuring Data Engine 1.0 (logging)
+# Configuring Data Engine
 
 The CX Cloud Kubernetes cluster provisioned with kops doesn't come out of the box with centralized logging for the Pods or application. Hence, the data engine 1.0 mostly focus on logging but with a data lake possibility.
 
@@ -6,15 +6,12 @@ The CX Cloud Kubernetes cluster provisioned with kops doesn't come out of the bo
 
 The architecture can be seen in the picture below. This version only support at the moment AWS since we use AWS services like Kinesis Firehose.
 
-![Data Engine, centralized logging](../.gitbook/assets/data-engine.png)
+![Data Engine, centralized logging](../../.gitbook/assets/data-engine.png)
 
-- Fluentd stream the stdout logs lines to Kinesis Firehose from all Kubernetes pods.
-
-- Kinesis Firehose load the streaming data into Amazon S3 and Amazon Elasticsearch service.
-
-- Amazon S3 store compressed logs that can be used for backups or for further analysis.
-
-- Amazon Elasticsearch service store the logs that can be easily searched with Kibana, which is a part of the managed service from AWS.
+* Fluentd stream the stdout logs lines to Kinesis Firehose from all Kubernetes pods.
+* Kinesis Firehose load the streaming data into Amazon S3 and Amazon Elasticsearch service.
+* Amazon S3 store compressed logs that can be used for backups or for further analysis.
+* Amazon Elasticsearch service store the logs that can be easily searched with Kibana, which is a part of the managed service from AWS.
 
 ### Fluentd
 
@@ -24,29 +21,38 @@ There is a CX Cloud provided [helm chart](https://github.com/cxcloud/helm-fluent
 
 To get started:
 
-- Clone the repository:
+* Install the repository:
 
-```sh
-git clone git@github.com:cxcloud/helm-fluentd-kinesis-firehose.git
+```bash
+helm repo add cxcloud-fluentd https://raw.githubusercontent.com/cxcloud/helm-fluentd-kinesis-firehose/master
 ```
 
-- Install the chart with the release name `my-fluentd-release` into the namespace `kube-system`:
+* Update repositories:
 
-```sh
-helm install helm-fluentd-kinesis-firehose --name my-fluentd-release --namespace kube-system
+```bash
+helm repo update
+```
+
+* Install the chart with version 0.1.0 and the release name `my-fluentd-release` into the namespace `kube-system`:
+
+```bash
+helm install cxcloud-fluentd/helm-fluentd-kinesis-firehose \
+  --version 0.1.0 \
+  --name my-release \
+  --namespace kube-system
 ```
 
 The helm chart is more in detail documented on the GitHub repository, [helm-fluentd-kinesis-firehose](https://github.com/cxcloud/helm-fluentd-kinesis-firehose).
 
 ### Kinesis Firehose, S3 and Elasticsearch
 
-The Fluentd daemonset requires that an AWS account has already been provisioned with a Kinesis Firehose stream and with its data stores (eg. Amazon S3 bucket, Amazon Elasticsearch Service, etc).
+The Fluentd daemonset requires that an AWS account has already been provisioned with a Kinesis Firehose stream and with its data stores \(eg. Amazon S3 bucket, Amazon Elasticsearch Service, etc\).
 
 Available is a CX Cloud provided Terraform module, [terraform-kinesis-firehose-elasticsearch](https://github.com/cxcloud/terraform-kinesis-firehose-elasticsearch) for helping with the installation of Kinesis Firehose, Amazon S3 bucket and Amazon Elasticsearch Service.
 
 The following example show how the module can be used in Terraform.
 
-```console
+```text
 module "kinesis-firehose-elasticsearch" {
   source                       = "github.com/cxcloud/terraform-kinesis-firehose-elasticsearch?ref=v1.1.0"
   region                       = "eu-west-1"
@@ -74,3 +80,4 @@ module "kinesis-firehose-elasticsearch" {
 ```
 
 The Terraform module is more in detail documented on the GitHub repository, [terraform-kinesis-firehose-elasticsearch](https://github.com/cxcloud/terraform-kinesis-firehose-elasticsearch).
+
