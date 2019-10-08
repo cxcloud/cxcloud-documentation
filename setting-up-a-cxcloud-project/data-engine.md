@@ -24,16 +24,25 @@ There is a CX Cloud provided [helm chart](https://github.com/cxcloud/helm-fluent
 
 To get started:
 
-- Clone the repository:
+- Install the repository:
 
 ```sh
-git clone git@github.com:cxcloud/helm-fluentd-kinesis-firehose.git
+helm repo add cxcloud-fluentd https://raw.githubusercontent.com/cxcloud/helm-fluentd-kinesis-firehose/master
 ```
 
-- Install the chart with the release name `my-fluentd-release` into the namespace `kube-system`:
+- Update repositories:
 
 ```sh
-helm install helm-fluentd-kinesis-firehose --name my-fluentd-release --namespace kube-system
+helm repo update
+```
+
+- Install the chart with version 0.1.0 and the release name `my-fluentd-release` into the namespace `kube-system`:
+
+```sh
+helm install cxcloud-fluentd/helm-fluentd-kinesis-firehose \
+  --version 0.1.0 \
+  --name my-release \
+  --namespace kube-system
 ```
 
 The helm chart is more in detail documented on the GitHub repository, [helm-fluentd-kinesis-firehose](https://github.com/cxcloud/helm-fluentd-kinesis-firehose).
