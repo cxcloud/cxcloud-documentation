@@ -15,11 +15,11 @@
 * [Architecture](architecture/README.md)
   * [Overview](architecture/architecture-overview.md)
   * [How to use CX Cloud](architecture/how_to_use.md)
-<!-- * [Best practices](best-practices/README.md) 
-  * [Customizing core services and demo front-end](best-practices/customize-core-demo.md)
-  * [Creating and deploying custom front-end](best-practices/create-custom-frontend.md)
-  * [Managing your infra and Kubernetes](best-practices/how-to-run-infra.md)
-  * [Multivendor coordination](best-practices/multivendor-coordination.md) -->
+<!-- * [Best practices](best-practices/README.md) -->
+<!--  * [Customizing core services and demo front-end](best-practices/customize-core-demo.md)-->
+<!--  * [Creating and deploying custom front-end](best-practices/create-custom-frontend.md)-->
+<!--  * [Managing your infra and Kubernetes](best-practices/how-to-run-infra.md)-->
+ <!-- * [Multivendor coordination](best-practices/multivendor-coordination.md) -->
 
 ## Guides
 
