@@ -10,6 +10,7 @@
   * [Git Repository Conventions](getting-started/create-a-git-repository.md)
   
 * [Architecture Overview](architecture/architecture-overview.md)
+* [Architecture Overview](architecture/architecture-overview.md)
 
 ## Getting Started
 
