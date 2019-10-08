@@ -5,6 +5,7 @@
   * [Architecture Overview](architecture/architecture-overview.md)    
   
 ## Getting started  
+
 * [Requirements](getting-started/README.md)
   * [Prepare Your Environment](getting-started/prepare-your-environment.md)
   * [Install CX Cloud CLI](getting-started/install-cxcloud-cli.md)
