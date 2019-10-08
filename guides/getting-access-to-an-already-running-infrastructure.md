@@ -16,9 +16,9 @@ $ kops export kubecfg somecluster.k8s.local --state=s3://somecluster.k8s.local
 
 This command will download the configuration to your system and sets up a Kubernetes `context` for easier use. Now you can run any `kubectl` or `cxcloud` command to interact with your cluster.
 
-{% hint style="warning" %}
+<!-- {% hint style="warning" %}
 If you have MFA activated on your AWS account, run the above command and see an error related to AWS environment, please check the [AWS MFA troubleshooting guide](../troubleshooting/aws-multi-factor-authentication-issues.md).
-{% endhint %}
+{% endhint %} -->
 
 ### Kubernetes Contexts
 
@@ -37,6 +37,3 @@ To switch between contexts, run:
 ```bash
 $ kubectl config use-context mycluster.k8s.local
 ```
-
-
-

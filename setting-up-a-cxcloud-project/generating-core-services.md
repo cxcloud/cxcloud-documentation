@@ -1,6 +1,6 @@
 # Generating Core Services
 
-CX Cloud provides selected ready-made \(Node.js\) core services \(e.g. commerce, content, search, authentication\) which can be generated and added to the project using CX Cloud CLI. These can, of course, be customized later on. Also, CX Cloud enables you to deploy any custom services with any tech stack. Read more about that [here](../guides/deploying-services.md).
+CX Cloud provides selected ready-made \(Node.js\) core services \(e.g. commerce, content, search, authentication\) which can be generated and added to the project using CX Cloud CLI. These can, of course, be customized later on. <!-- Also, CX Cloud enables you to deploy any custom services with any tech stack. Read more about that [here](../guides/deploying-services.md). -->
 
 ## Requirements
 
