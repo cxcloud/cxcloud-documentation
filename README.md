@@ -6,7 +6,7 @@ Welcome to CX Cloud. This site will help you through the journey of setting up a
 
 CX Cloud is an idea for creating microservices based architecture on AWS Cloud. This project is created and maintained by [Tieto CEM](https://www.tieto.com/cem) unit. We use this idea, accelerators, architecture and 3rd party tools \(e.g. commercetools, Algolia, Contentful\) for creating high quality online services for our customers.
 
-For additional information, see CX Cloud [architecture](architecture-overview.md) and [implementation scenarios](how_to_use.md). Check also our [Changelog](further-development/changelog.md) for quarterly summaries of the most important changes and improvements.
+For additional information, see CX Cloud [architecture](introduction/architecture-overview.md) and [implementation scenarios](introduction/how_to_use.md). Check also our [Changelog](further-development/changelog.md) for quarterly summaries of the most important changes and improvements.
 
 And although our CX Cloud CLI is built for AWS, there is no deep dependency on AWS in CX Cloud in general. You are most welcomed to run CX Cloud with MS Azure or Google Cloud as well.
 

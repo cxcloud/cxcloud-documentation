@@ -1,8 +1,12 @@
 # Table of contents
 
 * [Welcome to CX Cloud](README.md)
-* [Implementaton Scenarios](how_to_use.md)
-* [Architecture Overview](architecture-overview.md)
+
+## Introduction
+
+* [Implementaton Scenarios](introduction/how_to_use.md)
+* [Architecture Overview](introduction/architecture-overview.md)
+* [How to participate?](introduction/how-to-participate.md)
 
 ## Getting Started <a id="getting-started-1"></a>
 
@@ -31,5 +35,4 @@
 ## Further development
 
 * [Changelog](further-development/changelog.md)
-* [How to participate?](further-development/how-to-participate.md)
 
