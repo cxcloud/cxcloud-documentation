@@ -4,7 +4,7 @@ CX Cloud is a battle-proven solution accelerator for cloud native architecture. 
 
 Example solutions include web shops, customer self-service solutions, content rich web sites and API-layer for mobile apps and other clients. Solution implementation can also be part of "decomposing the monolith" program where your customer targets to create new online solutions with modern omni-channel architecture while at the same time reducing investments towards legacy platforms.
 
-We have seen many cloud native initiatives fail to reach the high expectations due to siloed approach and lack of governance in the areas of end-to-end feasibility, common services and long term architecture. For us, CX Cloud is a tool to promote also these long-term aspects in addition to enabling fast innovtion and benefitting from cloud native approach. 
+We have seen many cloud native initiatives fail to reach the high expectations due to siloed approach and lack of governance in the areas of end-to-end feasibility, common services and long term architecture. For us, CX Cloud is a tool to promote also these long-term aspects in addition to enabling fast innovation and benefitting from cloud native approach. 
 
 It is good to remember that even if CX Cloud provides guidance and accelerators to create an end-to-end online solution including infra, services and front-end, it is not a ready-made solution. It is more of a framework and its granularity of accelerators enable you to hand pick only the ones you need. For example, you can just use the infra and CI/CD part to get your team up and running in one day and then continue with customizing the rest of the stack.
 
