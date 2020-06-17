@@ -4,7 +4,7 @@
 
 We constantly develop Tieto CX Cloud based on customer projects, internal ideas, and partner contributions. Naturally, you can follow progress via Github but here are quarterly summaries of the most important changes and improvements.
 
-### Planned for H2/2019
+### Planned for H2/2020
 
 * Add GraphQL to basic set-up.
 * Create more templates to enable custom microservices generation with various technologies \(e.g. Node, Java, Groovy\) using CX Cloud CLI.
