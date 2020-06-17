@@ -18,7 +18,7 @@ In our approach, we emphasize to find the optimal balance between centralized go
 
 In cloud native space, technology evolution is quite dynamic. Also, solution use cases are versatile and ambitioius. From development perspective, this requires having motivated and autonomous teams and using fit-for-purpose tech stacks. However,  to reduce the negative impacts of siloed projects and to embrace reusability and maintainability, some common ground is needed. 
 
-For us, CX Cloud is a way to faclitate sharing code, best practices and experiences between teams to reach this common ground. Accelerators are provided as open source to make sure various teams can benefit without cost impacts and also to avoid any unintended vendor lock-in mechanisms when doing so.      
+For us, CX Cloud is a way to facilitate sharing code, best practices and experiences between teams to reach this common ground. Accelerators are provided as open source to make sure various teams can benefit without cost impacts and also to avoid any unintended vendor lock-in mechanisms when doing so.      
 
 ## Getting Started
 
