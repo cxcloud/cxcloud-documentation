@@ -302,5 +302,26 @@ Angular has [documented](https://angular.io/guide/styleguide) a set of best prac
 
 ## Getting started with React
 
-TBA.
+In our React demo, we used [Next.js](https://github.com/zeit/next.js/), a React framework that gives developers the possibility to create server-rendered React apps providing bunch of other nice features as well.
 
+### Running locally
+
+Switch to project directory and install the dependencies by running:
+```bash
+npm install
+```
+...then simply run following command to start local server:
+```bash
+npm run dev
+```
+...you can now view the demo in your browser:
+```bash
+http://localhost:3000
+```
+You can read more about nextjs through their [documentation](https://nextjs.org/docs)
+
+### Style guide
+
+Styles are handled through [styled-components](https://www.styled-components.com/)
+
+You can find the theme constants such as colors, screen sizes for media queries in ```common/theme.js``` file.
